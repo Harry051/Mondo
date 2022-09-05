@@ -10,9 +10,58 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_05_150711) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_05_165953) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cooked_dishes", force: :cascade do |t|
+    t.bigint "dish_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dish_id"], name: "index_cooked_dishes_on_dish_id"
+    t.index ["user_id"], name: "index_cooked_dishes_on_user_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+    t.text "story"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dishes", force: :cascade do |t|
+    t.string "title"
+    t.text "ingredients"
+    t.text "recipe"
+    t.float "average_rating"
+    t.string "dietary_filters"
+    t.integer "prep_time"
+    t.bigint "country_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_dishes_on_country_id"
+  end
+
+  create_table "favourites", force: :cascade do |t|
+    t.bigint "dish_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dish_id"], name: "index_favourites_on_dish_id"
+    t.index ["user_id"], name: "index_favourites_on_user_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.text "content"
+    t.float "rating"
+    t.bigint "dish_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dish_id"], name: "index_reviews_on_dish_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -22,8 +71,21 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_05_150711) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
+    t.text "bio"
+    t.integer "countries_cooked"
+    t.string "location"
+    t.string "favourite_dish"
+    t.string "rank"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "cooked_dishes", "dishes"
+  add_foreign_key "cooked_dishes", "users"
+  add_foreign_key "dishes", "countries"
+  add_foreign_key "favourites", "dishes"
+  add_foreign_key "favourites", "users"
+  add_foreign_key "reviews", "dishes"
+  add_foreign_key "reviews", "users"
 end
