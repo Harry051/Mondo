@@ -5,18 +5,22 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# To access image for upload to cloudinary
+require "open-uri"
+
+# Recipes/Country seeder
 recipes = [
   {
     'name' => 'Moussaka',
     'description' => "Moussaka is a classic Greek dish that's perfect comfort food. This version may not be completely traditional, but it's definitely delicious. A family favorite.",
-    'average_rating' => 5,
+    'average_rating' => 5.0,
     'categories' => ['Main Course', 'Greek'],
     'times' => { 'prep' => 20,
              'cook' => 70,
              'total' => 90
-               }
-    'ingredients' => [
-                      '2 eggplant aubergine, large',
+               },
+    'ingredients' => ['2 eggplant aubergine, large',
               '3 tablespoon olive oil for frying, or more as needed',
               '1 tablespoon olive oil',
               '1 onion large',
@@ -45,18 +49,20 @@ recipes = [
            "Then gently spread out the rest of the lamb on top, followed by the remaining eggplant/aubergine in a layer and finally the last of the sauce. Sprinkle the cheese you kept back over the top.",
            "Bake for approx 40mins until golden brown on the top."
                 ],
-    'country' => 'Greece'
-    'image_url' => 'https://www.carolinescooking.com/wp-content/uploads/2015/01/moussaka-photo-300x225.jpg'
+    'dish_image_url' => 'https://www.carolinescooking.com/wp-content/uploads/2015/01/moussaka-photo-300x225.jpg',
+    'country' => 'Greece',
+    'country_bio' => "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences. - Wikipedia",
+    'country_image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/510px-Flag_of_Greece.svg.png'
   },
   {
     'name' => 'Tiradito',
     'description' => 'This classic Japanese-Peruvian dish is easy to prepare and makes a wonderful appetizer.',
-    'average_rating' => 5,
+    'average_rating' => 4.3,
     'categories' => ['Appetizer/Starter', 'Peruvian'],
     'times' => { 'prep' => 10,
              'cook' => 0,
              'total' => 10
-               }
+               },
     'ingredients' => [
                       '1/4 lb white fish 110g, as a chunk, ideally even in shape - I used hake loin',
              '1 tablespoon lime juice',
@@ -71,19 +77,21 @@ recipes = [
                  'Thinly slice the fish and place on a plate. Chill while you prepare the sauce',
            'Mix the sauce ingredients together well (lime and lemon juices, aji amarillo, salt, ginger and garlic) then pour over the fish. Serve immediately.'
                 ],
-    'country' => 'Peru'
-    'image_url' => 'https://www.carolinescooking.com/wp-content/uploads/2020/06/tiradito-featured-pic-sq-300x300.jpg'
+    'dish_image_url' => 'https://www.carolinescooking.com/wp-content/uploads/2020/06/tiradito-featured-pic-sq-300x300.jpg',
+    'country' => 'Peru',
+    'country_bio' => "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru. - Wikipedia",
+    'country_image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
   },
 
   {
     'name' => 'Pavlova with raspberries and cream',
     'description' => "A delicious meringue that's soft inside and crisp outside, loaded up with raspberries and cream - such a tasty dessert.",
-    'average_rating' => 5,
+    'average_rating' => 4.6,
     'categories' => ['Dessert', 'Australian'],
     'times' => { 'prep' => 15,
              'cook' => 45,
              'total' => 60
-               }
+               },
     'ingredients' => [
                       '2 egg whites large',
              '1/2 cup granulated sugar 100g (3 1/2oz)',
@@ -102,7 +110,41 @@ recipes = [
            "Whip the cream until lightly whipped (soft peaks) then add the raspberries - if using a stand mixture you can probably put them in whole, with a hand mixture you'll need to break them up a bit first. Beat a little more until combined and semi-firm.",
            'Pour the cream mixture into the middle of the pavlova and carefully spread out so you still have a good 1in/3cm or so without cream round the edge. Top with the extra raspberries. Keep chilled until ready to serve.'
                 ],
-    'country' => 'Australia'
-    'image_url' => 'https://www.carolinescooking.com/wp-content/uploads/2016/05/pavlova-raspberries-and-cream-photo-300x225.jpg'
+    'dish_image_url' => 'https://www.carolinescooking.com/wp-content/uploads/2016/05/pavlova-raspberries-and-cream-photo-300x225.jpg',
+    'country' => 'Australia',
+    'country_bio' => "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences. - Wikipedia",
+    'country_image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/510px-Flag_of_Australia_%28converted%29.svg.png'
   }
  ]
+
+# Clear models before reseeding
+Dish.destroy_all
+Country.destroy_all
+
+ # Create country and dish with the hash above
+recipes.each do |r|
+  country = Country.create!(name: r['country'], story: r['country_bio'])
+  puts "Country: #{country.id} created!"
+
+  dish = Dish.create!(
+    title: r['name'],
+    description: r['description'],
+    average_rating: r['average_rating'],
+    categories: r['categories'],
+    times: r['times'],
+    ingredients: r['ingredients'],
+    recipe: r['recipe'],s
+    country: country
+    )
+  puts "Dish: #{dish.id} created!"
+
+  file = URI.open(r['dish_image_url'])
+  dish.photo.attach(io: file, filename: "#{dish.title}.jpg", content_type: "image/jpg")
+  dish.save
+  puts "Dish image created!"
+
+  file = URI.open(r['country_image_url'])
+  country.photo.attach(io: file, filename: "#{country.name}.jpg", content_type: "image/jpg")
+  country.save
+  puts "Country image created!"
+end
