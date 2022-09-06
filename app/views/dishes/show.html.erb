@@ -8,6 +8,14 @@
 
 
 <h2><%= @dish.title %></h2>
+
+
+<div class="container">
+  <%= simple_form_for [@dish, @cooked_dish] do |x| %>
+  <%= x.submit "Cooked ✅" %>
+  <% end %>
+</div>
+
 <p><i class="fa-solid fa-star"></i><%= @dish.average_rating %></p>
 <div class="container">
   <div class="card">
@@ -27,3 +35,4 @@
 <p><%= @dish.country.story %></p>
 
 <h1><strong>TO DO: INTEGRATE REVIEWS</strong></h1>
+
