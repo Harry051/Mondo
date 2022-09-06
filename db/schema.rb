@@ -65,7 +65,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_142158) do
     t.text "recipe"
     t.float "average_rating"
     t.string "categories"
-    t.text "times"
+    t.jsonb "times"
     t.bigint "country_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
