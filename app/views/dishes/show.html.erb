@@ -1,9 +1,38 @@
-<h1>Big ass pic of food</h1>
+<div class="card">
+  <div class="dish-img">
+    <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
+    <p>add favourite button</p>
+    <p>add refresh button</p>
+  </div>
+</div>
+
 
 <h2><%= @dish.title %></h2>
+
 
 <div class="container">
   <%= simple_form_for [@dish, @cooked_dish] do |x| %>
   <%= x.submit "Cooked ✅" %>
   <% end %>
 </div>
+
+<p><i class="fa-solid fa-star"></i><%= @dish.average_rating %></p>
+<div class="container">
+  <div class="card">
+    <ul>
+      <li>Prep time: <%= @dish.times %> mins</li>
+      <li>Calories: XX</li>
+      <li>Heading 3: XX</li>
+    </ul>
+  </div>
+</div>
+
+
+<p><%= @dish.description %></p>
+
+<%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
+<h6>Cuisine history:</h6>
+<p><%= @dish.country.story %></p>
+
+<h1><strong>TO DO: INTEGRATE REVIEWS</strong></h1>
+
