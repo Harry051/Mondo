@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'cooked_dishes/create'
   devise_for :users
   root to: "pages#home"
 
@@ -6,7 +7,9 @@ Rails.application.routes.draw do
     # get '/profile', to: 'user#profile'
   end
 
-  resources :dishes, only: [:show]
+  resources :dishes, only: [:show] do
+    resources :cooked_dishes, only: [:create]
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

@@ -1,3 +1,9 @@
 <h1>Big ass pic of food</h1>
 
 <h2><%= @dish.title %></h2>
+
+<div class="container">
+  <%= simple_form_for [@dish, @cooked_dish] do |x| %>
+  <%= x.submit "Cooked ✅" %>
+  <% end %>
+</div>
