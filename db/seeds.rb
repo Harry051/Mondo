@@ -133,7 +133,7 @@ recipes.each do |r|
     categories: r['categories'],
     times: r['times'],
     ingredients: r['ingredients'],
-    recipe: r['recipe'],s
+    recipe: r['recipe'],
     country: country
     )
   puts "Dish: #{dish.id} created!"
