@@ -1,0 +1,11 @@
+<h1> <%= @dish.title %></h1>
+
+<h2>Recipe</h2>
+
+<ol value="Step:">
+  <% @dish.recipe.each do |i| %>
+  <li type="step">
+  <%= i %>
+  <% end %>
+  </li>
+</ol>

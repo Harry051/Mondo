@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resources :dishes, only: [:show] do
     get '/ingredients', to: 'dishes#ingredients'
-    get '/recipes', to: 'dishes#recipes'
+    get '/recipes', to: 'dishes#recipe'
     resources :cooked_dishes, only: [:create]
     resources :reviews, only: %i[new create]
   end

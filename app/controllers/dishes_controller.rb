@@ -9,7 +9,8 @@ class DishesController < ApplicationController
     @dish = Dish.find(params[:dish_id])
   end
 
-  def recipes
+  def recipe
+    @dish = Dish.find(params[:dish_id])
   end
 
   # private
