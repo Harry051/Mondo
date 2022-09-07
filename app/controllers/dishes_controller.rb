@@ -5,6 +5,10 @@ class DishesController < ApplicationController
     @favourite = Favourite.new
   end
 
+  def ingredients
+    @dish = Dish.find(params[:dish_id])
+  end
+
   private
 
   def dish_params
