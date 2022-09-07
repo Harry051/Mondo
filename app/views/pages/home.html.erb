@@ -1,2 +1,7 @@
 <h1>Pages#Home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+
+<div class="container">
+  <div style="width: 90%; height: 600px;" class="mappy" data-controller="map" data-map-markers-value="<%= @markers.to_json %>" data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+</div>
