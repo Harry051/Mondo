@@ -3,8 +3,8 @@ class CreateDishes < ActiveRecord::Migration[7.0]
     create_table :dishes do |t|
       t.string :title
       t.text :description
-      t.text :ingredients
-      t.text :recipe
+      t.text :ingredients, array: true, default: []
+      t.text :recipe, array: true, default: []
       t.float :average_rating
       t.string :categories
       t.jsonb :times

@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :users, only: [:show] do
-    # get '/profile', to: 'user#profile'
+    # get '/profile', to: 'users#profile'
   end
 
   resources :dishes, only: [:show] do
+    get '/ingredients', to: 'dishes#ingredients'
     resources :cooked_dishes, only: [:create]
     resources :reviews, only: %i[new create]
   end
