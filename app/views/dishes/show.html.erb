@@ -20,7 +20,7 @@
 <div class="container">
   <div class="card">
     <ul>
-      <li>Prep time: <%= @dish.times %> mins</li>
+      <li>Prep time: <%= @dish.times["cook"] %> mins</li>
       <li>Calories: XX</li>
       <li>Heading 3: XX</li>
     </ul>
@@ -35,4 +35,3 @@
 <p><%= @dish.country.story %></p>
 
 <h1><strong>TO DO: INTEGRATE REVIEWS</strong></h1>
-
