@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus";
-import mapboxgl from 'mapbox/mapbox-gl';
+import mapboxgl from 'mapbox-gl';
+
 export default class extends Controller {
   static values = {
     apiKey: String,
@@ -15,7 +16,7 @@ export default class extends Controller {
     this.map = new mapboxgl.Map({
       container: this.element,
       projection: 'globe',
-      style: "mapbox://styles/harry051/cl6trq8xb001j15lb0gxhytli",
+      style: "mapbox://styles/harry051/cl7j2z4pn001l14p9rxykle8f",
     });
     this.#addMarkersToMap();
     this.#fitMapToMarkers();
