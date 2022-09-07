@@ -1,2 +1,32 @@
-<h1>Pages#Home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="iPhone-13">
+
+  <div class="home-background-top">
+
+    <div class="home-logo">
+      <%= image_tag "mondo-logo.png" %>
+    </div>
+
+    <div class="home-graphics">
+      <%= image_tag "pages-home-graphics.png" %>
+    </div>
+
+    <div class="home-infos">
+      <h3>Cook like a chef</h3>
+      <p>Cook professional dishes right in your kitchen</p>
+    </div>
+
+    <div class="home-btn">
+      <%= link_to "Get Started", "#home-bottom", class: "btn btn-get-started" %>
+    </div>
+
+  </div>
+
+  <div id="home-bottom" class="home-background-bottom">
+
+    <%= link_to "#home-bottom", class: "btn nav-btn" do %>
+      <i class="fa-solid fa-bars"></i>
+    <% end %>
+
+  </div>
+
+</div>
