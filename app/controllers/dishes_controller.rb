@@ -1,8 +1,8 @@
 class DishesController < ApplicationController
-
   def show
     @dish = Dish.find(params[:id])
     @cooked_dish = CookedDish.new
+    @favourite = Favourite.new
   end
 
   private

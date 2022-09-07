@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'favourites/index'
   get 'cooked_dishes/create'
   devise_for :users
   root to: "pages#home"
@@ -9,6 +10,7 @@ Rails.application.routes.draw do
 
   resources :dishes, only: [:show] do
     resources :cooked_dishes, only: [:create]
+    resources :favourites, only: [:create]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
