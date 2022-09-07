@@ -5,6 +5,9 @@ class DishesController < ApplicationController
     # @favourites = Favourites.new
   end
 
+  def ingredients
+  end
+
   private
 
   def dish_params
