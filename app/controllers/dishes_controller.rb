@@ -9,9 +9,13 @@ class DishesController < ApplicationController
     @dish = Dish.find(params[:dish_id])
   end
 
-  private
-
-  def dish_params
-    params.require(:dish).permit(:title, :ingredients, :recipe, :prep_time, :dietary_filters, :average_rating)
+  def recipe
+    @dish = Dish.find(params[:dish_id])
   end
+
+  # private
+
+  # def dish_params
+  #   params.require(:dish).permit(:title, :ingredients, :recipe, :prep_time, :dietary_filters, :average_rating)
+  # end
 end
