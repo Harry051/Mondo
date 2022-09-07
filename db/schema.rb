@@ -61,8 +61,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_142158) do
   create_table "dishes", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.text "ingredients"
-    t.text "recipe"
+    t.text "ingredients", default: [], array: true
+    t.text "recipe", default: [], array: true
     t.float "average_rating"
     t.string "categories"
     t.jsonb "times"

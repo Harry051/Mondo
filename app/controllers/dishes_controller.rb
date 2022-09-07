@@ -6,6 +6,8 @@ class DishesController < ApplicationController
   end
 
   def ingredients
+    # raise
+    @dish = Dish.find(params[:dish_id])
   end
 
   private
