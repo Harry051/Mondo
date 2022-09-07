@@ -1,8 +1,15 @@
 class CookedDishesController < ApplicationController
   def create
-    raise
-    @cooked = CookedDishes.new(params[:id])
+    @cooked_dish = CookedDish.new
+    @dish = Dish.find(params[:dish_id])
+    @cooked_dish.dish = @dish
+    @cooked_dish.user = current_user
 
+    if @cooked_dish.save
+      redirect_to user_path(current_user)
+    else
+      redirect_to root_path
+    end
 
     # @review = Review.new(review_params)
     # @list = List.find(params[:list_id])
