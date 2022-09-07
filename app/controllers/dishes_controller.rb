@@ -2,7 +2,7 @@ class DishesController < ApplicationController
   def show
     @dish = Dish.find(params[:id])
     @cooked_dish = CookedDish.new
-    @favourites = Favourites.new
+    # @favourites = Favourites.new
   end
 
   private

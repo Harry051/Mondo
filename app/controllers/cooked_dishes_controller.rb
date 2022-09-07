@@ -6,10 +6,10 @@ class CookedDishesController < ApplicationController
     @cooked_dish.user = current_user
 
     if @cooked_dish.save
+      redirect_to user_path(current_user)
+    else
       redirect_to root_path
     end
-
-
 
     # @review = Review.new(review_params)
     # @list = List.find(params[:list_id])
