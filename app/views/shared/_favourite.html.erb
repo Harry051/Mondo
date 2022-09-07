@@ -2,9 +2,15 @@
   <%= simple_form_for [@dish, @favourite] do |f| %>
     <%# Checks if the user has favourited meal before and colour codes the button accordingly %>
     <% if (Favourite.where("dish_id = ? and user_id = ?", @dish, current_user)).exists? %>
-      <%= f.button :submit, 'Text', class: 'btn btn-danger'%>
+     <%# If favourited - red heart %>
+      <button type="submit" class="btn" title="favourite">
+                <i style="color:red;" class="fa-solid fa-heart"></i>
+      </button>
     <% else %>
-      <%= f.button :submit, 'Text', class: 'btn btn-primary'%>
+    <button type="submit" class="btn" title="favourite">
+                <i class="fa-regular fa-heart"></i>
+    </button>
+
     <% end %>
   <% end %>
 </div>
