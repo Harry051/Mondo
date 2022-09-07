@@ -2,6 +2,7 @@
   <div class="dish-img">
     <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
     <p>add favourite button</p>
+    <%= render partial: 'shared/favourite', favourite: @favourite %>
     <p>add refresh button</p>
   </div>
 </div>

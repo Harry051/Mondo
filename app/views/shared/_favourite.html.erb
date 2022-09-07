@@ -1,0 +1,10 @@
+<div class='add-to-favourites'>
+  <%= simple_form_for [@dish, @favourite] do |f| %>
+    <%# Checks if the user has favourited meal before and colour codes the button accordingly %>
+    <% if (Favourite.where("dish_id = ? and user_id = ?", @dish, current_user)).exists? %>
+      <%= f.button :submit, 'Text', class: 'btn btn-danger'%>
+    <% else %>
+      <%= f.button :submit, 'Text', class: 'btn btn-primary'%>
+    <% end %>
+  <% end %>
+</div>

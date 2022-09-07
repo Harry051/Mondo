@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :dishes, only: [:show] do
     get '/ingredients', to: 'dishes#ingredients'
     resources :cooked_dishes, only: [:create]
+    resources :favourites, only: [:create]
     resources :reviews, only: %i[new create]
   end
 
