@@ -34,4 +34,16 @@
 <h6>Cuisine history:</h6>
 <p><%= @dish.country.story %></p>
 
-<h1><strong>TO DO: INTEGRATE REVIEWS</strong></h1>
+
+<h2><%= pluralize @dish.reviews.size, "review" %></h2>
+
+<div>
+  <% if @dish.reviews.blank? %>
+    Be the first to leave a review for <%= @dish.title %>
+  <% else %>
+    <% @dish.reviews.each do |review| %>
+      <p><%= review.content %></p>
+      <p>⭐️<%= review.rating %></p>
+    <% end %>
+  <% end %>
+</div>

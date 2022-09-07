@@ -1,0 +1,24 @@
+<div class="card-small-dish">
+  <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
+  <div class="card-small-dish-infos">
+    <h2><%= @dish.title %></h2>
+    <p><i class="fa-solid fa-star"></i><%= @dish.average_rating %></p>
+    <p><%= @dish.description %></p>
+  </div>
+</div>
+
+<p>Add to your Favourites | ❤️ button</p>
+
+<div class="card-review">
+  <h2>Leave a review</h2>
+  <%= simple_form_for([@dish, @review]) do |f| %>
+    <%#= f.input :rating %>
+    <%= f.collection_radio_buttons :rating, [[1], [2], [3], [4], [5]], :first, :last, item_wrapper_tag: false, boolean_style: :inline do |b| %>
+      <%= b.radio_button + b.label {'⭐️'} %>
+    <% end %>
+    <%= f.input :content , label: 'Share more', placeholder: 'Please leave your comment here ...' %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
+
+<%= link_to "Back", dish_path(@dish) %>
