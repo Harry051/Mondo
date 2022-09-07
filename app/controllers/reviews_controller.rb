@@ -1,8 +1,8 @@
 class ReviewsController < ApplicationController
 
   def new
-    @review = Review.new
     @dish = Dish.find(params[:dish_id])
+    @review = Review.new
   end
 
   def create
@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     @review.dish = @dish
     @review.user = current_user
     if @review.save
-      redirect_to user_path(@user)
+      redirect_to user_path(@review.user)
     else
       render "reviews/new", status: :unprocessable_entity
     end
