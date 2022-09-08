@@ -1,13 +1,17 @@
-<h1>Favourites</h1>
+<div class="fav">
+  <h1>My Favourites</h1>
+  <% @favourites.each do |f| %>
+    <div class="fav-card">
 
-<% @favourites.each do |f| %>
-  <div class="user-favourites-card">
-    <%= cl_image_tag f.dish.photo.key, class: 'cl_img' %>
-    <p><%= '⭐️' * f.dish.average_rating %></p>
-    <p><%= f.dish.title %></p>
-    <p><%= f.dish.description %></p>
-    <button type='submit' class="btn btn-danger" style="color: white;">-</button>
-  </div>
-<% end  %>
+      <%= cl_image_tag f.dish.photo.key, class:'fav-img' %>
+      <button type='submit' class="btn btn-danger" style="color: white;">-</button>
+      <div>
+        <p><%= '⭐️' * f.dish.average_rating %></p>
+        <p><h4><%= f.dish.title %></h4></p>
+        <p><%= f.dish.description %></p>
+      </div>
 
-<%= link_to "< Back", user_path(current_user), class:"btn btn-primary"  %>
+    </div>
+  <% end  %>
+  <%= link_to "< Back", user_path(current_user), class:"btn btn-primary"%>
+</div>
