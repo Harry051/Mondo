@@ -27,13 +27,15 @@
     </div>
 
     <div class="dish-stats">
-      <ul class="list">
-        <li>Prep time: <%= @dish.times["cook"] %> mins</li>
+      <div class="d-flex list">
+        <div class="piece"><p>Prep time</p><span><%= @dish.times["cook"] %> mins</span>
+        </div>
+        <div class="piece"> <p>Calories</p><span>XX</span>
+        </div>
+        <div class="piece"> <p> Heading 3</p><span>XX</span>
+        </div>
+      </div>
 
-        <li>Calories: XX</li>
-
-        <li>Heading 3: XX</li>
-      </ul>
       <p><%= @dish.description %></p>
     </div>
 
