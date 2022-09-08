@@ -1,2 +1,11 @@
-<h1>Favourites#index</h1>
-<p>Find me in app/views/favourites/index.html.erb</p>
+<h1>Favourites</h1>
+
+<% @favourites.each do |f| %>
+  <div class="user-favourites-card">
+    <%= cl_image_tag f.dish.photo.key, class: 'cl_img' %>
+    <p><%= '⭐️' * f.dish.average_rating %></p>
+    <p><%= f.dish.title %></p>
+    <p><%= f.dish.description %></p>
+    <button type='submit' class="btn btn-danger" style="color: white;">-</button>
+  </div>
+<% end  %>
