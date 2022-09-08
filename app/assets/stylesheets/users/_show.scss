@@ -1,0 +1,60 @@
+.iPhone-13 {
+  width: 392px;
+  margin: 0 auto;
+}
+
+.user-background {
+  background-image: linear-gradient(to bottom right, #75F864, #99F88D);
+  height: 778px;
+}
+
+.user-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.user-profile-pic {
+  padding: 24px;
+}
+
+.user-profile-pic img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border: 6px solid white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.user-username h2 {
+  text-align: center;
+  color: #261127;
+  font-weight: 600;
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6px 0px;
+  position: relative;
+  margin: 16px -24px;
+}
+
+.user-stats-circle {
+  background-color: white;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+  margin: 0px 12px 0px 12px;
+}
+
+.user-stats-circle p {
+  position: relative;
+  top: 24px;
+  color: #261127;
+  font-size: 13px;
+  text-align: center;
+  line-height: 100%;
+}
