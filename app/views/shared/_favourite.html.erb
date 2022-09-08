@@ -1,15 +1,22 @@
+<%#
+  This 'form' creates a favourite record with the dish and current user IDs if the
+%>
 <div class='add-to-favourites'>
   <%= simple_form_for [@dish, @favourite] do |f| %>
-    <%# Checks if the user has favourited meal before and colour codes the button accordingly %>
+
     <% if (Favourite.where("dish_id = ? and user_id = ?", @dish, current_user)).exists? %>
-     <%# If favourited - red heart %>
+
+      <%# Link to deatroy in fav controll %>
       <button type="submit" class="btn" title="favourite">
-                <i style="color:red;" class="fa-solid fa-heart"></i>
+        <i style="color:red;" class="fa-solid fa-heart"></i>
       </button>
+
     <% else %>
-    <button type="submit" class="btn" title="favourite">
-                <i class="fa-regular fa-heart"></i>
-    </button>
+      <%# Link to create in fav controll %>
+      <button type="submit" class="btn" title="favourite">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+
 
     <% end %>
   <% end %>
