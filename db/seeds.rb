@@ -146,7 +146,7 @@ recipes = [
            "Add the cheese and cilantro to the eggs and mix through then fill the two tortillas. Add any or all of your preferred toppings and serve immediately."
                 ],
     dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2021/04/vegetarian-breakfast-burrito-featured-pic-sq-300x300.jpg',
-    country: 'America',
+    country: 'USA',
     country_bio: "Principal influences on American cuisine are Native American, British, French, German, Spanish, and Italian cuisines. Whilst some of American cuisine is fusion cuisine, many regions in America have a specific regional cuisine. Each are deeply rooted in ethnic heritages, for example Cajun, Louisiana Creole, Native American, New England Algonquian, New Mexican, Pennsylvania Dutch, Soul food, Texan/Tex-Mex, Southern, and Tlingit. - Wikipedia",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/440px-Flag_of_the_United_States.svg.png'
   },
