@@ -7,9 +7,26 @@
   width: 392px;
   margin: auto;
   font-family: 'Raleway', sans-serif;
+  border: none;
 
-  .cl_img {
-    width: 390px;
+  .dish-img{
+    p {
+      margin-left: 20px;
+    }
+    .cl_img {
+      width: 390px;
+    }
+    .btn {
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px rgba(128,128,128,0.1);
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      position: relative;
+      bottom: 286px;
+      left: 355px;
+      background-color: white;
+    }
   }
 
   .title-rating {
@@ -17,6 +34,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 19px;
+    margin-bottom: 4px;
 
 
     .rating {
@@ -44,6 +62,8 @@
 
   .dish-stats {
     .list{
+      display: flex;
+
       border: 1px solid rgba(128,128,128,0.3);
       border-radius: 15px;
       margin-left: 43px;
@@ -51,7 +71,6 @@
       justify-content: space-evenly;
       text-align: center;
       padding: 7px 0px;
-      // display: inline;
 
       .piece {
         text-align: center;
@@ -63,8 +82,43 @@
       }
 
       span {
-        color: red;
+        color: rgb(138,247,123);
       }
     }
+
+    p {
+      margin: 20px 20px;
+      border-bottom: 1px solid rgba(128,128,128,0.5);
+      padding-bottom: 10px;
+      // use id in corresponding if wanting rid of the bottom border on upper box
+    }
   }
+
+  .dish-flag-history {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+
+    .cl_img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+
+    h4 {
+      margin-left: 20px;
+      padding-top: 10px;
+    }
+
+    p {
+      margin: 10px 20px;
+      border-bottom: 1px solid rgba(128,128,128,0.5);
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.reviews {
+  margin-left: 20px;
 }
