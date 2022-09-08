@@ -21,4 +21,5 @@
   <% end %>
 </div>
 
-<%= link_to "Back", dish_path(@dish) %>
+<%= link_to "< Back", :back, class:"btn btn-primary"  %>
+<%= link_to "> Next", dish_path(@dish), class:"btn btn-primary"%>
