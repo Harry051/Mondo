@@ -17,7 +17,7 @@ export default class extends Controller {
       container: this.element,
       projection: 'globe',
       style: "mapbox://styles/harry051/cl7j2z4pn001l14p9rxykle8f",
-      zoom: 1
+      zoom: 2
     });
     this.#addMarkersToMap();
     this.#fitMapToMarkers();

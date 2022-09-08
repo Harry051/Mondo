@@ -1,6 +1,5 @@
 <h1>My Profile (Pages#profile)</h1>
 
-
 <h3>Image?:</h3>
 
 <h3>Award/Rank: ...</h3>
@@ -9,14 +8,13 @@
 
 <p>Countries Cooked:  <%= @countries.to_set.count %>
 Dishes Made: <%= @cooked_dishes.count %>
-
 Favorites: <%= @current_user.favourites.length %></p>
 
 <h2>Bio: <%= current_user.bio %></h2>
-
 <h2>Location: <%= current_user.location %></h2>
-
 <h2>Favourite Dish: (ADD CODE HERE)</h2>
 
 
 <p>possible gallery </p>
+
+<%= link_to "Back", :back, class:"btn btn-success" %>
