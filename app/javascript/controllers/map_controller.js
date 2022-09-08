@@ -17,6 +17,7 @@ export default class extends Controller {
       container: this.element,
       projection: 'globe',
       style: "mapbox://styles/harry051/cl7j2z4pn001l14p9rxykle8f",
+      zoom: 1
     });
     this.#addMarkersToMap();
     this.#fitMapToMarkers();
@@ -28,13 +29,14 @@ export default class extends Controller {
       const customMarker = document.createElement("div")
       customMarker.className = "marker"
       customMarker.style.backgroundImage = `url('${marker.image_url}')`
+      customMarker.innerHTML = marker.image_url;
       customMarker.style.backgroundSize = "contain"
-      customMarker.style.width = "50px"
-      customMarker.style.height = "50px"
+      // customMarker.style.width = "1px"
+      // customMarker.style.height = "1px"
       customMarker.style.backgroundRepeat = "no-repeat"
       new mapboxgl.Marker(customMarker)
         .setLngLat([ marker.lng, marker.lat ])
-        .setPopup(popup)
+        // .setPopup(popup)
         .addTo(this.map)
     });
   };
