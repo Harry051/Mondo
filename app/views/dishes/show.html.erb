@@ -27,7 +27,7 @@
     </div>
 
     <div class="dish-stats">
-      <div class="d-flex list">
+      <div class="list">
         <div class="piece"><p>Prep time</p><span><%= @dish.times["cook"] %> mins</span>
         </div>
         <div class="piece"> <p>Calories</p><span>XX</span>
@@ -42,7 +42,7 @@
 
     <div class="dish-flag-history">
       <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
-      <h6>Cuisine history:</h6>
+      <h4>Cuisine history:</h4>
       <p><%= @dish.country.story %></p>
     </div>
 
