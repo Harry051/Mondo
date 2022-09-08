@@ -231,7 +231,42 @@ recipes = [
     country: 'Ghana',
     country_bio: "Ghanaian cuisine is the cuisine of the Ghanaian people. Ghanaian main dishes are organized around a starchy staple food, which goes with a sauce or soup containing a protein source. The main ingredients for the vast majority of soups and stews are tomatoes, hot peppers and onions. As a result, most of the Ghanaian soups and stews are red or orange in appearance.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png'
-  },
+  }
+ ]
+
+# Clear models before reseeding
+Dish.destroy_all
+Country.destroy_all
+
+# Create country and dish with the hash above
+recipes.each do |r|
+  country = Country.create!(name: r[:country], story: r[:country_bio], address: r[:country])
+  puts "Country: #{country.id} created!"
+
+  dish = Dish.create!(
+    title: r[:name],
+    description: r[:description],
+    average_rating: r[:average_rating],
+    categories: r[:categories],
+    times: r[:times],
+    ingredients: r[:ingredients],
+    recipe: r[:recipe],
+    country: country
+    )
+  puts "Dish: #{dish.id} created!"
+
+  file = URI.open(r[:dish_image_url])
+  dish.photo.attach(io: file, filename: "#{dish.title}.jpg", content_type: "image/jpg")
+  dish.save
+  puts "Dish image created!"
+
+  file = URI.open(r[:country_image_url])
+  country.photo.attach(io: file, filename: "#{country.name}.jpg", content_type: "image/jpg")
+  country.save
+  puts "Country image created!"
+end
+
+recipes = [
 
   {
     name: 'Yuca fries',
@@ -300,19 +335,13 @@ recipes = [
     country: 'Peru',
     country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
-  },
- ]
+  }
 
-# Clear models before reseeding
-Dish.destroy_all
-Country.destroy_all
+]
 
-# Create country and dish with the hash above
 recipes.each do |r|
-  country = Country.create!(name: r[:country], story: r[:country_bio], address: r[:country])
-  puts "Country: #{country.id} created!"
 
-  dish = Dish.create!(
+ dish = Dish.create!(
     title: r[:name],
     description: r[:description],
     average_rating: r[:average_rating],
@@ -320,17 +349,13 @@ recipes.each do |r|
     times: r[:times],
     ingredients: r[:ingredients],
     recipe: r[:recipe],
-    country: country
+    country_id: Country.find_by(name: r[:country]).id
     )
   puts "Dish: #{dish.id} created!"
+  puts Country.find_by(name: r[:country]).id
 
   file = URI.open(r[:dish_image_url])
   dish.photo.attach(io: file, filename: "#{dish.title}.jpg", content_type: "image/jpg")
   dish.save
   puts "Dish image created!"
-
-  file = URI.open(r[:country_image_url])
-  country.photo.attach(io: file, filename: "#{country.name}.jpg", content_type: "image/jpg")
-  country.save
-  puts "Country image created!"
 end
