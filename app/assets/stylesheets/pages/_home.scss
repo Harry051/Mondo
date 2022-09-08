@@ -1,4 +1,90 @@
 // Specific CSS for your home-page
+
+.iPhone-13 {
+  width: 392px;
+  margin: 0 auto;
+}
+
+.home-background-top {
+  background-image: linear-gradient(to bottom right, #1FE4DA, #A2EEEB);
+  height: 778px;
+}
+
+.home-background-bottom {
+  background-image: linear-gradient(to bottom right, #75F864, #99F88D);
+  height: 778px;
+}
+
+.home-logo img {
+  position: relative;
+  left: 12px;
+  top: 24px;
+  width: 40px;
+}
+
+.home-graphics img {
+  position: relative;
+  left: 4px;
+  top: 88px;
+  width: 382px;
+}
+
+.home-infos {
+  position: relative;
+  top: 114px;
+  left: 30px;
+  width: 320px;
+}
+
+.home-infos h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: #261127;
+}
+
+.home-infos p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #261127;
+}
+
+.home-btn {
+  position: relative;
+  top: 132px;
+  left: 30px;
+}
+
+.btn-get-started {
+  background: #99F88D;
+  padding: 20px 28px;
+  border-radius: 8px;
+  color: #261127;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background: #63F851;
+  color: #261127;
+  border: 1px solid #63F851;
+}
+
+.nav-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.fa-solid {
+  position: relative;
+  top: -6px;
+  left: -6px;
+ }
+
 .mappy {
   border-radius: 10px;
 }
