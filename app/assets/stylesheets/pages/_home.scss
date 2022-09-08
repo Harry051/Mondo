@@ -20,13 +20,13 @@
 .home-graphics img {
   position: relative;
   left: 4px;
-  top: 88px;
+  top: 98px;
   width: 382px;
 }
 
 .home-infos {
   position: relative;
-  top: 114px;
+  top: 118px;
   left: 30px;
   width: 320px;
 }
@@ -46,7 +46,7 @@
 
 .home-btn {
   position: relative;
-  top: 132px;
+  top: 140px;
   left: 30px;
   width: fit-content;
   transition: 0.4s ease;
@@ -67,7 +67,7 @@
   color: #261127;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  // transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .home-background-bottom {
@@ -75,20 +75,26 @@
   height: 778px;
 }
 
-.nav-btn {
+.home-nav {
   position: relative;
   top: 30px;
   left: 24px;
-  width: 28px;
-  height: 28px;
+  width: fit-content;
   border-radius: 50%;
-  background-color: white;
-  box-shadow: 2px 2px 2px #888888;
-  transition: 0.3s;
+  transition: 0.4s ease;
 }
 
-.nav-btn:hover {
-  background-color: #E6E6E6;
+.home-nav:hover {
+  background-color: #F3F3F3;
+}
+
+.nav-btn {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+  transition: 0.4s ease;
 }
 
 .fa-bars {
@@ -99,7 +105,7 @@
 
 .home-search-text h4 {
   position: relative;
-  top: 74px;
+  top: 68px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -109,7 +115,7 @@
 
 .home-search-bar {
   position: relative;
-  top: 86px;
+  top: 80px;
   height: 36px;
   width: 55%;
   margin: 0 auto;
@@ -133,22 +139,25 @@
   left: 170px;
 }
 
-.home-earth img {
-  width: 80%;
-  position: relative;
-  top: 130px;
-  left: 40px;
+.home-globe {
+  margin: 100px 0px -98px 5px;
 }
+
+// .home-earth img {
+//   position: relative;
+//   top: 130px;
+//   left: 40px;
+// }
 
 .home-filters-box {
   position: relative;
   top: 140px;
-  height: 200px;
+  height: 179px;
   width: 75%;
   margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 12px 12px 0px 0px;
   background-color: white;
-  box-shadow: 3px 3px 3px #888888;
+  box-shadow: 3px 0px 3px #888888;
   display: block;
 }
 
@@ -219,8 +228,4 @@
 
 .fa-leaf:hover {
   color: #848484;
-}
-
-.mappy {
-  border-radius: 0px;
 }
