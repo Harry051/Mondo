@@ -11,7 +11,7 @@
     </div>
 
     <div class="home-infos">
-      <h3>Cook like a chef 👨‍🍳</h3>
+      <h3>Cook like a chef </h3>
       <p>Cook professional dishes right in your kitchen</p>
     </div>
 
@@ -23,14 +23,84 @@
 
   <div id="home-bottom" class="home-background-bottom">
 
-    <%= link_to "#home-bottom", class: "btn nav-btn" do %>
+    <%= link_to "#home-bottom", class: "nav-btn btn" do %>
       <i class="fa-solid fa-bars"></i>
     <% end %>
 
+    <div class="home-search-text">
+      <h4>Choose a country or Search a dish</h4>
+    </div>
+
+    <div class="home-search-bar">
+      <p>Search a dish</p>
+      <p><i class="fa-solid fa-magnifying-glass"></i></p>
+    </div>
+
+    <div class="home-earth">
+      <%= image_tag "pages-home-earth.png" %>
+    </div>
+
+    <div class="home-filters-box">
+
+      <div class="home-filters-box-top">
+        <p>Filters</p>
+        <p><i class="fa-solid fa-filter"></i></p>
+        <hr>
+      </div>
+
+      <div class="home-filters-box-bottom">
+
+        <div class="home-filters-grid">
+
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-fish"></i></p>
+            <p>Fish</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-fish"></i></p>
+            <p>Fish</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-fish"></i></p>
+            <p>Fish</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-leaf"></i></p>
+            <p>Vegetarian</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-leaf"></i></p>
+            <p>Vegetarian</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-leaf"></i></p>
+            <p>Vegetarian</p>
+          <% end %>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="container">
-    <div style="width: 100%; height: 600px;" class="mappy" data-controller="map" data-map-markers-value="<%= @markers.to_json %>" data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  <div class="iPhone-13">
+    <div style="height: 600px;" class="mappy" data-controller="map" data-map-markers-value="<%= @markers.to_json %>" data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
   </div>
 
 </div>
