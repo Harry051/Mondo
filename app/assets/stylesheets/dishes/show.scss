@@ -9,6 +9,9 @@
   font-family: 'Raleway', sans-serif;
 
   .dish-img{
+    p {
+      margin-left: 20px;
+    }
     .cl_img {
       width: 390px;
     }
@@ -97,6 +100,12 @@
 
     p {
       margin: 10px 20px;
+      border-bottom: 1px solid rgba(128,128,128,0.5);
+      padding-bottom: 16px;
     }
   }
+}
+
+.reviews {
+  margin-left: 20px;
 }

@@ -46,9 +46,9 @@
       <p><%= @dish.country.story %></p>
     </div>
 
-    <h2><%= pluralize @dish.reviews.size, "review" %></h2>
 
-    <div>
+    <div class="reviews">
+      <h2><%= pluralize @dish.reviews.size, "review" %></h2>
       <% if @dish.reviews.blank? %>
         Be the first to leave a review for <%= @dish.title %>
       <% else %>
