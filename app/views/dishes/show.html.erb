@@ -6,6 +6,7 @@
       <p>add favourite button</p>
       <%= render partial: 'shared/favourite', favourite: @favourite %>
       <p>add refresh button</p>
+      <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
     </div>
   </div>
 
@@ -61,5 +62,7 @@
 
   </div>
 </div>
+
+
 
 <%= render "shared/bottom_navbar" %>
