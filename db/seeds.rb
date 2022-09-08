@@ -149,7 +149,158 @@ recipes = [
     country: 'America',
     country_bio: "Principal influences on American cuisine are Native American, British, French, German, Spanish, and Italian cuisines. Whilst some of American cuisine is fusion cuisine, many regions in America have a specific regional cuisine. Each are deeply rooted in ethnic heritages, for example Cajun, Louisiana Creole, Native American, New England Algonquian, New Mexican, Pennsylvania Dutch, Soul food, Texan/Tex-Mex, Southern, and Tlingit. - Wikipedia",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/440px-Flag_of_the_United_States.svg.png'
-  }
+  },
+
+  {
+    name: 'Mooncakes',
+    description: "Mooncakes are traditionally eaten to celebrate the Mid-Autumn Festival, but whatever your excuse these are both pretty and delicious with their sweet-nutty filling.",
+    average_rating: 3.7,
+    categories: ['Snack, Vegetarian'],
+    times: { prep: 45,
+             cook: 5,
+             total: 50
+               },
+    ingredients: [
+      '½ cup cooked glutinous rice flour 55g',
+      '¼ cup confectioners sugar 35g, icing sugar',
+      '1 ½ tablespoon coconut oil',
+      '2 tablespoon water or a little more',
+      '½ cup black sesame seeds 75g',
+      '2 tablespoon unsalted butter 20g',
+      '3 tablespoon confectioners sugar 26g, icing sugar',
+      '2 tablespoon glutinous rice flour'
+                     ],
+    recipe: [
+      'For the outer dough',
+      "Sift the cooked glutinous rice flour and confectioner's sugar together into a bowl. Add the coconut oil and water and mix to combine. If you'd like to add color, add a little at this point either to all or part (I added a little freeze dried strawberry to give pink tinge; matcha powder is another good option). Press the mixture together, adding a little more water if it breaks up too much. Weigh out 4 pieces of 17g each (you will have spare).",
+      "For the filling",
+      "Toast the sesame seeds in a dry skillet for around 4 min until they start to smell nutty and sizzle slightly. Transfer to a food processor and leave to cool before pulsing until smooth, scraping down the sides as needed.",
+      "Add the butter and sugar to the sesame seeds and pulse until mixed through. Add the glutinous rice flour and pulse to mix. Form the dough into 30g balls - you should get 4.",
+      "To form mooncakes",
+      "Flatten the pieces of outer dough into a thin round then place one of the sesame filling balls on top of a round. Wrap the outer dough around the filling, kneading it around as needed, so it covers completely. Repeat with the rest.",
+      "Lightly flour the mooncake mould then carefully put one of the mooncakes inside. Place on a surface and press down the top of the mould so that it imprints the top then press out the mooncake. Repeat with the rest then serve. You can keep them chilled for a couple days or slightly longer frozen."
+                ],
+    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2021/05/snow-skin-mooncakes-featured-pic-sq-180x180.jpg',
+    country: 'China',
+    country_bio: "Chinese cuisine encompasses the numerous cuisines originating from China, as well as overseas cuisines created by the Chinese diaspora. Because of the Chinese diaspora and historical power of the country, Chinese cuisine has influenced many other cuisines in Asia and beyond, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and tofu, and utensils such as chopsticks and the wok, can now be found worldwide.
+    The preferences for seasoning and cooking techniques of Chinese provinces depend on differences in historical background and ethnic groups. Geographic features including mountains, rivers, forests, and deserts also have a strong effect on the local available ingredients, considering that the climate of China varies from tropical in the south to subarctic in the northeast. Imperial royal and noble preference also plays a role in the change of Chinese cuisine. Because of imperial expansion and trading, ingredients and cooking techniques from other cultures have been integrated into Chinese cuisines over time.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1920px-Flag_of_the_People%27s_Republic_of_China.svg.png'
+  },
+
+  {
+    name: 'Okro Stew',
+    description: "As one of Ghana’s national dishes, okro stew is prepared with tomatoes, red palm oil, onions, tomatoes, spices and finely chopped okra.",
+    average_rating: 4.2,
+    categories: ['Main'],
+    times: { prep: 20,
+             cook: 40,
+             total: 60
+               },
+    ingredients: [
+      '2 lb stewing beef',
+      '1 beef stock cube (or chicken stock cube)',
+      '4 kpakposhito peppers',
+      '4 tablespoons palm oil',
+      '2 large onions',
+      '2 cloves garlic , finely diced',
+      '1 inch piece ginger',
+      '4 medium vine tomatoes',
+      'Scotch bonnet pepper (or chili powder), according to taste',
+      '2 fillets smoked mackerels (optional)',
+      '24 pods okra',
+      'Water (as needed)'
+                     ],
+    recipe: [
+      "Cut the stewing beef into bite sized chunks and place into a pot. Chop ¾ of the first onion and add it to the beef. Reserve the other ¼ onion for the sauce.",
+      "Add the kpakposhito to the pot, whole.",
+      "Add a cube of beef or chicken stock seasoning, top with water and braise until tender. Cooking time depends on the type of stewing beef used. While the beef is cooking, prepare the other ingredients as follows.",
+      "Finely chop the second whole onion. Place a large pot on the stove and heat up the palm oil. Fry the onions in the oil until they just begin to caramelize.",
+      "Add the diced ginger to the pot and fry for about 1 minute, just before adding the tomatoes.",
+      "Chop the tomatoes into small chunks and place them into a blender or food processor. Add the ginger to the tomatoes.",
+      "Add the remaining onion to the blender.",
+      "Add the desired amount of scotch bonnet peppers.",
+      "Pulse or liquidize the ingredients until smooth.",
+      "Pour the mixture over the caramelized onions and allow the sauce to cook down and thicken. This should take 10 minutes, as oil begins to rise to the top. Stir regularly to prevent burning.",
+      "Quarter the okra pods, then chop them into ¼-inch (5 mm) thin slices. Set aside.",
+      "Break the smoked mackerel into chunks and add to the stew (optional). Add a little more water and allow to simmer for 5 minutes to allow the flavors to infuse into the sauce.",
+      "Add the chopped okra into the stew and stir. A little more water may be added to encourage the okra to cook well. The presence of tomatoes in the stew slows down the sliming process. Simmer for 10 minutes.",
+      "Add the cooked beef along with the stock created during the braising process and stir to incorporate into the stew. Simmer for 5 minutes.",
+      "Check for seasoning and add salt if required. The dish is now ready to be served alongside banku."
+                ],
+    dish_image_url: 'https://myrecipejoint.com/wp-content/uploads/2020/12/126054251_364930781267593_715183987144198136_n.jpg',
+    country: 'Ghana',
+    country_bio: "Ghanaian cuisine is the cuisine of the Ghanaian people. Ghanaian main dishes are organized around a starchy staple food, which goes with a sauce or soup containing a protein source. The main ingredients for the vast majority of soups and stews are tomatoes, hot peppers and onions. As a result, most of the Ghanaian soups and stews are red or orange in appearance.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png'
+  },
+
+  {
+    name: 'Yuca fries',
+    description: "These yuca fries are wonderfully crisp and perfect for dipping!",
+    average_rating: 5.0,
+    categories: ['Snack, Vegetarian'],
+    times: { prep: 15,
+             cook: 40,
+             total: 55
+               },
+    ingredients: [
+      '19 oz yuca 550g, approx 15oz-1lb/425-450g peeled and trimmed weight',
+      '½ teaspoon salt approx, to taste',
+      '1.5 - 2 cups vegetable oil 360-480ml, approx - to make a layer deep enough in skillet/frying pan',
+      'aji verde, Peruvian green sauce to serve, or sauce of own choice'
+                     ],
+    recipe: [
+      "Trim the ends off the yuca root and cut it into approximately 3-4 lengths of similar length. Take care and use a sharp knife as it can be difficult to cut.",
+      "Score through the skin up and down (so from one cut edge to the other) just enough to break the skin rather than cut into the main root. Then using either the knife or your fingers, open up the skin and peel it off. There should be two layers of skin you want to remove - the thin outer dark layer and a slightly thicker white layer. They should both come off easily together after scoring through, but if needed, use a vegetable peeler to remove any still left.",
+      "Place the peeled chunks of yuca into a pot large enough to hold them all in a layer. Fill the pot with cold water so the yuca pieces are completely submerged.",
+      "Add some salt to the water, cover then place over a medium heat to bring to a boil. Once boiling, simmer for approximately 20 - 30 minutes until the yuca is tender. The middle of the root will open up and the pieces may break open a little which is fine and a sign it is cooked.",
+      "Remove the pieces from the water and let them cool a minute or two until cool enough to handle. Then cut the pieces in half and remove the inner tough core.",
+      "Cut the main root into strips - you can split as they naturally break then cut further as needed. You can make them whatever thickness suits - thicker will have more soft middle relative to the crisp outside after frying, thinner will be more crisp throughout. Leave the pieces to cool to room temperature and dry a little more.",
+      "Fill a small-medium skillet/frying pan with oil to create a layer around 1in/2.5cm. You want it deep enough so that the yuca pieces can be submerged when you add them (though they will tend to float up). Warm the oil over a medium-high heat until warm but not starting to smoke.",
+      "Add a few pieces of yuca to the oil so that you don't have huge spaces between pieces but also don't overcrowd the pan. Fry the yuca pieces in batches like this, turning once for around 3 - 5 minutes per side until they are golden and crisp. Remove the cooked fries from the oil using a slotted spoon and drain them on kitchen paper/paper towel. Repeat with rest of yuca pieces.",
+      "Serve ideally warm, freshly cooked (although room temperature works) with aji verde or your choice of dipping sauce."
+                ],
+    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2022/04/yuca-fries-featured-pic-sq-180x180.jpg',
+    country: 'Peru',
+    country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
+  },
+
+  {
+    name: 'Anticuchos de Corazón',
+    description: "TThe mere thought of preparing anticuchos makes me happy; it represents Peruvian cuisine at its purest. The star ingredient of this recipe is beef heart. If you have not yet tasted this delicious and highly nutritious organ meat, I encourage you to give this dish a try. It is not only healthy but also delicious and satisfying.",
+    average_rating: 2.7,
+    categories: ['Main'],
+    times: { prep: 20,
+             cook: 20,
+             total: 40
+               },
+    ingredients: [
+      '1 beef heart',
+      '1/2 cup aji panca paste',
+      '1/2 cup vegetable oil',
+      '1/4 cup red wine vinegar',
+      '1 tablespoon minced garlic',
+      '1 tablespoon dried oregano',
+      '1 teaspoon ground cumin',
+      '2 russet potatoes',
+      '2 corn on the cob Choclo- Peruvian giant kernel corns if available',
+      '1/2 cup aji amarillo paste',
+      '1 scallion thinly sliced',
+      'Salt to taste'
+                     ],
+    recipe: [
+      "Remove veins and sinew from the beef heart and cut the resulting firm meat into 1 1/2 inch cubes.",
+      "In a medium bowl, whisk together the aji panca, vegetable oil, red wine vinegar, garlic, oregano, cumin, and salt. Add the cubed beef heart, tossing to coat thoroughly. Cover and refrigerate for at least 3 hours.",
+      "Bring a large pot of water to a boil. Add the potatoes. When they are nearly tender, add the corn. When both are cooked through, drain and set aside. When cool enough to handle, cut the corn on the cob into serving sizes. Peel the potatoes and cut into thick slices.",
+      "In a small bowl, whisk in desired amount of sliced scallion into the aji amarillo paste. Season with salt and set aside.Set the grill to medium heat.",
+      "Place 3-4 beef cubes on each skewer. Set aside the remaining marinade for basting. Arrange the skewers on the preheated grill. Baste the marinade onto the skewers with a pastry brush or fresh corn husks and grill for 3 minutes. Flip to the other side, baste, and grill until cooked through with a little char, another 3 minutes.",
+      "Serve hot with the potatoes, corn, and seasoned aji amarillo."
+                ],
+    dish_image_url: 'https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2016/03/Anticuchos-Peruvian-Beef-Heart-Skewers-2-of-3.jpg?resize=1024%2C680&ssl=1',
+    country: 'Peru',
+    country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
+  },
  ]
 
 # Clear models before reseeding
