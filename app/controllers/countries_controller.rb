@@ -1,4 +1,4 @@
-class CountryController < ApplicationController
+class CountriesController < ApplicationController
   def index
     @countries = Country.all
     # The `geocoded` scope filters only flats with coordinates
