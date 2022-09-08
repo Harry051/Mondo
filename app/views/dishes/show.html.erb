@@ -3,8 +3,7 @@
   <div class="card dish-pic">
     <div class="dish-img">
       <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
-      <p>add favourite button</p>
-      <%= render partial: 'shared/favourite', favourite: @favourite %>
+      <%= render partial: 'shared/favourite', favourite: @favourite, class: 'heart'%>
       <p>add refresh button</p>
       <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
     </div>
@@ -28,7 +27,7 @@
     </div>
 
     <div class="dish-stats">
-      <div class="d-flex list">
+      <div class="list">
         <div class="piece"><p>Prep time</p><span><%= @dish.times["cook"] %> mins</span>
         </div>
         <div class="piece"> <p>Calories</p><span>XX</span>
@@ -43,13 +42,13 @@
 
     <div class="dish-flag-history">
       <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
-      <h6>Cuisine history:</h6>
+      <h4>Cuisine history:</h4>
       <p><%= @dish.country.story %></p>
     </div>
 
-    <h2><%= pluralize @dish.reviews.size, "review" %></h2>
 
-    <div>
+    <div class="reviews">
+      <h2><%= pluralize @dish.reviews.size, "review" %></h2>
       <% if @dish.reviews.blank? %>
         Be the first to leave a review for <%= @dish.title %>
       <% else %>
