@@ -1,0 +1,70 @@
+// dishes#show page
+
+// $base-color: #c6538c;
+// $border-dark: rgba($base-color, 0.88);
+
+.card {
+  width: 392px;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+
+  .cl_img {
+    width: 390px;
+  }
+
+  .title-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 19px;
+
+
+    .rating {
+      border: 1px solid rgba(128,128,128,0.3);
+      border-radius: 30px;
+      display: flex;
+      position: relative;
+      bottom: 3px;
+
+      .icon {
+        padding-left: 6px;
+        padding-right: 3px;
+        color: rgb(239,200,9);
+      }
+
+      .number {
+        padding-right: 6px;
+      }
+    }
+
+    h2 {
+      margin-right: 10px;
+    }
+  }
+
+  .dish-stats {
+    .list{
+      border: 1px solid rgba(128,128,128,0.3);
+      border-radius: 15px;
+      margin-left: 43px;
+      margin-right: 43px;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 7px 0px;
+      // display: inline;
+
+      .piece {
+        text-align: center;
+      }
+
+      p {
+        color: rgba(128,128,128,0.8);
+        margin: 2px;
+      }
+
+      span {
+        color: red;
+      }
+    }
+  }
+}
