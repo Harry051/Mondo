@@ -6,16 +6,15 @@
 
     <a href="#"><li><i style="color: #261127" class="fa-solid fa-heart fa-lg"></i></li></a>
 
-    <a href="#"><li><i style="color: #E36397" class="fa-solid fa-kitchen-set fa-2x"></i></li></a>
+    <a href="#"><li><i style="color: #261127" class="fa-solid fa-kitchen-set fa-lg"></i></li></a>
 
     <a href="#"><li><i style="color: #261127" class="fa-solid fa-music fa-lg"></i></li></a>
 
     <% if user_signed_in? %>
-      <a href="/users/<%= current_user.id %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
+      <a href="<% user_path(current_user) %>"><li><i style="color: #E36397" class="fa-solid fa-user fa-2x"></i></li></a>
     <% else %>
-      <a href="<% new_user_session_path %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
+      <a href="<% new_user_session_path %>"><li><i style="color: #E36397" class="fa-solid fa-user fa-2x"></i></li></a>
     <% end %>
-
   </ul>
 
 </div>

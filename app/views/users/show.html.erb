@@ -1,20 +1,50 @@
-<h1>My Profile (Pages#profile)</h1>
+<div class="iPhone-13">
 
-<h3>Image?:</h3>
+  <div class="user-background">
 
-<h3>Award/Rank: ...</h3>
+    <div class="user-container">
 
-<h2>Username: <%= current_user.username %></h2>
+      <div class="user-profile-pic">
+        <%= image_tag "user-profile-pic.png" %>
+      </div>
 
-<p>Countries Cooked:  <%= @countries.to_set.count %>
-Dishes Made: <%= @cooked_dishes.count %>
-Favorites: <%= @current_user.favourites.length %></p>
+      <div class="user-username">
+        <h2><%= current_user.username %></h2>
+      </div>
 
-<h2>Bio: <%= current_user.bio %></h2>
-<h2>Location: <%= current_user.location %></h2>
-<h2>Favourite Dish: (ADD CODE HERE)</h2>
+      <div class="user-stats">
+        <div class="user-stats-circle">
+          <p>Countries Cooked</p>
+          <p><%= @countries.to_set.count %></p>
+        </div>
+
+        <div class="user-stats-circle">
+          <p>Dishes Made</p>
+          <p><%= @cooked_dishes.count %></p>
+        </div>
+
+        <div class="user-stats-circle">
+          <p>Favorites</p>
+          <p><%= @current_user.favourites.length %></p>
+        </div>
+      </div>
+
+      <h3>Award/Rank: ...</h3>
 
 
-<p>possible gallery </p>
+      <h2>Bio: <%= current_user.bio %></h2>
+      <h2>Location: <%= current_user.location %></h2>
+      <h2>Favourite Dish: (ADD CODE HERE)</h2>
 
-<%= link_to "Back", :back, class:"btn btn-success" %>
+
+      <p>possible gallery </p>
+
+      <%= link_to "Back", :back, class:"btn btn-success" %>
+
+    </div>
+
+  </div>
+
+<%= render "shared/user_bottom_navbar" %>
+
+</div>
