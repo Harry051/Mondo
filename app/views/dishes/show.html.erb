@@ -1,50 +1,64 @@
-<div class="card">
-  <div class="dish-img">
-    <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
-    <p>add favourite button</p>
-    <%= render partial: 'shared/favourite', favourite: @favourite %>
-    <p>add refresh button</p>
-  </div>
-</div>
-
-
-<h2><%= @dish.title %></h2>
-
-
 <div class="container">
-  <%= simple_form_for [@dish, @cooked_dish] do |x| %>
-  <%= x.submit "Cooked ✅" %>
-  <% end %>
-</div>
 
-<p><i class="fa-solid fa-star"></i><%= @dish.average_rating %></p>
-<div class="container">
   <div class="card">
-    <ul>
-      <li>Prep time: <%= @dish.times["cook"] %> mins</li>
-      <li>Calories: XX</li>
-      <li>Heading 3: XX</li>
-    </ul>
+    <div class="dish-img">
+      <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
+      <p>add favourite button</p>
+      <%= render partial: 'shared/favourite', favourite: @favourite %>
+      <p>add refresh button</p>
+    </div>
   </div>
-</div>
+
+  <%# ***move this to review page*** will require back end code also to be moved****
+  <%# <div class="container">
+    <%= simple_form_for [@dish, @cooked_dish] do |x| %>
+    <%# <%= x.submit "Cooked ✅" %>
+    <%# <% end %>
+  <%# </div> %>
 
 
-<p><%= @dish.description %></p>
-
-<%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
-<h6>Cuisine history:</h6>
-<p><%= @dish.country.story %></p>
 
 
-<h2><%= pluralize @dish.reviews.size, "review" %></h2>
+    <div class="card dish-infos">
 
-<div>
-  <% if @dish.reviews.blank? %>
-    Be the first to leave a review for <%= @dish.title %>
-  <% else %>
-    <% @dish.reviews.each do |review| %>
-      <p><%= review.content %></p>
-      <p>⭐️<%= review.rating %></p>
-    <% end %>
-  <% end %>
+      <div class="title-rating">
+        <h2><%= @dish.title %></h2>
+        <div class="rating">
+          <p class="m-0"><i class="fa-solid fa-star"></i><%= @dish.average_rating %></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="dish-stats">
+          <ul>
+            <li>Prep time: <%= @dish.times["cook"] %> mins</li>
+            <li>Calories: XX</li>
+            <li>Heading 3: XX</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <p><%= @dish.description %></p>
+
+      <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
+      <h6>Cuisine history:</h6>
+      <p><%= @dish.country.story %></p>
+
+
+
+    <h2><%= pluralize @dish.reviews.size, "review" %></h2>
+
+    <div>
+      <% if @dish.reviews.blank? %>
+        Be the first to leave a review for <%= @dish.title %>
+      <% else %>
+        <% @dish.reviews.each do |review| %>
+          <p><%= review.content %></p>
+          <p>⭐️<%= review.rating %></p>
+        <% end %>
+      <% end %>
+    </div>
+
+  </div>
 </div>
