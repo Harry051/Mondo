@@ -140,14 +140,15 @@
 }
 
 .home-globe {
-  margin: 100px 0px -98px 5px;
+  margin: 100px 0px -128px 5px;
 }
 
-// .home-earth img {
-//   position: relative;
-//   top: 130px;
-//   left: 40px;
-// }
+.home-earth-shadow img {
+  position: relative;
+  top: 124px;
+  left: 100px;
+  width: 200px;
+}
 
 .home-filters-box {
   position: relative;
