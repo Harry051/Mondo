@@ -10,7 +10,7 @@
 <p>Countries Cooked:  <%= @countries.to_set.count %>
 Dishes Made: <%= @cooked_dishes.count %>
 
-Favorites: .....</p>
+Favorites: <%= @current_user.favourites.length %></p>
 
 <h2>Bio: <%= current_user.bio %></h2>
 
