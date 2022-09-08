@@ -16,35 +16,33 @@
     <%# <% end %>
   <%# </div> %>
 
+  <div class="card dish-infos">
 
-
-
-    <div class="card dish-infos">
-
-      <div class="title-rating">
-        <h2><%= @dish.title %></h2>
-        <div class="rating">
-          <p class="m-0 pt-2 px-2"><i class="fa-solid fa-star"></i></p>
-          <p class="m-0"><%= @dish.average_rating %></p>
-        </div>
+    <div class="title-rating">
+      <h2><strong><%= @dish.title %></strong></h2>
+      <div class="rating">
+        <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
+        <p class="number m-0"><%= @dish.average_rating %></p>
       </div>
+    </div>
 
-      <div class="dish-stats">
-        <ul>
-          <li>Prep time: <%= @dish.times["cook"] %> mins</li>
-          <li>Calories: XX</li>
-          <li>Heading 3: XX</li>
-        </ul>
-      </div>
+    <div class="dish-stats">
+      <ul class="list">
+        <li>Prep time: <%= @dish.times["cook"] %> mins</li>
 
+        <li>Calories: XX</li>
 
+        <li>Heading 3: XX</li>
+      </ul>
       <p><%= @dish.description %></p>
+    </div>
 
+
+    <div class="dish-flag-history">
       <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
       <h6>Cuisine history:</h6>
       <p><%= @dish.country.story %></p>
-
-
+    </div>
 
     <h2><%= pluralize @dish.reviews.size, "review" %></h2>
 
