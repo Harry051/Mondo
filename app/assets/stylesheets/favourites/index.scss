@@ -1,0 +1,24 @@
+.fav {
+  width: 392px;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  background-color: #F6FAFC;
+  text-align: center;
+}
+
+.fav-card {
+  width: 392px;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid rgba(128,128,128,0.3);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+}
+
+.fav-img {
+  border-radius: 50%;
+  object-fit: cover;
+  height:100px;
+  width: 100px;
+}
