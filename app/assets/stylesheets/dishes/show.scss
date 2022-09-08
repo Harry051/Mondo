@@ -15,6 +15,17 @@
     .cl_img {
       width: 390px;
     }
+    .btn {
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px rgba(128,128,128,0.1);
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      position: relative;
+      bottom: 286px;
+      left: 355px;
+      background-color: white;
+    }
   }
 
   .title-rating {
