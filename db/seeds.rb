@@ -49,10 +49,11 @@ recipes = [
              "Then gently spread out the rest of the lamb on top, followed by the remaining eggplant/aubergine in a layer and finally the last of the sauce. Sprinkle the cheese you kept back over the top.",
              "Bake for approx 40mins until golden brown on the top."
                 ],
-    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2015/01/moussaka-photo-300x225.jpg',
+    dish_image_url: 'https://i0.wp.com/www.eatlivecool.com/wp-content/uploads/2018/11/Moussaka-Vertical-5.jpg?w=800&ssl=1',
     country: 'Greece',
     country_bio: "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences. - Wikipedia",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/510px-Flag_of_Greece.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/510px-Flag_of_Greece.svg.png',
+    calories: 771
   },
   {
     name: 'Tiradito',
@@ -77,10 +78,11 @@ recipes = [
                  'Thinly slice the fish and place on a plate. Chill while you prepare the sauce',
            'Mix the sauce ingredients together well (lime and lemon juices, aji amarillo, salt, ginger and garlic) then pour over the fish. Serve immediately.'
                 ],
-    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2020/06/tiradito-featured-pic-sq-300x300.jpg',
+    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2020/03/Peruvian-tiradito-photo.jpg',
     country: 'Peru',
     country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru. - Wikipedia",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
+    calories: 106
   },
 
   {
@@ -110,10 +112,11 @@ recipes = [
            "Whip the cream until lightly whipped (soft peaks) then add the raspberries - if using a stand mixture you can probably put them in whole, with a hand mixture you'll need to break them up a bit first. Beat a little more until combined and semi-firm.",
            'Pour the cream mixture into the middle of the pavlova and carefully spread out so you still have a good 1in/3cm or so without cream round the edge. Top with the extra raspberries. Keep chilled until ready to serve.'
                 ],
-    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2016/05/pavlova-raspberries-and-cream-photo-300x225.jpg',
+    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2016/05/pavlova-raspberries-and-cream-photo.jpg',
     country: 'Australia',
     country_bio: "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences. - Wikipedia",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/510px-Flag_of_Australia_%28converted%29.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/510px-Flag_of_Australia_%28converted%29.svg.png',
+    calories: 216
   },
 
   {
@@ -145,10 +148,11 @@ recipes = [
            "Meanwhile warm the tortillas gently (in microwave, under grill or in a skillet/frying pan) - if you forget don't worry it's not the end of the world.",
            "Add the cheese and cilantro to the eggs and mix through then fill the two tortillas. Add any or all of your preferred toppings and serve immediately."
                 ],
-    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2021/04/vegetarian-breakfast-burrito-featured-pic-sq-300x300.jpg',
+    dish_image_url: 'https://www.mexicanplease.com/wp-content/uploads/2022/06/Vegetarian-Breakfast-Burritos-11.jpg',
     country: 'USA',
     country_bio: "Principal influences on American cuisine are Native American, British, French, German, Spanish, and Italian cuisines. Whilst some of American cuisine is fusion cuisine, many regions in America have a specific regional cuisine. Each are deeply rooted in ethnic heritages, for example Cajun, Louisiana Creole, Native American, New England Algonquian, New Mexican, Pennsylvania Dutch, Soul food, Texan/Tex-Mex, Southern, and Tlingit. - Wikipedia",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/440px-Flag_of_the_United_States.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/440px-Flag_of_the_United_States.svg.png',
+    calories: 430
   },
 
   {
@@ -180,11 +184,12 @@ recipes = [
       "Flatten the pieces of outer dough into a thin round then place one of the sesame filling balls on top of a round. Wrap the outer dough around the filling, kneading it around as needed, so it covers completely. Repeat with the rest.",
       "Lightly flour the mooncake mould then carefully put one of the mooncakes inside. Place on a surface and press down the top of the mould so that it imprints the top then press out the mooncake. Repeat with the rest then serve. You can keep them chilled for a couple days or slightly longer frozen."
                 ],
-    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2021/05/snow-skin-mooncakes-featured-pic-sq-180x180.jpg',
+    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2017/08/Chinese-mooncakes-snow-skiin-mooncakes-photo.jpg',
     country: 'China',
     country_bio: "Chinese cuisine encompasses the numerous cuisines originating from China, as well as overseas cuisines created by the Chinese diaspora. Because of the Chinese diaspora and historical power of the country, Chinese cuisine has influenced many other cuisines in Asia and beyond, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and tofu, and utensils such as chopsticks and the wok, can now be found worldwide.
     The preferences for seasoning and cooking techniques of Chinese provinces depend on differences in historical background and ethnic groups. Geographic features including mountains, rivers, forests, and deserts also have a strong effect on the local available ingredients, considering that the climate of China varies from tropical in the south to subarctic in the northeast. Imperial royal and noble preference also plays a role in the change of Chinese cuisine. Because of imperial expansion and trading, ingredients and cooking techniques from other cultures have been integrated into Chinese cuisines over time.",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1920px-Flag_of_the_People%27s_Republic_of_China.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1920px-Flag_of_the_People%27s_Republic_of_China.svg.png',
+    calories: 295
   },
 
   {
@@ -230,7 +235,8 @@ recipes = [
     dish_image_url: 'https://myrecipejoint.com/wp-content/uploads/2020/12/126054251_364930781267593_715183987144198136_n.jpg',
     country: 'Ghana',
     country_bio: "Ghanaian cuisine is the cuisine of the Ghanaian people. Ghanaian main dishes are organized around a starchy staple food, which goes with a sauce or soup containing a protein source. The main ingredients for the vast majority of soups and stews are tomatoes, hot peppers and onions. As a result, most of the Ghanaian soups and stews are red or orange in appearance.",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png',
+    calories: 250
   }
  ]
 
@@ -251,6 +257,7 @@ recipes.each do |r|
     times: r[:times],
     ingredients: r[:ingredients],
     recipe: r[:recipe],
+    calories: r[:calories],
     country: country
     )
   puts "Dish: #{dish.id} created!"
@@ -294,10 +301,11 @@ recipes = [
       "Add a few pieces of yuca to the oil so that you don't have huge spaces between pieces but also don't overcrowd the pan. Fry the yuca pieces in batches like this, turning once for around 3 - 5 minutes per side until they are golden and crisp. Remove the cooked fries from the oil using a slotted spoon and drain them on kitchen paper/paper towel. Repeat with rest of yuca pieces.",
       "Serve ideally warm, freshly cooked (although room temperature works) with aji verde or your choice of dipping sauce."
                 ],
-    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2022/04/yuca-fries-featured-pic-sq-180x180.jpg',
+    dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2022/04/yuca-fries-photo.jpg',
     country: 'Peru',
     country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
+    calories: 439
   },
 
   {
@@ -334,7 +342,8 @@ recipes = [
     dish_image_url: 'https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2016/03/Anticuchos-Peruvian-Beef-Heart-Skewers-2-of-3.jpg?resize=1024%2C680&ssl=1',
     country: 'Peru',
     country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
-    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png'
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
+    calories: 324
   }
 
 ]
@@ -349,7 +358,8 @@ recipes.each do |r|
     times: r[:times],
     ingredients: r[:ingredients],
     recipe: r[:recipe],
-    country_id: Country.find_by(name: r[:country]).id
+    country_id: Country.find_by(name: r[:country]).id,
+    calories: r[:calories]
     )
   puts "Dish: #{dish.id} created!"
   puts Country.find_by(name: r[:country]).id
