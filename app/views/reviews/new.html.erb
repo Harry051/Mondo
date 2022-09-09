@@ -1,10 +1,27 @@
-<div class="card-small-dish">
-  <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
-  <div class="card-small-dish-infos">
-    <h2><%= @dish.title %></h2>
-    <p><i class="fa-solid fa-star"></i><%= @dish.average_rating %></p>
-    <p><%= @dish.description %></p>
+<div class="iPhone-13">
+
+<div class="review-background">
+
+  <div class="card-small-dish">
+    <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
+    <div class="title-rating">
+
+      <div class="card-dish-infos">
+        <h2><strong><%= @dish.title %></strong></h2>
+        <p><%= @dish.categories %></p>
+      </div>
+
+      <div class="rating">
+        <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
+        <p class="number m-0"><%= @dish.average_rating %></p>
+      </div>
+
+
+    </div>
   </div>
+
+</div>
+
 </div>
 
 <div class="container">
