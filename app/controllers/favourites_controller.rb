@@ -6,6 +6,7 @@ class FavouritesController < ApplicationController
     @favourite.dish = @dish
     @favourite.user = current_user
     @favourite.save
+    redirect_to dish_path(@dish)
   end
 
   def index

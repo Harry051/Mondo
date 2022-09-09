@@ -39,13 +39,11 @@
       <p><%= @dish.description %></p>
     </div>
 
-
     <div class="dish-flag-history">
       <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
       <h4>Cuisine history:</h4>
       <p><%= @dish.country.story %></p>
     </div>
-
 
     <div class="reviews">
       <h2><%= pluralize @dish.reviews.size, "review" %></h2>
@@ -61,7 +59,5 @@
 
   </div>
 </div>
-
-
 
 <%= render "shared/bottom_navbar" %>
