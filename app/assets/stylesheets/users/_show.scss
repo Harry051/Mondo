@@ -145,17 +145,44 @@
   margin-left: 4px;
 }
 
-
-
-.tab {
+.user-tab {
+  position: relative;
+  bottom: -90px;
+  width: 390px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 50%;
-  background: #97F58B;
+  background: #C8FFC1;
   border-radius: 10px 10px 0px 0px;
   box-shadow: 2px 2px 2px #888888;
+}
+
+.user-tab h2 {
   text-align: center;
   color: #261127;
+  font-size: 18px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+}
+
+.user-tab p {
+  margin: 14px 20px 10px 20px;
+  color: #261127;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.user-tab hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tab-new-position {
+  position: relative;
+  bottom: -50px;
+  width: 390px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #C8FFC1;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 2px 2px 2px #888888;
 }
