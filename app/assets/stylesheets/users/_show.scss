@@ -30,8 +30,10 @@
 .user-username h2 {
   text-align: center;
   color: #261127;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
+
 
 .user-stats {
   display: grid;
@@ -54,7 +56,106 @@
   position: relative;
   top: 24px;
   color: #261127;
-  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   text-align: center;
   line-height: 100%;
+}
+
+.user-stats-circle h6 {
+  position: relative;
+  top: 14px;
+  color: #99F88D;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.user-stats-circle-0 {
+  background-color: white;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+  margin: 0px 12px 0px 12px;
+}
+
+.user-stats-circle-0 p {
+  position: relative;
+  top: 32px;
+  color: #261127;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  line-height: 100%;
+}
+
+.user-stats-circle-0 h6 {
+  position: relative;
+  top: 22px;
+  color: #99F88D;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.user-infos {
+  margin: 28px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.user-basic h6 {
+  color: #261127;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.user-basic p {
+  color: #261127;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
+.user-awards {
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fa-burger {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  margin-top: 4px;
+}
+
+.user-awards-infos p {
+  color: #261127;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+
+
+.tab {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  background: #97F58B;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 2px 2px 2px #888888;
+  text-align: center;
+  color: #261127;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }

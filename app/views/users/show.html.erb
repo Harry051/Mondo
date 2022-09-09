@@ -13,35 +13,68 @@
       </div>
 
       <div class="user-stats">
+
         <div class="user-stats-circle">
           <p>Countries Cooked</p>
-          <p><%= @countries.to_set.count %></p>
+          <h6><%= @countries.to_set.count %></h6>
         </div>
 
-        <div class="user-stats-circle">
+        <div class="user-stats-circle-0">
           <p>Dishes Made</p>
-          <p><%= @cooked_dishes.count %></p>
+          <h6><%= @cooked_dishes.count %></h6>
         </div>
 
-        <div class="user-stats-circle">
+        <div class="user-stats-circle-0 ">
           <p>Favorites</p>
-          <p><%= @current_user.favourites.length %></p>
+          <h6><%= @current_user.favourites.length %></h6>
         </div>
       </div>
 
-      <h3>Award/Rank: ...</h3>
 
+      <div class="user-infos">
 
-      <h2>Bio: <%= current_user.bio %></h2>
-      <h2>Location: <%= current_user.location %></h2>
-      <h2>Favourite Dish: (ADD CODE HERE)</h2>
+        <div class="user-basic">
+          <h6>Bio:</h6>
+          <p><%= current_user.bio %></p>
 
+          <h6>Location:</h6>
+          <p><%= current_user.location %></p>
 
-      <p>possible gallery </p>
+          <h6>Favourite Dish:</h6>
+          <p>Not McDonald's<%#= current_user.xxx %></p>
+        </div>
+
+        <div class="user-basic">
+          <h6>My Award:</h6>
+          <div class="user-awards">
+            <i class="fa-solid fa-burger fa-2x"></i>
+            <div class="user-awards-infos">
+              <p>Master Food Delivery</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
 
       <%= link_to "Back", :back, class:"btn btn-success" %>
 
+      <p> </p>
+
     </div>
+
+      <div class="user-tabs">
+
+        <div data-controller="insert-in-list">
+          <div class="tab" data-insert-in-list-target="tab">
+            <h2>Cooking History</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+      </div>
+
 
   </div>
 
