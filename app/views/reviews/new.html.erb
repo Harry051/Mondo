@@ -7,7 +7,11 @@
   </div>
 </div>
 
-<p>Add to your Favourites | ❤️ button</p>
+<!--<div>
+  <% if !current_user.favourites.where(dish_id:@dish).exists? %>
+    <p>Add to your Favorites</p> <%= render partial: 'shared/favourite', class: 'heart'%>
+  <% end %>
+</div> %> -->
 
 <div class="card-review">
   <h2>Leave a review</h2>
@@ -21,4 +25,4 @@
   <% end %>
 </div>
 
-<%= link_to "< Back", :back, class:"btn btn-primary"  %>
+<%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary"  %>

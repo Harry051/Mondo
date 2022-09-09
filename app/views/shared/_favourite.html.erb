@@ -1,23 +1,15 @@
-<%#
-  This 'form' creates a favourite record with the dish and current user IDs if the
-%>
+<%# This 'form' creates a favourite record with the dish and current user IDs if combination not exist%>
 <div class='add-to-favourites'>
   <%= simple_form_for [@dish, @favourite] do |f| %>
-
-    <% if (Favourite.where("dish_id = ? and user_id = ?", @dish, current_user)).exists? %>
-
-      <%# Link to deatroy in fav controll %>
-      <button type="submit" class="btn" title="favourite">
+    <% if current_user.favourites.where(dish_id:@dish).exists? %>
+      <%# Add Link to destroy in fav controller %>
+      <%= button_tag(type: 'submit', class: "btn") do %>
         <i style="color:red;" class="fa-solid fa-heart"></i>
-      </button>
-
+      <% end %>
     <% else %>
-      <%# Link to create in fav controll %>
-      <button type="submit" class="btn" title="favourite">
+      <%= button_tag(type: 'submit', class: "btn") do %>
         <i class="fa-regular fa-heart"></i>
-      </button>
-
-
+      <% end %>
     <% end %>
   <% end %>
 </div>
