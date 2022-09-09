@@ -24,7 +24,7 @@
     }
     .btn {
       border-radius: 50%;
-      box-shadow: 1px 1px 1px rgba(128,128,128,0.1);
+      box-shadow: 2px 2px 2px #888888;
       width: 30px;
       height: 30px;
       padding: 0;
@@ -41,6 +41,7 @@
     justify-content: flex-start;
     padding-left: 19px;
     margin-bottom: 4px;
+    text-shadow:  1px 1px 1px rgba(128,128,128,0.3);
 
 
     .rating {
