@@ -7,11 +7,11 @@
   </div>
 </div>
 
-<!--<div>
-  <% if !current_user.favourites.where(dish_id:@dish).exists? %>
-    <p>Add to your Favorites</p> <%= render partial: 'shared/favourite', class: 'heart'%>
+<div class="container">
+  <%= simple_form_for [@dish, @cooked_dish] do |x| %>
+  <%= x.submit "Cooked ✅" %>
   <% end %>
-</div> %> -->
+</div>
 
 <div class="card-review">
   <h2>Leave a review</h2>
