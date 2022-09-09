@@ -1,45 +1,53 @@
 <div class="iPhone-13">
+  <div class="review-background">
+    <br>
+    <div class="card-small-dish">
+      <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
+      <div class="title-rating">
 
-<div class="review-background">
+        <div class="card-dish-infos">
+          <h2><strong><%= @dish.title %></strong></h2>
+          <ul class="dish-categories">
+            <% @dish.categories.each do |c| %>
+            <li><%= c %></li>
+            <% end %>
+          </ul>
 
-  <div class="card-small-dish">
-    <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
-    <div class="title-rating">
+        </div>
 
-      <div class="card-dish-infos">
-        <h2><strong><%= @dish.title %></strong></h2>
-        <p><%= @dish.categories %></p>
+        <div class="rating">
+          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
+          <p class="number m-0"><%= @dish.average_rating %></p>
+        </div>
       </div>
-
-      <div class="rating">
-        <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
-        <p class="number m-0"><%= @dish.average_rating %></p>
-      </div>
-
-
     </div>
+
+    <br>
+
+     <div class="container">
+      <%= simple_form_for [@dish, @cooked_dish] do |x| %>
+      <%= x.submit "Mark as Cooked", class:"btn btn-primary review-button"%>
+      <% end %>
+    </div>
+
+    <br>
+
+    <div class="dish-review">
+      <h2>Leave a review</h2>
+      <%= simple_form_for([@dish, @review]) do |f| %>
+        <%#= f.input :rating %>
+        <%= f.collection_radio_buttons :rating, [[1], [2], [3], [4], [5]], :first, :last, item_wrapper_tag: false, boolean_style: :inline do |b| %>
+          <%= b.radio_button + b.label {'⭐️'} %>
+        <% end %>
+        <%= f.input :content , label: 'Share more', placeholder: 'Please leave your comment here ...' %>
+        <%= f.button :submit, class:"btn btn-primary review-button"%>
+      <% end %>
+    </div>
+    <br>
+
+    <div class="dish-back">
+      <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary review-button"  %>
+    </div>
+
   </div>
-
 </div>
-
-</div>
-
-<div class="container">
-  <%= simple_form_for [@dish, @cooked_dish] do |x| %>
-  <%= x.submit "Cooked ✅" %>
-  <% end %>
-</div>
-
-<div class="card-review">
-  <h2>Leave a review</h2>
-  <%= simple_form_for([@dish, @review]) do |f| %>
-    <%#= f.input :rating %>
-    <%= f.collection_radio_buttons :rating, [[1], [2], [3], [4], [5]], :first, :last, item_wrapper_tag: false, boolean_style: :inline do |b| %>
-      <%= b.radio_button + b.label {'⭐️'} %>
-    <% end %>
-    <%= f.input :content , label: 'Share more', placeholder: 'Please leave your comment here ...' %>
-    <%= f.button :submit %>
-  <% end %>
-</div>
-
-<%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary"  %>

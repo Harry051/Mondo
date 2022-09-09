@@ -15,7 +15,7 @@ recipes = [
     name: 'Moussaka',
     description: "Moussaka is a classic Greek dish that's perfect comfort food. This version may not be completely traditional, but it's definitely delicious. A family favorite.",
     average_rating: 5.0,
-    categories: ['Main Course'],
+    categories: ['Main'],
     times: { prep: 20,
              cook: 70,
              total: 90
@@ -89,7 +89,7 @@ recipes = [
     name: 'Pavlova with raspberries and cream',
     description: "A delicious meringue that's soft inside and crisp outside, loaded up with raspberries and cream - such a tasty dessert.",
     average_rating: 4.6,
-    categories: ['Dessert'],
+    categories: ['Dessert', 'Sweet'],
     times: { prep: 15,
              cook: 45,
              total: 60
@@ -159,7 +159,7 @@ recipes = [
     name: 'Mooncakes',
     description: "Mooncakes are traditionally eaten to celebrate the Mid-Autumn Festival, but whatever your excuse these are both pretty and delicious with their sweet-nutty filling.",
     average_rating: 3.7,
-    categories: ['Snack, Vegetarian'],
+    categories: ['Snack', 'Vegetarian'],
     times: { prep: 45,
              cook: 5,
              total: 50
@@ -279,7 +279,7 @@ recipes = [
     name: 'Yuca fries',
     description: "These yuca fries are wonderfully crisp and perfect for dipping!",
     average_rating: 5.0,
-    categories: ['Snack, Vegetarian'],
+    categories: ['Snack', 'Vegetarian'],
     times: { prep: 15,
              cook: 40,
              total: 55

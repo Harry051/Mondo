@@ -6,7 +6,7 @@ class CreateDishes < ActiveRecord::Migration[7.0]
       t.text :ingredients, array: true, default: []
       t.text :recipe, array: true, default: []
       t.float :average_rating
-      t.string :categories
+      t.string :categories, array: true, default: []
       t.jsonb :times
       t.references :country, null: false, foreign_key: true
       t.timestamps
