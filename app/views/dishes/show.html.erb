@@ -4,17 +4,10 @@
     <div class="dish-img">
       <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
       <%= render partial: 'shared/favourite', favourite: @favourite, class: 'heart'%>
-      <p>add refresh button</p>
+      <%# <p>add refresh button</p> %>
       <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
     </div>
   </div>
-
-  <%# ***move this to review page*** will require back end code also to be moved****
-  <%# <div class="container">
-    <%= simple_form_for [@dish, @cooked_dish] do |x| %>
-    <%# <%= x.submit "Cooked ✅" %>
-    <%# <% end %>
-  <%# </div> %>
 
 <%# <%= audio_tag "peru_track.mp3", id: "peru_track-audio" %>
 <%# <script>document.getElementById('peru_track-audio').play();</script> %>
@@ -62,5 +55,12 @@
 
   </div>
 </div>
+
+  <%# ***move this to review page*** will require back end code also to be moved****
+  <%# <div class="container">
+    <%= simple_form_for [@dish, @cooked_dish] do |x| %>
+    <%# <%= x.submit "Cooked ✅" %>
+    <%# <% end %>
+  <%# </div> %>
 
 <%= render "shared/bottom_navbar" %>

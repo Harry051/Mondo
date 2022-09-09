@@ -10,12 +10,16 @@
   border: none;
 
   .dish-img{
+    height: 310px;
+
     p {
       margin-left: 20px;
     }
     .cl_img {
-      width: 390px;
-      border-radius: 15px 15px 30px 40%;
+      width: 392px;
+      height: 300px;
+      border-radius: 0px 0px 30px 40%;
+      box-shadow: 0px 4px 4px rgba(128,128,128,0.5);
 
     }
     .btn {
