@@ -7,10 +7,7 @@
 
         <div class="card-dish-infos">
           <h2><strong><%= @dish.title %></strong></h2>
-          <ul class="dish-categories">
-            <% @dish.categories.each do |c| %>
-            <li><%= c %></li>
-            <% end %>
+          <p><%= @dish.categories %></p>
           </ul>
 
         </div>
@@ -44,7 +41,7 @@
     <div class="dish-back">
       <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary review-button"  %>
     </div>
-   
+
 
   </div>
 </div>
