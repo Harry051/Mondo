@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import CuisineHistoryController from "./cuisine_history_controller"
+application.register("cuisine-history", CuisineHistoryController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
