@@ -49,7 +49,7 @@
       border: 1px solid rgba(128,128,128,0.3);
       border-radius: 30px;
       display: flex;
-      position: relative;
+      position: inherit;
       bottom: 3px;
 
       .icon {
@@ -60,6 +60,7 @@
 
       .number {
         padding-right: 6px;
+        padding-bottom: 2px;
       }
     }
 
