@@ -1,16 +1,18 @@
-<h1> <%= @dish.title %></h1>
+<div class="iPhone-13">
+  <h1> <%= @dish.title %></h1>
 
-<h2>Recipe</h2>
+  <h2>Recipe</h2>
 
-<ol value="Step:">
-  <% @dish.recipe.each do |i| %>
-  <li type="step">
-  <%= i %>
-  <% end %>
-  </li>
-</ol>
+  <ol value="Step:">
+    <% @dish.recipe.each do |i| %>
+    <li type="step">
+    <%= i %>
+    <% end %>
+    </li>
+  </ol>
 
-<%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary"  %>
-<%= link_to "> Next", new_dish_review_path(@dish), class:"btn btn-success" %>
+  <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary"  %>
+  <%= link_to "> Next", new_dish_review_path(@dish), class:"btn btn-success" %>
 
-<%= render "shared/bottom_navbar" %>
+  <%= render "shared/bottom_navbar" %>
+</div>
