@@ -1,18 +1,38 @@
 <div class="iPhone-13">
-  <h1><%= @dish.title %></h1>
-  <h2>Ingredients</h2>
+  <br>
+  <div class="card-small-dish">
+      <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
+      <div class="title-rating">
 
+        <div class="card-dish-infos">
+          <h2><strong><%= @dish.title %></strong></h2>
+          <p><%= @dish.categories %></p>
+        </div>
 
-  <ul>
-    <% @dish.ingredients.each do |i| %>
-    <li>
-    <%= i %>
-    <% end %>
-    </li>
-  </ul>
+        <div class="rating">
+          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
+          <p class="number m-0"><%= @dish.average_rating %></p>
+        </div>
 
-  <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary" %>
-  <%= link_to "> Next", dish_recipes_path(@dish), class:"btn btn-success" %>
+      </div>
+   </div>
+  <br>
+  <div class="ingredient-list">
+    <h2>Ingredients</h2>
+  <br>
 
-  <%= render "shared/bottom_navbar" %>
+    <ul>
+      <% @dish.ingredients.each do |i| %>
+      <li class="card card-lists">
+      <p class="text"><%= i %></p>
+      <input type="checkbox" class="checkbox">
+      <% end %>
+      </li>
+    </ul>
+
+    <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary" %>
+    <%= link_to "> Next", dish_recipes_path(@dish), class:"btn btn-success" %>
+  </div>
+  <br>
+    <%= render "shared/bottom_navbar" %>
 </div>

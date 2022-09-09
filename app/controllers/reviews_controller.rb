@@ -8,6 +8,7 @@ class ReviewsController < ApplicationController
   def create
     @dish = Dish.find(params[:dish_id])
     @review = Review.new(review_params)
+    @cooked_dish = CookedDish.new
     @review.dish = @dish
     @review.user = current_user
     if @review.save

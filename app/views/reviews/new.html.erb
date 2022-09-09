@@ -24,11 +24,7 @@
 
     <br>
 
-     <div class="container">
-      <%= simple_form_for [@dish, @cooked_dish] do |x| %>
-      <%= x.submit "Mark as Cooked", class:"btn btn-primary review-button"%>
-      <% end %>
-    </div>
+  <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
 
     <br>
 
@@ -48,6 +44,7 @@
     <div class="dish-back">
       <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary review-button"  %>
     </div>
+   
 
   </div>
 </div>
