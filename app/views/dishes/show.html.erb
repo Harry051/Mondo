@@ -28,17 +28,18 @@
         </div>
         <div class="piece"> <p>Cooking time</p><span><%= @dish.times["cook"] %> mins </span>
         </div>
-        <div class="piece"> <p>Calories</p><span>XX</span>
+        <div class="piece"> <p>Calories</p><span><%= @dish.calories %></span>
         </div>
       </div>
 
       <p><%= @dish.description %></p>
     </div>
 
-    <div class="dish-flag-history">
+    <div class="dish-flag-history" data-controller="cuisine-history">
       <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
       <h4>Cuisine history:</h4>
-      <p><%= @dish.country.story %></p>
+      <i class="fa-solid fa-star" data-action="click->cuisine-history#revealContent"></i>
+      <p class="d-none" data-cuisine-history-target="content"><%= @dish.country.story %></p>
     </div>
 
     <div class="reviews">
@@ -55,12 +56,5 @@
 
   </div>
 </div>
-
-  <%# ***move this to review page*** will require back end code also to be moved****
-  <%# <div class="container">
-    <%= simple_form_for [@dish, @cooked_dish] do |x| %>
-    <%# <%= x.submit "Cooked ✅" %>
-    <%# <% end %>
-  <%# </div> %>
 
 <%= render "shared/bottom_navbar" %>

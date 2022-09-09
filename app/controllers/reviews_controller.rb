@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
   def new
     @dish = Dish.find(params[:dish_id])
+    @cooked_dish = CookedDish.new
     @review = Review.new
   end
 
