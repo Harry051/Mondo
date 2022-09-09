@@ -38,7 +38,9 @@
     <div class="dish-flag-history" data-controller="cuisine-history">
       <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
       <h4>Cuisine history:</h4>
-      <i class="fa-solid fa-star" data-action="click->cuisine-history#revealContent"></i>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" class="bi bi-caret-down" data-action="click->cuisine-history#revealContent">
+        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+      </svg>
       <p class="d-none" data-cuisine-history-target="content"><%= @dish.country.story %></p>
     </div>
 
