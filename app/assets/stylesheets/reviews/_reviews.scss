@@ -1,0 +1,64 @@
+.review-background {
+  background-image: linear-gradient(to bottom right, #75F864, #99F88D);
+  height: 778px;
+}
+
+.card-small-dish {
+  display: flex;
+  width: 90%;
+  height: 100px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+  background-color: white;
+}
+
+.card-small-dish img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 4px 4px rgba(128,128,128,0.5);
+}
+
+.card-dish-infos{
+  width: 80%;
+  align-items: center;
+}
+
+.card-small-dish-infos {
+  display: flex;
+}
+
+.title-rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 19px;
+  margin-bottom: 4px;
+
+
+  .rating {
+    border: 1px solid rgba(128,128,128,0.3);
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+    top: -22px;
+    right: -8px;
+
+    .icon {
+      padding-left: 6px;
+      padding-right: 3px;
+      color: rgb(239,200,9);
+    }
+
+    .number {
+      padding-right: 6px;
+    }
+  }
+
+  h2 {
+    margin-right: 10px;
+  }
+}
