@@ -23,11 +23,24 @@
 
   <div id="home-bottom" class="home-background-bottom">
 
-    <div class="home-nav">
-      <%= link_to "#home-bottom", class: "nav-btn btn" do %>
-        <i class="fa-solid fa-bars"></i>
-      <% end %>
-    </div>
+    <%# <div class="home-tab-menu"> %>
+
+
+
+      <div class="home-nav" data-controller="home-nav-btn">
+        <div class="nav-btn btn"><i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <%# <li class="home-tab-menu-item-toggle">
+        <span class="home-tab-menu-icon"><i style="color: #261127" class="fa-solid fa-book-atlas fa-lg"></i></span>
+        <span class="home-tab-menu-text">Nav Menu</span>
+      </li> %>
+
+
+
+    <%# </div> %>
+
 
     <div class="home-search-text">
       <h4>Choose a country or Search a dish</h4>
