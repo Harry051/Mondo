@@ -16,66 +16,16 @@
 
       </div>
 
-        <%# <p>add refresh button</p> %>
+        <% @random_dish = Dish.where(country: @dish.country).ids.sample  %>
+        <a href="<%= dish_path(@random_dish) %>"><i class="fa-solid fa-rotate-left"></i></a>
+
         <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
-
-    </div>
-
-    <div class="card dish-infos">
-
-      <div class="title-rating">
-        <h2><strong><%= @dish.title %></strong></h2>
-        <div class="rating">
-          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
-          <p class="number m-0"><%= @dish.average_rating %></p>
-        </div>
-      </div>
-
-      <div class="dish-stats">
-        <div class="list">
-          <div class="piece"><p>Prep time</p><span><%= @dish.times["prep"] %> mins</span>
-          </div>
-          <div class="piece"> <p>Cooking time</p><span><%= @dish.times["cook"] %> mins </span>
-          </div>
-          <div class="piece"> <p>Calories</p><span><%= @dish.calories %></span>
-          </div>
-        </div>
-
-        <p><%= @dish.description %></p>
-      </div>
-
-      <div class="dish-flag-history" data-controller="cuisine-history">
-        <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
-        <h4>Cuisine history:</h4>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" class="bi bi-caret-down" data-action="click->cuisine-history#revealContent">
-          <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-        </svg>
-        <p class="d-none" data-cuisine-history-target="content"><%= @dish.country.story %></p>
-      </div>
-
-      <div class="reviews">
-        <h2><%= pluralize @dish.reviews.size, "review" %></h2>
-        <% if @dish.reviews.blank? %>
-          Be the first to leave a review for <%= @dish.title %>
-        <% else %>
-          <% @dish.reviews.each do |review| %>
-            <p><%= review.content %></p>
-            <p>⭐️<%= review.rating %></p>
-          <% end %>
-        <% end %>
-      </div>
 
     </div>
 
   </div>
 
-  <% @random_dish = Dish.where(country: @dish.country).ids.sample  %>
-  <a href="<%= dish_path(@random_dish) %>"><i class="fa-solid fa-rotate-left"></i></a>
 </div>
-
-
-    <%# <%= audio_tag "peru_track.mp3", id: "peru_track-audio" %>
-    <%# <script>document.getElementById('peru_track-audio').play();</script> %>
 
   <%= render "shared/bottom_navbar" %>
 
