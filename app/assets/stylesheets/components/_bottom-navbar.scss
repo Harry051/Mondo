@@ -35,3 +35,18 @@
   vertical-align: middle;
   margin: 0px 24px;
 }
+
+.music-btn-list {
+  display: inline-block;
+  list-style: none;
+}
+
+.music-btn {
+  background-color: white;
+  opacity: 0;
+  width: 50px;
+  height: 32px;
+  position: fixed;
+  bottom: 286px;
+  right: 140px
+}
