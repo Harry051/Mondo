@@ -259,7 +259,7 @@ recipes.each do |r|
     recipe: r[:recipe],
     calories: r[:calories],
     country: country
-    )
+  )
   puts "Dish: #{dish.id} created!"
 
   file = URI.open(r[:dish_image_url])
@@ -349,8 +349,7 @@ recipes = [
 ]
 
 recipes.each do |r|
-
- dish = Dish.create!(
+  dish = Dish.create!(
     title: r[:name],
     description: r[:description],
     average_rating: r[:average_rating],
@@ -360,7 +359,7 @@ recipes.each do |r|
     recipe: r[:recipe],
     country_id: Country.find_by(name: r[:country]).id,
     calories: r[:calories]
-    )
+  )
   puts "Dish: #{dish.id} created!"
   puts Country.find_by(name: r[:country]).id
 
