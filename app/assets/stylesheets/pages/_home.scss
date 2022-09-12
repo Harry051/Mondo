@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 
 .iPhone-13 {
-  width: 392px;
+  width: 390px;
   margin: 0 auto;
 }
 
@@ -72,30 +72,11 @@
 
 .home-background-bottom {
   background-image: linear-gradient(to bottom right, #75F864, #99F88D);
-  height: 778px;
+  height: 844px;
 }
 
-.home-nav {
-  position: relative;
-  top: 30px;
-  left: 24px;
-  width: fit-content;
-  border-radius: 50%;
-  transition: 0.4s ease;
-}
 
-.home-nav:hover {
-  background-color: #F3F3F3;
-}
 
-.nav-btn {
-  width: 28px;
-  height: 28px;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 2px 2px 2px #888888;
-  transition: 0.4s ease;
-}
 
 .fa-bars {
   position: relative;
@@ -234,3 +215,71 @@
 .mapboxgl-canvas {
   border-radius: 35%;
 }
+
+
+.home-nav {
+  position: relative;
+  top: 34px;
+  left: 34px;
+  width: fit-content;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.home-nav:hover {
+  background-color: #F3F3F3;
+}
+
+.nav-btn {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+  transition: 0.4s ease;
+}
+
+.home-tab-menu {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px #888888;
+  width: 240px;
+  transition: all 0.4s ease;
+}
+
+// .home-tab-menu-list {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 4px;
+// }
+
+// .home-tab-menu-item {
+//   display: flex;
+//   gap: 6px;
+//   align-items: center;
+//   color: #261127;
+//   font-family: 'Raleway', sans-serif;
+//   font-size: 13px;
+//   padding: 6px 12px;
+//   border-radius: 20px;
+//   cursor: pointer;
+//   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+// }
+
+// .home-tab-menu-icon {
+//   transform: translateX(2px);
+// }
+
+// .home-tab-menu-text {
+//   display: none;
+// }
+
+// .home-tab-menu-active {
+//   background-color: lightblue;
+//   padding: 6px 12px;
+// }
+
+// .home-tab-menu-active .home-tab-menu-text{
+//   display: block;
+// }

@@ -1,5 +1,7 @@
 <div class="iPhone-13">
+
   <br>
+
   <div class="card-small-dish">
       <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
       <div class="title-rating">
@@ -33,6 +35,7 @@
     <%= link_to "< Dish", dish_path(@dish), class:"btn btn-primary" %>
     <%= link_to "> Recipe", dish_recipes_path(@dish), class:"btn btn-success" %>
   </div>
+
   <br>
     <%= render "shared/bottom_navbar" %>
 </div>

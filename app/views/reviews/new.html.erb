@@ -8,11 +8,25 @@
     </div>
   </div>
 
-  <br>
+    <br>
 
-  <%# ---- Star rating header and buttons -------------- %>
-  <div  class='dish-star-rating'>
-    <h5>How was the experience and the meal?</h5>
-  </div>
+    <div class="dish-review">
+      <h2>Leave a review</h2>
+      <%= simple_form_for([@dish, @review]) do |f| %>
+        <%#= f.input :rating %>
+        <%= f.collection_radio_buttons :rating, [[1], [2], [3], [4], [5]], :first, :last, item_wrapper_tag: false, boolean_style: :inline do |b| %>
+          <%= b.radio_button + b.label {'⭐️'} %>
+        <% end %>
+        <%= f.input :content , label: 'Share more', placeholder: 'Please leave your comment here ...' %>
+        <%= f.button :submit, class:"btn btn-primary review-button"%>
+      <% end %>
+    </div>
+    <br>
+
+    <div class="dish-back">
+      <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary review-button"  %>
+    </div>
+
   <%= render "shared/bottom_navbar" %>
+
 </div>
