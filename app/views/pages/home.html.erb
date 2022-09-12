@@ -23,23 +23,29 @@
 
   <div id="home-bottom" class="home-background-bottom">
 
-    <%# <div class="home-tab-menu"> %>
-
-
 
       <div class="home-nav" data-controller="home-nav-btn">
         <div class="nav-btn btn"><i class="fa-solid fa-bars"></i>
         </div>
       </div>
 
-      <%# <li class="home-tab-menu-item-toggle">
-        <span class="home-tab-menu-icon"><i style="color: #261127" class="fa-solid fa-book-atlas fa-lg"></i></span>
-        <span class="home-tab-menu-text">Nav Menu</span>
-      </li> %>
+    <div class="home-tab-menu-tabs d-none">
 
+      <ul>
+        <li class="home-menu-nav home-tab-menu-item">
+          <div class="nav-menu-btn btn"><a href="/favourites"><i class="fa-solid fa-heart fa-heart-nav"></i></a></div>
+        </li>
 
+        <li class="home-menu-nav home-tab-menu-item">
+          <div class="nav-menu-btn btn"><a href="/"><i class="fa-solid fa-music fa-music-nav"></i></a></div>
+        </li>
 
-    <%# </div> %>
+        <li class="home-menu-nav home-tab-menu-item">
+          <div class="nav-menu-btn btn"><a href="/users/<%= current_user.id %>"><i class="fa-solid fa-user fa-user-nav"></i></a></div>
+        </li>
+      </ul>
+
+    </div>
 
 
     <div class="home-search-text">
