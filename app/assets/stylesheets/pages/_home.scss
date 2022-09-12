@@ -1,34 +1,44 @@
 // Specific CSS for your home-page
 
-.iPhone-13 {
-  width: 390px;
-  margin: 0 auto;
+@media (max-width: 480px) {
+  .iPhone-13 {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 480px) {
+  .iPhone-13 {
+    width: 390px;
+    margin: 0 auto;
+  }
 }
 
 .home-background-top {
+  height: 768px;
   background-image: linear-gradient(to bottom right, #1FE4DA, #A2EEEB);
-  height: 778px;
 }
 
-.home-logo img {
-  position: relative;
-  left: 12px;
-  top: 24px;
-  width: 40px;
-}
+// .home-logo img {
+//   position: relative;
+//   left: 12px;
+//   top: 24px;
+//   width: 40px;
+// }
 
 .home-graphics img {
   position: relative;
   left: 4px;
   top: 98px;
-  width: 382px;
+  width: 98%;
 }
 
 .home-infos {
   position: relative;
   top: 118px;
   left: 30px;
-  width: 320px;
+  width: 80%;
 }
 
 .home-infos h3{
@@ -71,12 +81,9 @@
 }
 
 .home-background-bottom {
-  background-image: linear-gradient(to bottom right, #75F864, #99F88D);
   height: 844px;
+  background-image: linear-gradient(to bottom right, #75F864, #99F88D);
 }
-
-
-
 
 .fa-bars {
   position: relative;

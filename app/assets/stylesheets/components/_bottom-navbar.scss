@@ -1,20 +1,37 @@
-.iPhone-13-bottom-nav-bar {
-  width: 392px;
-  margin: 0 auto;
-  position: relative;
-  bottom: 0;
-  background-color: white;
-  height: 76px;
+.iPhone-13-spacing {
+  height: 64px;
+}
+
+@media (max-width: 480px) {
+  .Phone-13-bottom-nav-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 64px;
+    border-top: 0.5px solid #888888;
+  }
+}
+
+@media (min-width: 480px) {
+  .iPhone-13-bottom-nav-bar {
+    width: 390px;
+    position: fixed;
+    top: 780px;
+    background-color: white;
+    height: 64px;
+    border-top: 0.5px solid #888888;
+  }
 }
 
 .bottom-nav-bar-list {
-  padding: 22px 20px;
+  padding: 12px 0px;
   list-style: none;
   text-align: center;
 }
 
 .bottom-nav-bar-list li {
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
-  margin: 0px 20px;
+  margin: 0px 24px;
 }
