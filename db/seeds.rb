@@ -59,7 +59,7 @@ recipes = [
     name: 'Tiradito',
     description: 'This classic Japanese-Peruvian dish is easy to prepare and makes a wonderful appetizer.',
     average_rating: 4.3,
-    categories: ['Appetizer/Starter'],
+    categories: ['Pescetarian'],
     times: { prep: 10,
              cook: 0,
              total: 10
@@ -89,7 +89,7 @@ recipes = [
     name: 'Pavlova with raspberries and cream',
     description: "A delicious meringue that's soft inside and crisp outside, loaded up with raspberries and cream - such a tasty dessert.",
     average_rating: 4.6,
-    categories: ['Dessert', 'Sweet'],
+    categories: ['Puddings'],
     times: { prep: 15,
              cook: 45,
              total: 60
@@ -123,7 +123,7 @@ recipes = [
     name: 'Vegetarian breakfast burrito',
     description: "A delicious combination that's easy to make and tasty too.",
     average_rating: 4.4,
-    categories: ['Breakfast', 'Vegetarian'],
+    categories: ['Vegetarian'],
     times: { prep: 5,
              cook: 10,
              total: 15
@@ -196,7 +196,7 @@ recipes = [
     name: 'Okro Stew',
     description: "As one of Ghana’s national dishes, okro stew is prepared with tomatoes, red palm oil, onions, tomatoes, spices and finely chopped okra.",
     average_rating: 4.2,
-    categories: ['Main'],
+    categories: ['Vegetarian', 'Vegan', 'Lactose', 'Gluten'],
     times: { prep: 20,
              cook: 40,
              total: 60
@@ -237,6 +237,214 @@ recipes = [
     country_bio: "Ghanaian cuisine is the cuisine of the Ghanaian people. Ghanaian main dishes are organized around a starchy staple food, which goes with a sauce or soup containing a protein source. The main ingredients for the vast majority of soups and stews are tomatoes, hot peppers and onions. As a result, most of the Ghanaian soups and stews are red or orange in appearance.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png',
     calories: 250
+  },
+
+  {
+    name: 'Prinsesstårta',
+    description: "A classic Scandinavian torte with layers of sponge cake, raspberry jam, vanilla custard, and whipped cream. It is traditionally dome-shaped and covered with a layer of sweet marzipan tinted green.",
+    average_rating: 4.2,
+    categories: ['Vegetarian', 'Puddings'],
+    times: { prep: 60,
+             cook: 40,
+             total: 100
+               },
+    ingredients: [
+      '4 large eggs',
+      '1 cup sugar',
+      '1/2 cup flour',
+      '1/2 cup potato flour or (70g) cornstarch',
+      '1 teaspoon baking powder',
+      '1/8 teaspoon salt',
+      'Powdered sugar for dusting',
+      '1 lb. prepared marzipan',
+      'Leaf green food color',
+      'Ready made rose icing decorations',
+      'Rose food colouring',
+      'Clear extract'
+                     ],
+    recipe: [
+      "Preheat the oven to 350°F. Grease and line a 9-inch round springform pan with parchment paper",
+      "Make the sponge: Place the eggs and sugar in a mixing bowl and beat on high speed until pale and thickened. Properly whipped batter should be light and thick, and fall in a ribbon back into the bowl leaving trails of batter on the surface. In a separate bowl, whisk the flours (or cornstarch), baking powder and salt together. Carefully fold the dry mixture into the egg mixture until thoroughly combined. Pour the batter into the prepared pan and bake for about 40 minutes or until a toothpick tester comes out clean. Let the cake cool slightly in the pan for a few minutes then run a knife around the edge and remove the springform collar. Peel away the parchment and let cool completely on a wire rack.",
+      "Make the custard filling: Stir together the cream, egg yolks, cornstarch, and sugar in a small saucepan. Cook over medium heat, whisking constantly, until the mixture thickens. Stir in the vanilla and remove from heat. Transfer to a bowl and let cool slightly. Press plastic wrap over the surface of the custard and refrigerate until firm. The chilled custard should be thick and hold in the bowl of a spoon.",
+      "Make the stabilized whipped cream: Sprinkle the gelatin over the 2 tablespoons of water in a small bowl. Let stand until set. Place the heavy cream in the bowl of an electric mixer fitted with a whip attachment. Set mixer speed to medium and beat until soft peaks form. Gradually add in the powdered sugar and then mix in the vanilla. Heat gelatin in the microwave for 5-7 seconds, or until completely liquid. Gradually add liquid gelatin to whipped cream in a thin stream with the mixer running. After all of the gelatin is added, increase mixer speed to high and beat to stiff peaks. Set aside.",
+      "Build the layers: Torte the cake into four layers using a serrated knife or cake leveler. The layers will be very thin so do this carefully. Place the bottom cake layer on a plate or cake board. Spread on the raspberry jam and top with a second cake piece. Top the second cake piece with the custard filling (you may have extra custard). Top with a third cake layer. Pile all of the whipped cream on top and smooth into a dome shape using a large spatula. Place the final cake layer on top and press down so that all of the cake’s edges are smoothed against the whipped cream and a dome shape is formed. Cover the entire cake with a thin layer of buttercream, smoothing it as much as possible. Refrigerate until the frosting is firm, about 40 minutes.",
+      "Prep and cover with marzipan: Dust a work surface with marzipan. Knead the marzipan with your hands to soften and place it on the work surface. Add a small amount of leaf green food color to the marzipan and knead in until a consistent green color is achieved. Lightly add powdered sugar as needed to prevent sticking. Roll it to a large circle, lifting to occasionally dust underneath with powdered sugar to prevent sticking. Gently lay the marzipan circle over the top of the cake and use your hands to form the marzipan to the shape of the cake. Trim the excess marzipan from the bottom of the cake using a pizza or pastry wheel. Gently tuck the bottom edges of the marzipan under the cake using the back of a butter knife.",
+      "Decors: Paint the white Wilton candy roses with a little Baker’s Rose food color dissolved in clear extract. Use a kitchen-dedicated art brush with soft bristles so the food color can easily be brushed between the petals.",
+      "Tint leftover marzipan with a little more leaf green food color, and roll flat on a powdered sugar-dusted work surface. Cut small star-shaped flowers from the marzipan using a fondant cutter. Use leftover buttercream or a dot of corn syrup to attach the star shape to the bottom of the candy rose.",
+      "Attach the rose to the top center of the cake using buttercream or a dot of corn syrup. Dust the top of the cake with powdered sugar using a small sieve.",
+      "The cake needs to be refrigerated until serving time and any leftovers need to be refrigerated as well."
+                ],
+    dish_image_url: 'https://cdn.sprinklebakes.com/media/2019/01/Swedish2BPrincess2BCake2B3.jpg',
+    country: 'Sweden',
+    country_bio: "Historically, in the far north, meats such as reindeer, and other (semi-)game dishes were eaten, some of which have their roots in the Sami culture, while fresh vegetables have played a larger role in the South. Many traditional dishes employ simple, contrasting flavours, such as the traditional dish of meatballs and brown cream sauce with tart, pungent lingonberry jam (slightly similar in taste to cranberry sauce).",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1920px-Flag_of_Sweden.svg.png',
+    calories: 253
+  },
+
+  {
+    name: 'Muriwo Undeovi',
+    description: "Muriwo Unedovi, sometimes called peanut butter greens, is a traditional Zimbabwe dish that combines a leafy green of your choosing and a peanut butter sauce.",
+    average_rating: 3.9,
+    categories: ['Vegetarian', 'Vegan', 'Gluten', 'Lactose'],
+    times: { prep: 20,
+             cook: 10,
+             total: 30
+               },
+    ingredients: [
+      "1 onion, chopped",
+      "½ cup bell pepper, chopped",
+      "1 tomato, chopped",
+      "1-inch piece of fresh ginger, minced or grated",
+      "2 cloves garlic, minced",
+      "1 Tbsp smoked paprika",
+      "1 tsp garlic powder",
+      "1 tsp onion powder",
+      "10 to 12 cups chopped kale or collard greens",
+      "1 onion, chopped",
+      "¼ cup creamy peanut butter (without added oil and sugar)",
+      "¼ cup of water",
+      "2 tsp coconut aminos",
+      "1 tsp scotch bonnet pepper sauce for heat",
+      "2 Tbsp Simple Homemade Date Syrup"
+
+                     ],
+    recipe: [
+      "Preheat a large skillet or sauté pan over medium heat.",
+      "Add chopped onion to the hot pan and dry sauté for 3 to 4 minutes.",
+      "Stir in chopped bell pepper and tomato. Continue cooking for another 3 to 4 minutes until tomatoes start to break down.",
+      "Add minced garlic and ginger, and stir to combine.",
+      "Stir in smoked paprika, onion powder, and garlic powder and cook for another minute. Your kitchen should smell amazing.",
+      "Add chopped kale or collard greens, cover, and allow the greens to wilt without overcooking. They should be bright green, slightly tender, but with a bit of crunch. About 3 to 5 minutes should do it.",
+      "While greens are wilting, prepare the peanut butter sauce.",
+      "In a small mixing bowl, add peanut butter, scotch bonnet pepper sauce, coconut aminos, Simple Homemade Date Syrup, and water. Stir well. The sauce should be smooth and creamy, like a thick dressing. Taste it and adjust seasonings, if needed. ",
+      "Pour the sauce over the greens and stir well to combine. Turn off the heat, plate, and enjoy!"
+                ],
+    dish_image_url: 'https://danielsplate.com/wp-content/uploads/2022/04/muriwo-unedovi-peanut-butter-greens-3-8.jpg',
+    country: 'Zimbabwe',
+    country_bio: "Like in many African countries, the majority of Zimbabweans depend on a few staple foods. 'Mealie meal', also known as cornmeal, is used to prepare sadza or isitshwala, as well as porridge known as bota or ilambazi. Sadza is made by mixing the cornmeal with water to produce a thick paste/porridge. After the paste has been cooking for several minutes, more cornmeal is added to thicken the paste. This is usually eaten as lunch or dinner, usually with sides such as gravy, vegetables (spinach, chomolia, or spring greens/collard greens), beans, and meat (stewed, grilled, roasted, or sundried). Sadza is also commonly eaten with curdled milk (sour milk), commonly known as lacto (mukaka wakakora), or dried Tanganyika sardine, known locally as kapenta or matemba. Bota is a thinner porridge, cooked without the additional cornmeal and usually flavoured with peanut butter, milk, butter, or jam. Bota is usually eaten for breakfast.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/2560px-Flag_of_Zimbabwe.svg.png',
+    calories: 160
+  },
+
+  {
+    name: 'Asado',
+    description: "The Argentine barbecue or asado is more than just a meal; these food-centric get-togethers constitute an important part of the Argentine social life.",
+    average_rating: 4.8,
+    categories: ['Lactose'],
+    times: { prep: 90,
+             cook: 90,
+             total: 180
+               },
+    ingredients: [
+      "2½ kg meat flank steak, flap, skirt steak, tenderloin. But always choose the ribs and a cut of meat",
+      "6 chorizo sausages",
+      "400 g chinchulines chinchulines is a term that makes reference to the offal of the cow such as the small intestine, kidneys and sweetbread. Black pudding is usually considered in this group too",
+      "2 lemons",
+      "coarse salt",
+      "marinade optional if using kidneys",
+      "mini baguettes toasted lightly on the grill for a minute before serving the sausages",
+      "simple salad",
+      "1 cup olive oil 250 ml",
+      "1 tbsp white-wine vinegar",
+      "½ cup fresh parsley 30 g, finely chopped",
+      "¼ cup fresh oregano 15 g, finely chopped",
+      "¼ cup fresh thyme 15 g, finely chopped",
+      "¼ cup onion 30 g, finely chopped",
+      "1 tbsp minced garlic",
+      "salt and cayenne pepper to taste"
+                     ],
+    recipe: [
+      "Before you start, soak the chorizos in bowl until you are ready to cook them. This is to prevent dryness after cooking.",
+      "Make a fire using charcoal, wood and paper. This would probably take you around an hour.",
+      "Once you have the fire ready, distribute the embers so you have a high heat and a low heat area. Sprinkle some salt on top of the embers to prevent the ashes from rising too much.",
+      "Keep to the side a small additional fire going from where you can take embers to put in the main fire when needed.",
+      "If you’re making chinchulines you need to wash and clean them very well. They take a long time to cook, around 1 or 1,5 hours. Make sure they are on a low heat and far from the meat to prevent the chinchulines from giving the meat their flavor.",
+      "a. Small intestine: after cleaning and taking the fat out, make a braid or just roll it in a circle and put it on the grill. Turn it after 30 minutes and add salt.",
+      "b. Kidneys: Peeled off the membrane they come in, take out the renal pelvis and after washing, leave overnight in water with vinegar, red wine or milk (3:1). When cooking on the grill put first the side that has the opening of the renal pelvis so it would finish draining. Turn around once the kidney has a more rigid texture to the touch (around 30-40 minutes). Don’t forget to add salt.",
+      "c. Chorizos: just take them out of the water and put them on the grill.",
+      "d. Black pudding: since this is already cooked, add it last to the grill, 30 min after after the rest.",
+      "Sprinkle coarse salt and lemon juice on both side of the meat.",
+      "Put the meat on the grill, fat side down and let it cook for at least 40 min - one hour, turning the meat every 15 or 20 minutes.",
+      "Place the ribs on the grill. They are ready in 15 - 20 minutes.",
+      "When the meat is ready, cut it in portions and put them in a large plate so everyone can choose what they want."
+                    ],
+    dish_image_url: 'https://chowcation.com/wp-content/uploads/2017/asado-1024x683.jpg',
+    country: 'Argentina',
+    country_bio: "Argentine cuisine is described as a cultural blending of Mediterranean influences brought by the Spanish during the colonial period and, later, by Italian and Spanish immigrants to Argentina during 19th and 20th centuries, with influences from a further cultural blending of criollos (due to Spanish colonizers) with the Indigenous peoples of Argentina (such as mate and humitas). Beyond asado (the Argentine barbecue), no other dish more genuinely matches the national identity. Nevertheless, the country's vast area, and its cultural diversity, have led to a local cuisine of various dishes. Argentine people have a reputation for their love of eating.[3] Social gatherings are commonly centred on sharing a meal. Invitations to have dinner at home are generally viewed as a symbol of friendship, warmth, and integration. Sunday family lunch is considered the most significant meal of the week, whose highlights often include asado or pasta.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1920px-Flag_of_Argentina.svg.png',
+    calories: 985
+  },
+
+  {
+    name: 'Pork Adobo',
+    description: "Almost every region in the Philippines have their own pork adobo version. Sometimes, there can be more than one version in a location. This is one of the favorite when it comes to family picnics. This is a dish wherein pork and chicken slices are combined and cooked inadobo style.",
+    average_rating: 4.1,
+    categories: ['Lactose', 'Gluten'],
+    times: { prep: 10,
+             cook: 60,
+             total: 70
+               },
+    ingredients: [
+      "2 lbs pork belly",
+      "2 tablespoons garlic minced or crushed",
+      "5 dried bay leaves",
+      "4 tablespoons vinegar",
+      "1/2 cup soy sauce",
+      "1 tablespoon peppercorn",
+      "2 cups water",
+      "Salt to taste"
+                     ],
+    recipe: [
+      "Combine the pork belly, soy sauce, and garlic then marinade for at least 1 hour",
+      "Heat the pot and put-in the marinated pork belly then cook for a few minutes",
+      "Pour remaining marinade including garlic.",
+      "Add water, whole pepper corn, and dried bay leaves then bring to a boil. Simmer for 40 minutes to 1 hour",
+      "Put-in the vinegar and simmer for 12 to 15 minutes",
+      "Add salt to taste",
+      "Serve hot. Share and enjoy!"
+                    ],
+    dish_image_url: 'https://panlasangpinoy.com/wp-content/uploads/2009/08/Pork-Adobo-.jpg?x45865',
+    country: 'Philippines',
+    country_bio: "A majority of mainstream Filipino dishes that compose Filipino cuisine are from the food traditions of various ethnolinguistic groups and tribes of the archipelago, including the Ilocano, Pangasinan, Kapampangan, Tagalog, Bicolano, Visayan (Cebuano, Hiligaynon and Waray), Chavacano and Maranao ethnolinguistic groups. The style of food making and preparation, and the dishes associated with them, have evolved over many centuries from a largely indigenous (largely Austronesian) base shared with maritime Southeast Asia with varied influences from Chinese, Spanish and American cuisines, in line with the major waves of influence that had enriched the cultures of the archipelago, as well as others adapted to indigenous ingredients and the local palate.",
+
+
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1200px-Flag_of_the_Philippines.svg.png',
+    calories: 1211
+  },
+
+  {
+    name: 'Vegetable Chettinad',
+    description: "Almost every region in the Philippines have their own pork adobo version. Sometimes, there can be more than one version in a location. This is one of the favorite when it comes to family picnics. This is a dish wherein pork and chicken slices are combined and cooked inadobo style.",
+    average_rating: 4.1,
+    categories: ['Vegetarian', 'Vegan', 'Lactose', 'Gluten'],
+    times: { prep: 20,
+             cook: 30,
+             total: 50
+               },
+    ingredients: [
+      "½ cup vegetable oil",
+      "20 dried red chilies, mild, preferably goondu milagi, seeded and broken in 2",
+      "1 1½-inch piece cinnamon",
+      "11 large garlic cloves, peeled and sliced in thirds, lengthwise",
+      "20 medium shallots, peeled whole",
+      "½ tsp turmeric",
+      "½ medium onion, finely chopped",
+      "1½ medium tomatoes, sliced in half and then quartered",
+      "1 tsp salt, or to taste"
+                     ],
+    recipe: [
+      "Heat oil in a large heavy-bottomed kadhai or wok over high heat. When hot but not smoking, add the red chillies, stirring to release their fragrance.",
+      "Break the cinnamon into a few pieces and add to the kadhai; follow with sliced garlic. Stir to ensure that it does not burn.",
+      "Slide in the shallots, onion and turmeric to stir to combine. The kadhai should be smoking hot.",
+      "Add the tomatoes and stir. Let the mixture cook for three minutes before adding the salt. Stir occasionally for about four minutes.",
+      "Add one cup of water, bring to a boil and then reduce to a simmer. If more water is needed to continue the cooking process, add as required, if using a pressure cooker, seal lid and cook for 15 minutes or until the first whistle, and then let simmer for another 15 minutes. Remove lid once cooled.",
+      "Braise until water has mostly evaporated and mutton has darkened substantially and is beautifully coated with the sauce."
+                    ],
+    dish_image_url: 'https://assets.vogue.in/photos/5f2d006293fbd755fe1ac36f/2:3/w_2240,c_limit/Chicken%20Chettinad%20easy%20chettinad%20recipes%20chettinad%20cuisine.jpg',
+    country: 'India',
+    country_bio: "Indian cuisine consists of a variety of regional and traditional cuisines native to India. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Indian cuisine has shaped the history of international relations; the spice trade between India and Europe was the primary catalyst for Europe's Age of Discovery.[4] Spices were bought from India and traded around Europe and Asia. Indian cuisine has influenced other cuisines across the world, especially those from Europe (especially Britain), the Middle East, Southern African, East Africa, Southeast Asia, North America, Mauritius, Fiji, Oceania, and the Caribbean.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1920px-Flag_of_India.svg.png',
+    calories: 472
   }
  ]
 
@@ -279,7 +487,7 @@ recipes = [
     name: 'Yuca fries',
     description: "These yuca fries are wonderfully crisp and perfect for dipping!",
     average_rating: 5.0,
-    categories: ['Snack', 'Vegetarian'],
+    categories: ['Vegetarian', 'Vegan'],
     times: { prep: 15,
              cook: 40,
              total: 55
@@ -312,7 +520,7 @@ recipes = [
     name: 'Anticuchos de Corazón',
     description: "TThe mere thought of preparing anticuchos makes me happy; it represents Peruvian cuisine at its purest. The star ingredient of this recipe is beef heart. If you have not yet tasted this delicious and highly nutritious organ meat, I encourage you to give this dish a try. It is not only healthy but also delicious and satisfying.",
     average_rating: 2.7,
-    categories: ['Main'],
+    categories: ['Lactose'],
     times: { prep: 20,
              cook: 20,
              total: 40
@@ -344,7 +552,127 @@ recipes = [
     country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
     calories: 324
-  }
+  },
+
+  {
+    name: 'Goan Fish Curry',
+    description: "This famous fish curry comes to you from Goa, a little pocket of Indian paradise that's all about the sun, surf, sand and excellent seafood! Deeply aromatic with a tomato and coconut based sauce.",
+    average_rating: 3.6,
+    categories: ['Pescetarian', 'Lactose'],
+    times: { prep: 15,
+             cook: 20,
+             total: 35
+               },
+    ingredients: [
+      "2 1/2 tbsp Kashmiri chilli powder",
+      "1 tbsp coriander",
+      "2 tsp cumin",
+      "1 tsp turmeric",
+      "1/2 tsp fenugreek powder",
+      "3/8 tsp ground cloves",
+      "6 cloves garlic , minced",
+      "1 tbsp fresh ginger , finely grated",
+      "2 tbsp tamarind puree",
+      "1/2 red onion , chopped",
+      "6 tbsp water (plus more, as needed)",
+      "3 tbsp vegetable oil",
+      "1/2 tsp black mustard seeds",
+      "1/2 red onion , cut in half again (like a quartered orange) and thinly sliced",
+      "1 tbsp tomato paste",
+      "2/3 cup canned tomato pulp/polp (Mutti), OR tomato passata or crushed tomato",
+      "2/3 cup water",
+      "400ml/ 14oz coconut milk , full fat",
+      "1 1/4 tsp salt , cooking/kosher (or 3/4 tsp fine table salt)",
+      "1 1/2 tsp sugar",
+      "1/4 tsp chilli powder",
+      "2 long green chillies , cut into half lengthwise and deseeded",
+      "1 tomato , cut into 8 wedges then into 2.5cm chunks",
+      "600g / 1.2 lb firm-fleshed white fish , cut into 3cm cubes"
+                     ],
+    recipe: [
+      "Sizzle black mustard seeds: Heat oil over medium heat in a large pot. Add black mustard seeds and let them sizzle for 30 seconds - careful, they might pop!",
+      "Saute onion: Add red onion and cook for 3 minutes until edges start to tinge with gold.",
+      "Cook off curry paste: Add curry paste and cook for 3 minutes - to evaporate water, make spices bloom and cook garlic & ginger.",
+      "Cook off tomato: Turn heat up to medium high. Add tomato paste and tomato pulp, cook for 2 minutes.",
+      "Coconut milk: Add water, coconut milk, sugar, salt and chilli powder if using. Stir, then bring to simmer, low heat so it's bubbling gently.",
+      "Simmer 2 minutes, add tomato & green chilli: Simmer for 2 minutes, add tomato and green chilli.",
+      "Simmer 3 minutes: Simmer for another 3 minutes, stirring every now and then - sauce should be thickened (not watery), it gets looser again when fish is added (because fish will drop some juices = even more flavour!).",
+      "Add fish: Add fish, stir, cook for 3 to 4 minutes until fish easily flakes.",
+      "Garnish & serve: Remove from stove and transfer to serving bowl. Garnish with coriander/cilantro and fresh green chillies if desired. Serve with basmati rice!"
+                ],
+    dish_image_url: 'https://www.recipetineats.com/wp-content/uploads/2020/10/Goan-Fish-Curry_6.jpg',
+    country: 'India',
+    country_bio: "Indian cuisine consists of a variety of regional and traditional cuisines native to India. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Indian cuisine has shaped the history of international relations; the spice trade between India and Europe was the primary catalyst for Europe's Age of Discovery.[4] Spices were bought from India and traded around Europe and Asia. Indian cuisine has influenced other cuisines across the world, especially those from Europe (especially Britain), the Middle East, Southern African, East Africa, Southeast Asia, North America, Mauritius, Fiji, Oceania, and the Caribbean.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1920px-Flag_of_India.svg.png',
+    calories: 484
+  },
+
+  {
+    name: 'Sopa de Quinoa',
+    description: "A gluten-free, nutritious, and tasty soup recipe that's easy to make and a definite crowd pleaser. ",
+    average_rating: 3.2,
+    categories: ['Vegetarian'],
+    times: { prep: 10,
+             cook: 40,
+             total: 50
+               },
+    ingredients: [
+      "3 ounces dried quinoa",
+      "1 large carrot",
+      "1 large leek",
+      "2 celery stalks",
+      "¼ medium white cabbage",
+      "4-5 cups water or chicken stock",
+      "1 teaspoon garlic minced",
+      "Salt black pepper and cumin to taste",
+      "Fresh cilantro or celery leaves chopped (optional, for decoration)",
+                     ],
+    recipe: [
+      "Remove veins and sinew from the beef heart and cut the resulting firm meat into 1 1/2 inch cubes.",
+      "In a medium bowl, whisk together the aji panca, vegetable oil, red wine vinegar, garlic, oregano, cumin, and salt. Add the cubed beef heart, tossing to coat thoroughly. Cover and refrigerate for at least 3 hours.",
+      "Bring a large pot of water to a boil. Add the potatoes. When they are nearly tender, add the corn. When both are cooked through, drain and set aside. When cool enough to handle, cut the corn on the cob into serving sizes. Peel the potatoes and cut into thick slices.",
+      "In a small bowl, whisk in desired amount of sliced scallion into the aji amarillo paste. Season with salt and set aside.Set the grill to medium heat.",
+      "Place 3-4 beef cubes on each skewer. Set aside the remaining marinade for basting. Arrange the skewers on the preheated grill. Baste the marinade onto the skewers with a pastry brush or fresh corn husks and grill for 3 minutes. Flip to the other side, baste, and grill until cooked through with a little char, another 3 minutes.",
+      "Serve hot with the potatoes, corn, and seasoned aji amarillo."
+                ],
+    dish_image_url: 'https://www.eatperu.com/wp-content/uploads/2020/10/peruvian-soup-recipe-sopa-de-quinoa.webp',
+    country: 'Peru',
+    country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
+    calories: 200
+  },
+
+  {
+    name: 'Patacones',
+    description: "AIn some countries they are known as tostones, but in the northern region of Peru, where plantains are abundant and an important part of the daily diet, these tasty fritters are called patacones. They are usually eaten as an accompaniment for meat and fish dishes, instead of bread, French fries, or rice.",
+    average_rating: 4.7,
+    categories: ['Vegetarian'],
+    times: { prep: 60,
+             cook: 20,
+             total: 80
+               },
+    ingredients: [
+      "3 medium green plantains, unpeeled",
+      "1/2 teaspoon kosher salt, plus more to taste",
+      "4 cups water, or amount to cover plantains",
+      "2 /3 cup vegetable oil"
+                ],
+    recipe: [
+      "Slice the ends off of each plantain, then slice the unpeeled plantains crosswise into 1 1/2-inch wide circles.",
+      "Place the plantain slices in a bowl with 1/2 teaspoon salt and 4 cups water to soak for 1 hour.",
+      "After soaking, peel the plantain slices. If the peel does not come off easily, make a slit through the skin with a sharp knife, then peel it off. Place the peeled plantain slices on paper towels and pat dry.",
+      "In a heavy skillet, heat 1 to 2 inches of vegetable oil to 350 F.",
+      "Place plantain slices in the oil and cook until golden (the plantain should sizzle gently). Work in batches if necessary and drain on paper towels.",
+      "Use the bottom of a glass or bottle to flatten the slices of plantain into disks about 1/3- to 1/2-inch thick.",
+      "Return flattened plantains to the hot oil and fry until a deep golden brown. Drain on paper towels, and sprinkle generously with kosher salt.",
+      "Serve plantain warm with aji sauce for dipping."
+                ],
+    dish_image_url: 'https://as2.ftcdn.net/v2/jpg/05/26/58/77/1000_F_526587756_imAxOTJ9L5NbbegQHYiKWy73ppGz99tS.jpg',
+    country: 'Peru',
+    country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
+    calories: 491
+  },
 
 ]
 
