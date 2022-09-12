@@ -30,8 +30,8 @@
       </li>
     </ol>
 
-    <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary"  %>
-    <%= link_to "> Next", new_dish_review_path(@dish), class:"btn btn-success" %>
+    <%= link_to "< Ingredients", dish_ingredients_path(@dish), class:"btn btn-primary"  %>
+    <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
   </div>
   <br>
   <%= render "shared/bottom_navbar" %>

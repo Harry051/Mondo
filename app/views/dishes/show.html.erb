@@ -3,7 +3,7 @@
   <div class="card dish-pic">
     <div class="dish-img">
       <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
-      <%= render partial: 'shared/favourite', favourite: @favourite, class: 'heart'%>
+      <%= render partial: 'shared/show_favourite', favourite: @favourite, class: 'heart'%>
       <%# <p>add refresh button</p> %>
       <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
     </div>
