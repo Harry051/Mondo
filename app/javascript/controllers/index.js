@@ -10,6 +10,9 @@ application.register("cuisine-history", CuisineHistoryController)
 import DisplayTabController from "./display_tab_controller"
 application.register("display-tab", DisplayTabController)
 
+import HeartController from "./heart_controller"
+application.register("heart", HeartController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 

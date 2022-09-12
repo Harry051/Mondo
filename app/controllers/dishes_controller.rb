@@ -10,6 +10,7 @@ class DishesController < ApplicationController
 
   def recipe
     @dish = Dish.find(params[:dish_id])
+    @cooked_dish = CookedDish.new
   end
 
   # private
