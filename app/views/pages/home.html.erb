@@ -76,44 +76,44 @@
 
         <div class="home-filters-grid">
 
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-fish"></i></p>
-            <p>Fish</p>
-          <% end %>
-        </div>
-
-        <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-fish"></i></p>
-            <p>Fish</p>
-          <% end %>
-        </div>
-
-        <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-fish"></i></p>
-            <p>Fish</p>
-          <% end %>
-        </div>
-
-        <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-leaf"></i></p>
+          <%= link_to root_path(category: "Vegetarian") do %>
+            <p><i class="fa-solid fa-seedling <%= params[:category] == "Vegetarian" ? "selected" : "" %>"></i></p>
             <p>Vegetarian</p>
           <% end %>
         </div>
 
         <div class="home-filters-grid">
           <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-leaf"></i></p>
-            <p>Vegetarian</p>
+            <p><i class="fa-solid fa-fish"></i></p>
+            <p>Pescetarian</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-cow"></i></p>
+            <p>Lactose</p>
           <% end %>
         </div>
 
         <div class="home-filters-grid">
           <%= link_to "#home-bottom" do %>
             <p><i class="fa-solid fa-leaf"></i></p>
-            <p>Vegetarian</p>
+            <p>Vegan</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-bread-slice"></i></p>
+            <p>Gluten</p>
+          <% end %>
+        </div>
+
+        <div class="home-filters-grid">
+          <%= link_to "#home-bottom" do %>
+            <p><i class="fa-solid fa-ice-cream"></i></p>
+            <p>Puddings</p>
           <% end %>
         </div>
 
