@@ -30,4 +30,4 @@ export default class extends Controller {
   //   console.log(this.menuTarget)
   //   this.menuTarget.innerHTML = "<h2>Cooking History</h2> <hr> <p>1. Lasagna</p>"
   }
-}
+};

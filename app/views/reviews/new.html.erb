@@ -4,28 +4,26 @@
   <%# ---- Add to fav header and button ---------------- %>
   <div class="add-to-favourite">
     <h4>Add to Favourites</h4>
+    <div>
       <%= render partial: 'shared/review_favourite', favourite: @favourite %>
     </div>
   </div>
 
-    <br>
+  <br>
 
-    <div class="dish-review">
-      <h2>Leave a review</h2>
-      <%= simple_form_for([@dish, @review]) do |f| %>
-        <%#= f.input :rating %>
-        <%= f.collection_radio_buttons :rating, [[1], [2], [3], [4], [5]], :first, :last, item_wrapper_tag: false, boolean_style: :inline do |b| %>
-          <%= b.radio_button + b.label {'⭐️'} %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <%= simple_form_for([@dish, @review]) do |f| %>
+          <%= f.input :content, label: "So, tell us how was it?", title:""%>
+          <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
+          <%= f.submit "Send your review" %>
         <% end %>
-        <%= f.input :content , label: 'Share more', placeholder: 'Please leave your comment here ...' %>
-        <%= f.button :submit, class:"btn btn-primary review-button"%>
-      <% end %>
+      </div>
     </div>
-    <br>
+  </div>
 
-    <div class="dish-back">
-      <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary review-button"  %>
-    </div>
+  <br>
 
   <%= render "shared/bottom_navbar" %>
 
