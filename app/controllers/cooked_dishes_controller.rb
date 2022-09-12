@@ -4,11 +4,7 @@ class CookedDishesController < ApplicationController
     @dish = Dish.find(params[:dish_id])
     @cooked_dish.dish = @dish
     @cooked_dish.user = current_user
-
-    if @cooked_dish.save
-      redirect_to user_path(current_user)
-    else
-      redirect_to root_path
-    end
+    @cooked_dish.save
+    redirect_to new_dish_review_path(@dish)
   end
 end

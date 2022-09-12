@@ -1,5 +1,5 @@
 <div class="container">
   <%= simple_form_for [@dish, @cooked_dish] do |x| %>
-  <%= x.submit "Cooked ✅" %>
+    <%= button_tag "Mark as Cooked",type:'submit', class:"btn btn-primary" %>
   <% end %>
 </div>

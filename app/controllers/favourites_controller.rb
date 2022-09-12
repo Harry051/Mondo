@@ -1,12 +1,12 @@
 class FavouritesController < ApplicationController
   def create
     # Creates entry in the favourite for user/dish
+    @review = Review.new
     @favourite = Favourite.new
     @dish = Dish.find(params[:dish_id])
     @favourite.dish = @dish
     @favourite.user = current_user
     @favourite.save
-    redirect_to dish_path(@dish)
   end
 
   def index

@@ -1,27 +1,12 @@
-<div class="iPhone-13">
-  <div class="review-background">
-    <br>
-    <div class="card-small-dish">
-      <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
-      <div class="title-rating">
+<div class="iPhone-13x">
+  <br>
 
-        <div class="card-dish-infos">
-          <h2><strong><%= @dish.title %></strong></h2>
-          <p><%= @dish.categories %></p>
-          </ul>
-
-        </div>
-
-        <div class="rating">
-          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
-          <p class="number m-0"><%= @dish.average_rating %></p>
-        </div>
-      </div>
+  <%# ---- Add to fav header and button ---------------- %>
+  <div class="add-to-favourite">
+    <h4>Add to Favourites</h4>
+      <%= render partial: 'shared/review_favourite', favourite: @favourite %>
     </div>
-
-    <br>
-
-  <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
+  </div>
 
     <br>
 
@@ -42,6 +27,6 @@
       <%= link_to "< Back", "javascript:history.back()", class:"btn btn-primary review-button"  %>
     </div>
 
+  <%= render "shared/bottom_navbar" %>
 
-  </div>
 </div>
