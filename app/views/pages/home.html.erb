@@ -83,36 +83,36 @@
         </div>
 
         <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-fish"></i></p>
+          <%= link_to root_path(category: "Pescetarian") do %>
+            <p><i class="fa-solid fa-fish <%= params[:category] == "Pescetarian" ? "selected" : "" %>"></i></p>
             <p>Pescetarian</p>
           <% end %>
         </div>
 
         <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-cow"></i></p>
+          <%= link_to root_path(category: "Lactose") do %>
+            <p><i class="fa-solid fa-cow <%= params[:category] == "Lactose" ? "selected" : "" %>"></i></p>
             <p>Lactose</p>
           <% end %>
         </div>
 
         <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-leaf"></i></p>
+          <%= link_to root_path(category: "Vegan") do %>
+            <p><i class="fa-solid fa-leaf" <%= params[:category] == "Vegan" ? "selected" : "" %>></i></p>
             <p>Vegan</p>
           <% end %>
         </div>
 
         <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-bread-slice"></i></p>
+          <%= link_to root_path(category: "Gluten") do %>
+            <p><i class="fa-solid fa-bread-slice <%= params[:category] == "Gluten" ? "selected" : "" %>"></i></p>
             <p>Gluten</p>
           <% end %>
         </div>
 
         <div class="home-filters-grid">
-          <%= link_to "#home-bottom" do %>
-            <p><i class="fa-solid fa-ice-cream"></i></p>
+          <%= link_to root_path(category: "Puddings") do %>
+            <p><i class="fa-solid fa-ice-cream <%= params[:category] == "Puddings" ? "selected" : "" %>"></i></p>
             <p>Puddings</p>
           <% end %>
         </div>
