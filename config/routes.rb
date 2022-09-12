@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   # independent route for favs
-  resources :favourites, only: [:index]
+  resources :favourites, only: [:index, :destroy]
 
   resources :users, only: [:show] do
     # get '/profile', to: 'users#profile'
