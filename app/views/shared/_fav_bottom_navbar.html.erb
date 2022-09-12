@@ -13,7 +13,7 @@
     <% if user_signed_in? %>
       <a href="/users/<%= current_user.id %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
     <% else %>
-      <a href="<% new_user_session_path %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
+      <a href="/users/sign_in"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
     <% end %>
 
   </ul>

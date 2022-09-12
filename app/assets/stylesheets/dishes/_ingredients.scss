@@ -1,9 +1,16 @@
-.iPhone-13{
+.iPhone-13-screen {
+  width: 390px;
+  height: 844px;
+  margin: 0 auto;
   background-image: linear-gradient(to bottom right, #75F864, #99F88D);
 }
 
 .card-dish-infos {
   font-family: 'Raleway', sans-serif;
+}
+
+.card-small-dish img {
+  width: 90%;
 }
 
 .card-lists {

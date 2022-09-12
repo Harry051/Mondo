@@ -3,145 +3,172 @@
 // $base-color: #c6538c;
 // $border-dark: rgba($base-color, 0.88);
 
-.card {
-  width: 390px;
-  margin: auto;
-  font-family: 'Raleway', sans-serif;
-  border: none;
+// background-color: #E1F8DE;
 
-  .dish-img{
-    height: 310px;
-
-    p {
-      margin-left: 20px;
-    }
-    .cl_img {
-      width: 390px;
-      height: 300px;
-      border-radius: 0px 0px 30px 40%;
-      box-shadow: 0px 4px 4px rgba(128,128,128,0.5);
-
-    }
-    .btn {
-      border-radius: 50%;
-      box-shadow: 2px 2px 2px #888888;
-      width: 30px;
-      height: 30px;
-      padding: 0;
-      position: relative;
-      bottom: 286px;
-      left: 355px;
-      background-color: white;
-    }
-  }
-
-  .title-rating {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 19px;
-    margin-bottom: 4px;
-    margin-right: 40px;
-    text-shadow:  1px 1px 1px rgba(128,128,128,0.3);
-
-
-    .rating {
-      border: 1px solid rgba(128,128,128,0.3);
-      border-radius: 30px;
-      display: flex;
-      position: inherit;
-      bottom: 3px;
-
-      .icon {
-        padding-left: 6px;
-        padding-right: 3px;
-        color: rgb(239,200,9);
-      }
-
-      .number {
-        padding-right: 6px;
-        padding-bottom: 2px;
-      }
-    }
-
-    h2 {
-      margin-right: 15px;
-    }
-  }
-
-  .dish-stats {
-    .list{
-      display: flex;
-
-      border: 1px solid rgba(128,128,128,0.3);
-      border-radius: 15px;
-      margin-left: 43px;
-      margin-right: 43px;
-      justify-content: space-evenly;
-      text-align: center;
-      padding: 7px 0px;
-
-      .piece {
-        text-align: center;
-      }
-
-      p {
-        color: rgba(128,128,128,0.8);
-        margin: 2px;
-      }
-
-      span {
-        color: rgb(138,247,123);
-      }
-    }
-
-    p {
-      margin: 20px 20px;
-      border-bottom: 1px solid rgba(128,128,128,0.5);
-      padding-bottom: 10px;
-      // use id in corresponding if wanting rid of the bottom border on upper box
-    }
-  }
-
-  .dish-flag-history {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
-
-    .cl_img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin-left: 52px;
-    }
-
-    h4 {
-      margin-left: 20px;
-      padding-top: 10px;
-    }
-
-    .bi-caret-down {
-      margin-top: 12px;
-      margin-left: 14px;
-    }
-
-    p {
-      margin-top: 10px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 0px;
-
-      .d-none {
-        display: none;
-      }
-    }
-  }
+.iPhone-13-container {
+  width: 100%;
+  height: 704px;
+  background-color: #FFFFFF;
+  overflow: scroll;
 }
 
-.reviews {
-  margin-top: 15px;
-  padding-top: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-top: 1px solid rgba(128,128,128,0.5);
+.dish-card-container {
+  width: 100%;
+  margin-bottom: 12px;
 }
+
+.dish-card-img-container{
+  height: 310px;
+}
+
+.cl_img {
+  width: 100%;
+  height: 310px;
+  box-shadow: 3px 0px 3px #888888;;
+}
+
+.dish-card-img-curve {
+  position: relative;
+  top: -70px;
+}
+
+.heart {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+  transition: 0.4s ease;
+}
+
+
+
+//     p {
+//       margin-left: 20px;
+//     }
+//     .btn {
+//       border-radius: 50%;
+//       box-shadow: 2px 2px 2px #888888;
+//       width: 30px;
+//       height: 30px;
+//       padding: 0;
+//       position: relative;
+//       bottom: 286px;
+//       left: 355px;
+//       background-color: white;
+//     }
+
+
+//   .title-rating {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     padding-left: 19px;
+//     margin-bottom: 4px;
+//     margin-right: 40px;
+//     text-shadow:  1px 1px 1px rgba(128,128,128,0.3);
+
+
+//     .rating {
+//       border: 1px solid rgba(128,128,128,0.3);
+//       border-radius: 30px;
+//       display: flex;
+//       position: inherit;
+//       bottom: 3px;
+
+//       .icon {
+//         padding-left: 6px;
+//         padding-right: 3px;
+//         color: rgb(239,200,9);
+//       }
+
+//       .number {
+//         padding-right: 6px;
+//         padding-bottom: 2px;
+//       }
+//     }
+
+//     h2 {
+//       margin-right: 15px;
+//     }
+//   }
+
+//   .dish-stats {
+//     .list{
+//       display: flex;
+
+//       border: 1px solid rgba(128,128,128,0.3);
+//       border-radius: 15px;
+//       margin-left: 43px;
+//       margin-right: 43px;
+//       justify-content: space-evenly;
+//       text-align: center;
+//       padding: 7px 0px;
+
+//       .piece {
+//         text-align: center;
+//       }
+
+//       p {
+//         color: rgba(128,128,128,0.8);
+//         margin: 2px;
+//       }
+
+//       span {
+//         color: rgb(138,247,123);
+//       }
+//     }
+
+//     p {
+//       margin: 20px 20px;
+//       border-bottom: 1px solid rgba(128,128,128,0.5);
+//       padding-bottom: 10px;
+//       // use id in corresponding if wanting rid of the bottom border on upper box
+//     }
+//   }
+
+//   .dish-flag-history {
+//     display: flex;
+//     flex-flow: wrap;
+//     justify-content: flex-start;
+
+//     .cl_img {
+//       width: 50px;
+//       height: 50px;
+//       border-radius: 50%;
+//       margin-left: 52px;
+//     }
+
+//     h4 {
+//       margin-left: 20px;
+//       padding-top: 10px;
+//     }
+
+//     .bi-caret-down {
+//       margin-top: 12px;
+//       margin-left: 14px;
+//     }
+
+//     p {
+//       margin-top: 10px;
+//       margin-left: 20px;
+//       margin-right: 20px;
+//       margin-bottom: 0px;
+
+//       .d-none {
+//         display: none;
+//       }
+//     }
+//   }
+
+
+// .reviews {
+//   margin-top: 15px;
+//   padding-top: 5px;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   border-top: 1px solid rgba(128,128,128,0.5);
+// }
