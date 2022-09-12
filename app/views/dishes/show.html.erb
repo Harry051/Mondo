@@ -68,6 +68,11 @@
 
   </div>
 
+  <% @random_dish = Dish.where(country: @dish.country).ids.sample  %>
+  <a href="<%= dish_path(@random_dish) %>"><i class="fa-solid fa-rotate-left"></i></a>
+</div>
+
+
     <%# <%= audio_tag "peru_track.mp3", id: "peru_track-audio" %>
     <%# <script>document.getElementById('peru_track-audio').play();</script> %>
 

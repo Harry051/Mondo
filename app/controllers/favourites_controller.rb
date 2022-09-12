@@ -15,6 +15,8 @@ class FavouritesController < ApplicationController
   end
 
   def destroy
-    # to do
+    @favourite = Favourite.find(params[:id])
+    @favourite.destroy
+    redirect_to favourite_path(@favourite), status: :see_other
   end
 end

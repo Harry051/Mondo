@@ -11,8 +11,8 @@
     </div>
 
     <div class="home-infos">
-      <h3>Cook like a chef </h3>
-      <p>Cook professional dishes right in your kitchen</p>
+      <h3>Find exotic new recipes </h3>
+      <p>Make dishes from around the world right in your kitchen</p>
     </div>
 
     <div class="home-btn">
@@ -45,11 +45,13 @@
         </li>
 
         <li class="home-menu-nav home-tab-menu-item">
+          
           <% if user_signed_in? %>
             <div class="nav-menu-btn btn"><a href="/users/<%= current_user.id %>"><i class="fa-solid fa-user fa-user-nav"></i></a></div>
           <% else %>
             <div class="nav-menu-btn btn"><a href="/users/sign_in"><i class="fa-solid fa-user fa-user-nav"></i></a></div>
           <% end %>
+
         </li>
       </ul>
 
@@ -57,13 +59,9 @@
 
 
     <div class="home-search-text">
-      <h4>Choose a country or Search a dish</h4>
+      <h4>Pick a country and get a random dish!</h4>
     </div>
 
-    <div class="home-search-bar">
-      <p>Search a dish</p>
-      <p><i class="fa-solid fa-magnifying-glass"></i></p>
-    </div>
 
     <div class="home-globe">
       <div

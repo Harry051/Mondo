@@ -9,5 +9,4 @@ class Country < ApplicationRecord
       dish.categories.include?(category)
     end
   end
-
 end

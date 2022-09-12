@@ -9,6 +9,7 @@
 
           <%= cl_image_tag f.dish.photo.key, class:'fav-img' %>
           <button type='submit' class="btn btn-danger" style="color: white;">-</button>
+          <%= link_to '-', favourite_path(f), data: {turbo_method: :delete} %>
           <div>
             <p><%= '⭐️' * f.dish.average_rating %></p>
             <p><h4><%= f.dish.title %></h4></p>
