@@ -204,11 +204,71 @@
   transition: 0.3s;
 }
 
+.fa-seedling {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.fa-cow {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.fa-bread-slice {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.fa-ice-cream {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
 .fa-fish:hover {
   color: #E36397;
 }
 
+.fa-fish.selected {
+  color: #E36397;
+}
+
 .fa-leaf:hover {
+  color: #E36397;
+}
+
+.fa-leaf.selected {
+  color: #E36397;
+}
+
+.fa-seedling:hover {
+  color: #E36397;
+}
+
+.fa-seedling.selected {
+  color: #E36397;
+}
+
+.fa-cow:hover {
+  color: #E36397;
+}
+
+.fa-cow.selected {
+  color: #E36397;
+}
+
+.fa-bread-slice:hover {
+  color: #E36397;
+}
+
+.fa-bread-slice.selected {
+  color: #E36397;
+}
+
+.fa-ice-cream:hover {
+  color: #E36397;
+}
+
+.fa-ice-cream.selected {
   color: #E36397;
 }
 
