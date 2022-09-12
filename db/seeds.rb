@@ -159,7 +159,7 @@ recipes = [
     name: 'Mooncakes',
     description: "Mooncakes are traditionally eaten to celebrate the Mid-Autumn Festival, but whatever your excuse these are both pretty and delicious with their sweet-nutty filling.",
     average_rating: 3.7,
-    categories: ['Snack', 'Vegetarian'],
+    categories: ['Vegetarian', 'Puddings'],
     times: { prep: 45,
              cook: 5,
              total: 50
