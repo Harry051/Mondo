@@ -8,7 +8,11 @@
 
     <a href="#"><li><i style="color: #E36397" class="fa-solid fa-kitchen-set fa-2x"></i></li></a>
 
-    <a href="#"><li><i style="color: #261127" class="fa-solid fa-music fa-lg"></i></li></a>
+    <div data-controller="music-player">
+    <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
+      <a href="#"><li><i style="color: #261127" class="fa-solid fa-music fa-lg"  data-action="click->music-player#audioplay"></i></li></a>
+    </div>
+
 
     <% if user_signed_in? %>
       <a href="/users/<%= current_user.id %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>

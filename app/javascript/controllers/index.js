@@ -22,5 +22,8 @@ application.register("home-nav-btn", HomeNavBtnController)
 import MapController from "./map_controller"
 application.register("map", MapController)
 
+import MusicPlayerController from "./music_player_controller"
+application.register("music-player", MusicPlayerController)
+
 import StarRatingController from "./star_rating_controller"
 application.register("star-rating", StarRatingController)
