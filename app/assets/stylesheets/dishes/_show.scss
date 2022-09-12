@@ -45,6 +45,19 @@
   margin-left: 28px;
 }
 
+.dish-heart-item-login {
+  position: relative;
+  top: -367px;
+  left: 300px;
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 3px 0px 3px #888888;
+  transition: all 0.4s ease;
+  margin-left: 28px;
+}
+
 .dish-heart-item .fa-solid {
   color: #E36397;
 }
@@ -57,6 +70,12 @@ button {
   border: 0px !important;
 }
 
+.dish-heart-item-login a {
+  position: relative;
+  top: 4px;
+  left: 6px;
+}
+
 .dish-fa-heart {
   color: #261127;
   position: relative;
@@ -64,130 +83,167 @@ button {
   left: 0px;
 }
 
+.dish-fa-heart-login {
+  color: #261127;
+}
 
-//     p {
-//       margin-left: 20px;
-//     }
-//     .btn {
-//       border-radius: 50%;
-//       box-shadow: 2px 2px 2px #888888;
-//       width: 30px;
-//       height: 30px;
-//       padding: 0;
-//       position: relative;
-//       bottom: 286px;
-//       left: 355px;
-//       background-color: white;
-//     }
+.dish-refresh-btn {
+  position: relative;
+  top: -284px;
+  left: -8px;
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 3px 0px 3px #888888;
+  transition: all 0.4s ease;
+  margin-left: 28px;
+}
 
-
-//   .title-rating {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-start;
-//     padding-left: 19px;
-//     margin-bottom: 4px;
-//     margin-right: 40px;
-//     text-shadow:  1px 1px 1px rgba(128,128,128,0.3);
+.dish-refresh-btn a {
+  position: relative;
+  top: 4px;
+  left: 7px;
+  color: #261127;
+}
 
 
-//     .rating {
-//       border: 1px solid rgba(128,128,128,0.3);
-//       border-radius: 30px;
-//       display: flex;
-//       position: inherit;
-//       bottom: 3px;
-
-//       .icon {
-//         padding-left: 6px;
-//         padding-right: 3px;
-//         color: rgb(239,200,9);
-//       }
-
-//       .number {
-//         padding-right: 6px;
-//         padding-bottom: 2px;
-//       }
-//     }
-
-//     h2 {
-//       margin-right: 15px;
-//     }
-//   }
-
-//   .dish-stats {
-//     .list{
-//       display: flex;
-
-//       border: 1px solid rgba(128,128,128,0.3);
-//       border-radius: 15px;
-//       margin-left: 43px;
-//       margin-right: 43px;
-//       justify-content: space-evenly;
-//       text-align: center;
-//       padding: 7px 0px;
-
-//       .piece {
-//         text-align: center;
-//       }
-
-//       p {
-//         color: rgba(128,128,128,0.8);
-//         margin: 2px;
-//       }
-
-//       span {
-//         color: rgb(138,247,123);
-//       }
-//     }
-
-//     p {
-//       margin: 20px 20px;
-//       border-bottom: 1px solid rgba(128,128,128,0.5);
-//       padding-bottom: 10px;
-//       // use id in corresponding if wanting rid of the bottom border on upper box
-//     }
-//   }
-
-//   .dish-flag-history {
-//     display: flex;
-//     flex-flow: wrap;
-//     justify-content: flex-start;
-
-//     .cl_img {
-//       width: 50px;
-//       height: 50px;
-//       border-radius: 50%;
-//       margin-left: 52px;
-//     }
-
-//     h4 {
-//       margin-left: 20px;
-//       padding-top: 10px;
-//     }
-
-//     .bi-caret-down {
-//       margin-top: 12px;
-//       margin-left: 14px;
-//     }
-
-//     p {
-//       margin-top: 10px;
-//       margin-left: 20px;
-//       margin-right: 20px;
-//       margin-bottom: 0px;
-
-//       .d-none {
-//         display: none;
-//       }
-//     }
-//   }
-
-
-// .reviews {
-//   margin-top: 15px;
-//   padding-top: 5px;
+// p {
 //   margin-left: 20px;
-//   margin-right: 20px;
-//   border-top: 1px solid rgba(128,128,128,0.5);
 // }
+// .btn {
+//   border-radius: 50%;
+//   box-shadow: 2px 2px 2px #888888;
+//   width: 30px;
+//   height: 30px;
+//   padding: 0;
+//   position: relative;
+//   bottom: 286px;
+//   left: 355px;
+//   background-color: white;
+// }
+
+.dish-infos {
+  margin-top: -20px;
+}
+
+.dish-infos h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #261127;
+  width: 80%;
+}
+
+
+.title-rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  // text-shadow: 1px 1px 1px rgba(128,128,128,0.3);
+
+  .rating {
+    background-color: white;
+    padding: 4px 8px;
+    border: 1px solid rgba(128,128,128,0.3);
+    border-radius: 30px;
+    // box-shadow: 1px 1px 2px #888888;
+    display: flex;
+    position: relative;
+    top: -28px;
+    right: 4px;
+    font-family: 'Raleway', sans-serif;
+
+      .icon {
+        padding-left: 2px;
+        padding-right: 4px;
+        color: rgb(239,200,9);
+      }
+
+      .number {
+        position: relative;
+        top: -1px;
+        padding-right: 4px;
+        padding-bottom: 2px;
+      }
+  }
+}
+
+.dish-stats {
+
+  .list{
+    display: flex;
+    border: 1px solid rgba(128,128,128,0.3);
+    border-radius: 15px;
+    margin-left: 43px;
+    margin-right: 43px;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 7px 0px;
+
+    .piece {
+      text-align: center;
+    }
+
+    p {
+      color: rgba(128,128,128,0.8);
+      margin: 2px;
+    }
+
+    span {
+      color: rgb(138,247,123);
+    }
+  }
+
+  p {
+    margin: 20px 20px;
+    border-bottom: 1px solid rgba(128,128,128,0.5);
+    padding-bottom: 10px;
+    // use id in corresponding if wanting rid of the bottom border on upper box
+  }
+}
+
+.dish-flag-history {
+display: flex;
+flex-flow: wrap;
+justify-content: flex-start;
+
+.cl_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 52px;
+}
+
+h4 {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.bi-caret-down {
+  margin-top: 12px;
+  margin-left: 14px;
+}
+
+p {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+
+  .d-none {
+    display: none;
+  }
+}
+}
+
+
+.reviews {
+  margin-top: 15px;
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid rgba(128,128,128,0.5);
+}
