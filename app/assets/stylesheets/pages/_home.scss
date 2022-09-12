@@ -217,11 +217,14 @@
 }
 
 
+
 .home-nav {
   position: relative;
   top: 34px;
   left: 34px;
-  width: fit-content;
+  background-color: white;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   transition: all 0.4s ease;
 }
@@ -231,55 +234,88 @@
 }
 
 .nav-btn {
+  background-color: white;
   width: 28px;
   height: 28px;
-  background-color: white;
   border-radius: 50%;
   box-shadow: 2px 2px 2px #888888;
   transition: 0.4s ease;
+}
+
+.nav-btn:hover {
+  background-color: #F3F3F3;
+}
+
+.home-menu-nav {
+  position: relative;
+  top: 6px;
+  left: 30px;
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  margin-left: 28px;
+}
+
+.home-menu-nav:hover {
+  background-color: #F3F3F3;
+}
+
+.nav-menu-btn {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #888888;
+  transition: 0.4s ease;
+}
+
+.nav-menu-btn:hover {
+  background-color: #F3F3F3;
 }
 
 .home-tab-menu {
   background-color: white;
   border-radius: 25px;
   box-shadow: 2px 2px 2px #888888;
-  width: 240px;
+  width: 208px;
   transition: all 0.4s ease;
 }
 
-// .home-tab-menu-list {
-//   list-style: none;
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 4px;
-// }
+.home-tab-menu:hover {
+  background-color: white;
+}
 
-// .home-tab-menu-item {
-//   display: flex;
-//   gap: 6px;
-//   align-items: center;
-//   color: #261127;
-//   font-family: 'Raleway', sans-serif;
-//   font-size: 13px;
-//   padding: 6px 12px;
-//   border-radius: 20px;
-//   cursor: pointer;
-//   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-// }
+.home-tab-menu-item {
+  display: inline-block;
+}
 
-// .home-tab-menu-icon {
-//   transform: translateX(2px);
-// }
+.fa-heart-nav {
+  color: #261127;
+  position: relative;
+  top: -4px;
+  left: -6px;
+}
 
-// .home-tab-menu-text {
-//   display: none;
-// }
+.fa-music-nav {
+  color: #261127;
+  position: relative;
+  top: -4px;
+  left: -6px;
+}
 
-// .home-tab-menu-active {
-//   background-color: lightblue;
-//   padding: 6px 12px;
-// }
+.fa-user-nav {
+  color: #261127;
+  position: relative;
+  top: -4px;
+  left: -6px;
+}
 
-// .home-tab-menu-active .home-tab-menu-text{
-//   display: block;
-// }
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: -28px;
+}
