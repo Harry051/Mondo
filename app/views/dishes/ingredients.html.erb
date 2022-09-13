@@ -17,12 +17,19 @@
       <% x = 1 %>
       <% @dish.ingredients.each do |i| %>
         <hr>
-        <div class="ingredients-card-simple">
+        <div class="ingredients-card-simple" data-controller="check-ingredients" data-action="click->check-ingredients#checkBox">
 
           <h6 class="ingredients-index"><%= x %></h6>
-          <p><%= i %></p>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-solid fa-circle-check"></i>
+          <p data-check-ingredients-target="word"><%= i %></p>
+
+          <div class='ingredients-checkbox'>
+            <div class="ingredients-checkbox-item">
+              <i style="font-size: 20px" class="fa-regular fa-circle checkbox-item" data-check-ingredients-target="box"></i>
+            </div>
+          </div>
+
+            <%# <i class="fa-solid fa-circle-check"></i> %>
+
           <% x = x + 1 %>
         </div>
       <% end %>
