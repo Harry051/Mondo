@@ -4,14 +4,15 @@
 
 
     <%# ---- Add to fav header and button ---------------- %>
-    <div class="add-to-favourite">
+    <div class="add-to-favourite container">
       <h4>Add to Favourites</h4>
       <div>
         <% if user_signed_in? %>
           <%= render partial: 'shared/review_favourite', favourite: @favourite %>
         <% else %>
           <div class="dish-heart-btn">
-            <div class="dish-heart-item-login"><a href="/users/sign_in"><i class="fa-regular fa-heart dish-fa-heart-login"></i></a></div>
+            <div class="dish-heart-item-login"><a href="/users/sign_in"><i class="fa-regular fa-heart dish-fa-heart-login"></i></a>
+            </div>
           </div>
         <% end %>
       </div>

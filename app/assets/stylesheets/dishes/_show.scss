@@ -17,8 +17,16 @@
   margin-bottom: 12px;
 }
 
-.dish-card-img-container{
+.dish-card-img-container {
   height: 310px;
+
+  button {
+    width: 0px;
+    height: 0px;
+    background-color: white !important;
+    padding: 0px;
+    border: 0px !important;
+  }
 
   .dish-heart-item {
     position: relative;
@@ -81,13 +89,6 @@
   color: rgb(220,20,60);
 }
 
-button {
-  width: 0px;
-  height: 0px;
-  background-color: white !important;
-  padding: 0px;
-  border: 0px !important;
-}
 
 .btn-choose {
   padding: 10px 16px;

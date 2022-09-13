@@ -19,14 +19,21 @@
 // }
 
 
-// .add-to-favourite button {
+.add-to-favourite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    margin: 0px;
+  }
 //   width: 40px;
 //   height: 35px;
 //   padding: 0px;
 //   margin-left: 10px;
 //   // border: solid 1px;
 //   // border-radius: 50%;
-// }
+}
 
 // .add-to-favourite {
 //   margin: 0;
