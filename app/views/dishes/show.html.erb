@@ -25,19 +25,21 @@
 
     </div>
 
-    <%#= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
-
-
     <div class="dish-infos">
 
       <div class="title-rating">
-        <h2><strong><%= @dish.title %></strong></h2>
+        <h2><%= @dish.title %></h2>
         <div class="rating">
           <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
           <p class="number m-0"><%= @dish.average_rating %></p>
         </div>
       </div>
 
+      <div class="dish-categories">
+        <% @dish.categories.each do |cat| %>
+          <h6> • <%= cat %> • </h6>
+        <% end %>
+      </div>
 
       <div class="dish-stats">
         <div class="list">
@@ -45,29 +47,40 @@
           <div class="piece"> <p>Cooking time</p><span><%= @dish.times["cook"] %> mins </span></div>
           <div class="piece"> <p>Calories</p><span><%= @dish.calories %></span></div>
         </div>
-        <p><%= @dish.description %></p>
+        <div class="dish-description">
+          <p><%= @dish.description %></p>
+        </div>
       </div>
 
+      <div class="choose-dish-btn">
+        <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
+      </div>
 
       <div class="dish-flag-history" data-controller="cuisine-history">
         <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
-        <h4>Cuisine history:</h4>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" class="bi bi-caret-down" data-action="click->cuisine-history#revealContent">
+        <h4>Cuisine history</h4>
+        <%# <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow">
           <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-        </svg>
+        </svg> %>
+        <i class="fa-solid fa-2x fa-caret-down" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow"></i>
         <p class="d-none" data-cuisine-history-target="content"><%= @dish.country.story %></p>
       </div>
 
 
-      <div class="reviews">
-        <h2><%= pluralize @dish.reviews.size, "review" %></h2>
-        <% if @dish.reviews.blank? %>
-          Be the first to leave a review for <%= @dish.title %>
-        <% else %>
-          <% @dish.reviews.each do |review| %>
-            <p><%= review.content %></p>
-            <p>⭐️<%= review.rating %></p>
-          <% end %>
+      <div class="dish-show-reviews-container" data-controller="cuisine-reviews">
+        <div class="dish-show-reviews">
+          <i class="fa-solid fa-2x fa-star"></i>
+          <h4><%= pluralize @dish.reviews.size, "review" %></h4>
+          <i class="fa-solid fa-2x fa-caret-down" data-action="click->cuisine-reviews#revealReviews" data-cuisine-reviews-target="caret"></i>
+          <% if @dish.reviews.blank? %>
+            <p>Be the first to leave a review for <%= @dish.title %></p>
+        </div>
+          <% else %>
+            <% @dish.reviews.each do |review| %>
+          <div class="d-none dish-show-reviews-item" data-cuisine-reviews-target="reviews">
+              <p><%= review.rating %> - <%= review.content %> </p>
+            <% end %>
+          </div>
         <% end %>
       </div>
 
