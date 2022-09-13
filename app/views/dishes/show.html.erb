@@ -89,6 +89,8 @@
           <% else %>
             <% @dish.reviews.each do |review| %>
               <div class="d-none dish-show-reviews-item" data-cuisine-reviews-target="reviews">
+
+
                 <div class="dish-reviews-card">
                   <%# Display default image if none uploaded %>
                     <% if review.photo.attached? %>
@@ -98,9 +100,12 @@
                     <% end %>
                   <div class="dish-reviews-card-content">
                     <h4><i class="fa-solid fa-lg fa-star"></i> <%= review.rating %></h4>
+                    <hr>
                     <h6><%= review.content %> </h6>
                   </div>
                 </div>
+
+
               </div>
             <% end %>
           <% end %>
