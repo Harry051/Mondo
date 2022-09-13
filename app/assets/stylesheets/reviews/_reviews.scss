@@ -18,6 +18,7 @@
 //   color: #282d33;
 // }
 
+
 .picture-card {
   width: 90%;
   margin: 0 auto;
@@ -37,12 +38,12 @@
   h4 {
     margin: 0px;
   }
-//   width: 40px;
-//   height: 35px;
-//   padding: 0px;
-//   margin-left: 10px;
-//   // border: solid 1px;
-//   // border-radius: 50%;
+  //   width: 40px;
+  //   height: 35px;
+  //   padding: 0px;
+  //   margin-left: 10px;
+  //   // border: solid 1px;
+  //   // border-radius: 50%;
 }
 
 .review-container {
@@ -51,8 +52,12 @@
   box-shadow: 2px 2px 2px #888888;
   background-color: #F5F5EE;
   margin-bottom: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-top: 10px;
+}
+
+[data-star-rating] {
+  margin-top: -23px;
 }
 
 .share-box {
