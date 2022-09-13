@@ -2,6 +2,11 @@
   background-image: linear-gradient(to bottom right, #F5F5EE, #F4F5DB);
 }
 
+.iPhone-13-spacing-colour {
+  background-color: #F4F5DB;
+  height: 64px;
+}
+
 .dish-card-simple-container {
   width: 90%;
   margin: 0 auto;
@@ -45,74 +50,146 @@
     font-family: 'Raleway', sans-serif;
     font-size: 21px;
     font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  hr {
+    margin: 8px 0px;
   }
 }
 
 .ingredients-card-simple {
-  padding: 6px 6px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  .ingredients-index {
+    margin-top: 8px;
+    background-color: #F5F5C2;
+    opacity: 0.8;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+  }
 
   p {
-    width: 75%;
-    margin-top: 6px;
-    margin-left: 16px;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
     color: #261127;
+  }
+
+  .ingredients-checkbox {
+    margin-right: -28px;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
   }
 }
 
+.dish-p-btn {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-.card-dish-infos {
+.btn-dish-next {
+  background-color: #9595F5;
+  padding: 8px 12px;
+  border-radius: 25px;
   font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 2px auto;
+  transition: ease 0.4s;
 }
 
-.card-small-dish img {
-  width: 90%;
+.btn-dish-next:hover {
+  background-color: #BDBDF5 !important;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white !important;
+  text-align: center;
+  margin: 2px auto;
 }
 
-.card-lists {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  padding: 3px;
-  border-radius: 12px;
-  position: relative;
-  left: -45px;
-  width: 328px;
-  box-shadow: 2px 2px 2px #888888;
+.btn-dish-back {
+  background-color: #CDCD36;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 2px auto;
+  transition: ease 0.4s;
 }
 
-.checkbox {
-  position: absolute;
-  right: 15px;
-  top: 17px;
+.btn-dish-back:hover {
+  background-color: #BFBF32 !important;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white !important;
+  text-align: center;
+  margin: 2px auto;
 }
 
-.text {
-  position: relative;
-  top: 9px;
-}
 
-.card-small-dish {
-  margin: 25px;
-}
+// .card-dish-infos {
+//   font-family: 'Raleway', sans-serif;
+// }
 
-.btn-success {
-  position: relative;
-  right: -155px;
-}
+// .card-small-dish img {
+//   width: 90%;
+// }
+
+// .card-lists {
+//   margin-left: 5px;
+//   margin-right: 5px;
+//   margin-top: 17px;
+//   margin-bottom: 17px;
+//   padding: 3px;
+//   border-radius: 12px;
+//   position: relative;
+//   left: -45px;
+//   width: 328px;
+//   box-shadow: 2px 2px 2px #888888;
+// }
+
+// .checkbox {
+//   position: absolute;
+//   right: 15px;
+//   top: 17px;
+// }
+
+// .text {
+//   position: relative;
+//   top: 9px;
+// }
+
+// .card-small-dish {
+//   margin: 25px;
+// }
+
+// .btn-success {
+//   position: relative;
+//   right: -155px;
+// }
