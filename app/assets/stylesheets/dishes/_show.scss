@@ -19,6 +19,32 @@
 
 .dish-card-img-container{
   height: 310px;
+
+  .dish-heart-item {
+    position: relative;
+    top: -380px;
+    left: 288px;
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 3px 0px 3px #888888;
+    transition: all 0.4s ease;
+    margin-left: 28px;
+  }
+
+  .dish-heart-item-login {
+    position: relative;
+    top: -367px;
+    left: 300px;
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 3px 0px 3px #888888;
+    transition: all 0.4s ease;
+    margin-left: 28px;
+  }
 }
 
 .cl_img {
@@ -32,31 +58,7 @@
   top: -75px;
 }
 
-.dish-heart-item {
-  position: relative;
-  top: -380px;
-  left: 288px;
-  background-color: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  box-shadow: 3px 0px 3px #888888;
-  transition: all 0.4s ease;
-  margin-left: 28px;
-}
 
-.dish-heart-item-login {
-  position: relative;
-  top: -367px;
-  left: 300px;
-  background-color: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  box-shadow: 3px 0px 3px #888888;
-  transition: all 0.4s ease;
-  margin-left: 28px;
-}
 
 .dish-heart-item .fa-solid {
   color: #E36397;

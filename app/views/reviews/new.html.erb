@@ -1,30 +1,39 @@
-<div class="iPhone-13x">
-  <br>
+<div class="iPhone-13">
+  <div class="iPhone-13-container">
 
-  <%# ---- Add to fav header and button ---------------- %>
-  <div class="add-to-favourite">
-    <h4>Add to Favourites</h4>
-    <div>
-      <%= render partial: 'shared/review_favourite', favourite: @favourite %>
-    </div>
-  </div>
 
-  <br>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4">
-        <%= simple_form_for([@dish, @review]) do |f| %>
-          <%= f.input :content, label: "So, tell us how was it?", title:""%>
-          <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
-          <%= f.submit "Send your review" %>
+    <%# ---- Add to fav header and button ---------------- %>
+    <div class="add-to-favourite">
+      <h4>Add to Favourites</h4>
+      <div>
+        <% if user_signed_in? %>
+          <%= render partial: 'shared/review_favourite', favourite: @favourite %>
+        <% else %>
+          <div class="dish-heart-btn">
+            <div class="dish-heart-item-login"><a href="/users/sign_in"><i class="fa-regular fa-heart dish-fa-heart-login"></i></a></div>
+          </div>
         <% end %>
       </div>
     </div>
+
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <%= simple_form_for([@dish, @review]) do |f| %>
+            <%= f.input :content, label: "So, tell us how was it?", title:""%>
+            <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
+            <%= f.submit "Send your review" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <%= render "shared/bottom_navbar" %>
+
   </div>
-
-  <br>
-
-  <%= render "shared/bottom_navbar" %>
-
 </div>
