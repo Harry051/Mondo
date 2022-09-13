@@ -43,13 +43,13 @@
 }
 
 .music-btn {
-  background-color: white;
-  opacity: 0;
+  background-color: black;
+  opacity: 0.4;
   width: 50px;
   height: 32px;
-  position: relative;
-  bottom: 30px;
-  right: -220px;
+  position: absolute;
+  bottom: 18px;
+  right: 88px;
 }
 
 .music-btn-list {

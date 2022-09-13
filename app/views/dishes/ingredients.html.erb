@@ -1,43 +1,38 @@
-<div class="iPhone-13-screen">
+<div class="iPhone-13">
 
-  <br>
+  <div class="iPhone-13-container iPhone-13-container-colour">
 
-  <div class="card-small-dish">
-      <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
-      <div class="title-rating">
 
-        <div class="card-dish-infos">
-          <h2><strong><%= @dish.title %></strong></h2>
-          <p><%= @dish.categories %></p>
-        </div>
-
-        <div class="rating">
-          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
-          <p class="number m-0"><%= @dish.average_rating %></p>
-        </div>
-
-      </div>
-   </div>
-  <br>
-  <div class="ingredient-list">
-    <h2>Ingredients</h2>
-  <br>
-
-    <ul>
-      <% @dish.ingredients.each do |i| %>
-      <li class="card card-lists">
-      <p class="text"><%= i %></p>
-      <input type="checkbox" class="checkbox">
-      <% end %>
-      </li>
-    </ul>
-
-    <%= link_to "< Dish", dish_path(@dish), class:"btn btn-primary" %>
-    <%= link_to "> Recipe", dish_recipes_path(@dish), class:"btn btn-success" %>
+  <div class="dish-card-simple-container" data-controller="dish-card">
+    <div class="dish-card-simple">
+      <h4><%= @dish.title %></h4>
+      <i class="dish-card-btn fa-solid fa-lg fa-caret-down" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow"></i>
+    </div>
   </div>
 
-<div class="iPhone-13-spacing"></div>
 
-<%= render "shared/bottom_navbar" %>
+    <div class="ingredient-list">
+      <h2>Good! Let's get the ingredients.</h2>
+
+      <% @dish.ingredients.each do |i| %>
+        <div class="ingredients-card-simple">
+          <p><%= i %></p>
+          <input type="checkbox" class="checkbox">
+        </div>
+      <% end %>
+
+
+
+      <%= link_to "< Dish", dish_path(@dish), class:"btn btn-primary" %>
+      <%= link_to "> Recipe", dish_recipes_path(@dish), class:"btn btn-success" %>
+    </div>
+
+    <div class="iPhone-13-spacing"></div>
+
+  </div>
+
+  <%= render "shared/bottom_navbar" %>
+
+  </div>
 
 </div>

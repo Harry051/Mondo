@@ -3,8 +3,11 @@
 }
 
 .navbar-lewagon {
-  justify-content: space-between;
+  // // justify-content: space-between;
   background: white;
+  // position: sticky;
+  // z-index: 10;
+  // top: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -15,6 +18,43 @@
   width: 40px;
 }
 
+// .navbar-nav {
+//   align-items: center;
+// }
+
+// .container-fluid {
+//   display: inline !important;
+//   height: 100px;
+//   justify-content: space-around;
+// }
+
+.nav-bar-top {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .nav-item {
-  margin: 0 2px;
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+
+.avatar {
+  position: absolute !important;
+  top: 6px;
+  left: -42px;
+}
+
+.nav-link {
+  position: absolute !important;
+  top: 6px;
+  left: -50px;
+}
+
+.dropdown-menu.show {
+  position: inherit !important;
+  top: 50px;
 }

@@ -28,18 +28,36 @@
     border: 0px !important;
   }
 
-  .dish-heart-item {
-    position: relative;
-    top: -380px;
-    left: 288px;
-    background-color: white;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    box-shadow: 3px 0px 3px #888888;
-    transition: all 0.4s ease;
-    margin-left: 28px;
+
+  @media (max-width: 480px) {
+    .dish-heart-item {
+      position: fixed;
+      top: 102px;
+      left: 372px;
+      background-color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      box-shadow: 3px 0px 3px #888888;
+      transition: all 0.4s ease;
+      margin-left: 28px;
+    }
   }
+
+  @media (min-width: 480px) {
+    .dish-heart-item {
+      position: relative;
+      top: -380px;
+      left: 290px;
+      background-color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      box-shadow: 3px 0px 3px #888888;
+      transition: all 0.4s ease;
+      margin-left: 28px;
+      }
+    }
 
   .dish-heart-item-login {
     position: relative;
@@ -215,7 +233,7 @@
 
 .dish-categories h6 {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #888888;
   margin-right: 6px;
@@ -235,17 +253,22 @@
     text-align: center;
     padding: 8px 0px;
 
+    hr{
+      margin: 2px 0px;
+    }
+
     .piece {
       text-align: center;
     }
 
     p {
       color: rgba(128,128,128,0.8);
+      font-weight: 600;
       margin: 2px;
     }
 
     span {
-      color: rgb(138,247,123);
+      color: black;
       padding-top: 8px;
     }
   }
@@ -273,11 +296,24 @@
 .btn-choose {
   background-color: #9595F5;
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 25px;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
+  text-align: center;
+  margin: 2px auto;
+  transition: ease 0.4s;
+}
+
+.btn-choose:hover {
+  background-color: #BDBDF5 !important;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white !important;
   text-align: center;
   margin: 2px auto;
 }
@@ -413,4 +449,53 @@
     margin-right: 20px;
     margin-bottom: 0px;
   }
+}
+
+.dish-reviews-card {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #F5F5EE;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #888888;
+
+  img {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  .dish-reviews-card-content {
+    margin-left: 6px;
+    padding-top: 12px;
+
+    h4 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      padding-bottom: 6px;
+      width: 90%;
+    }
+
+    hr {
+      width: 192px;
+      margin-top: -4px;
+      margin-bottom: 12px;
+    }
+
+    h6 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      margin-left: 4px;
+    }
+
+    .fa-star {
+      color: gold;
+    }
+  }
+
 }
