@@ -18,6 +18,13 @@
 //   color: #282d33;
 // }
 
+.picture-card {
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 3px 3px 3px #888888;
+  height: 300px;
+  background-color: aquamarine;
+}
 
 .add-to-favourite {
   display: flex;
@@ -33,6 +40,12 @@
 //   margin-left: 10px;
 //   // border: solid 1px;
 //   // border-radius: 50%;
+}
+
+.card-css {
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 3px 3px 3px #888888;
 }
 
 // .add-to-favourite {
