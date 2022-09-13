@@ -58,10 +58,27 @@
   top: -75px;
 }
 
+.dish-heart-item {
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 3px 0px 3px #888888;
+  transition: all 0.4s ease;
+}
 
+.dish-heart-item-login {
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 3px 0px 3px #888888;
+  transition: all 0.4s ease;
+
+}
 
 .dish-heart-item .fa-solid {
-  color: #E36397;
+  color: rgb(220,20,60);
 }
 
 button {
@@ -74,7 +91,7 @@ button {
 
 .btn-choose {
   padding: 10px 16px;
-  background-color: #E36397;
+  background-color: rgb(220,20,60);
 }
 
 .dish-heart-item-login a {
