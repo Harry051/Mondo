@@ -1,5 +1,4 @@
 <%# This 'form' creates a favourite record with the dish and current user IDs if combination not exist%>
-
 <div class='add-to-favourites'>
   <% if user_signed_in? %>
     <%= simple_form_for [@dish, @favourite] do |f| %>

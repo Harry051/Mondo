@@ -8,7 +8,7 @@ export default class extends Controller {
   }
 
   showContent() {
-    this.tabTarget.classList.add("tab-new-position")
-    this.tabTarget.innerHTML = "<h2>Cooking History</h2> <hr> <p>1. Lasagna</p>"
+    this.tabTarget.classList.add("tab-new-position");
+    this.tabTarget.innerHTML = "<h2>Cooking History</h2> <hr> <p>1. Lasagna</p>";
   }
 }
