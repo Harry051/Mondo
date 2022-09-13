@@ -13,6 +13,9 @@ application.register("cuisine-reviews", CuisineReviewsController)
 import DisplayTabController from "./display_tab_controller"
 application.register("display-tab", DisplayTabController)
 
+import GlobeFilteringController from "./globe_filtering_controller"
+application.register("globe-filtering", GlobeFilteringController)
+
 import HeartController from "./heart_controller"
 application.register("heart", HeartController)
 
