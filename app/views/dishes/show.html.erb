@@ -90,6 +90,7 @@
           <% else %>
             <% @dish.reviews.each do |review| %>
           <div class="d-none dish-show-reviews-item" data-cuisine-reviews-target="reviews">
+              <div><%= cl_image_tag review.photo.key, class: 'cl_img' %></div>
               <p><%= review.rating %> - <%= review.content %> </p>
             <% end %>
           </div>
