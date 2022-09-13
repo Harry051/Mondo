@@ -35,8 +35,19 @@
   </div>
 
   <div class="container share-box">
-    <p>share items</p>
-
+    <p><strong>Share Links</strong></p>
+    <div class="share-links">
+      <%# twitter %>
+      <a href="https://twitter.com/intent/tweet?button_hashtag=LoveMondo&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="I found this amazing recipe on Mondo!!" data-url="https://www.mondo.recipes/dishes/6" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LoveMondo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <%# facebook head%>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="hhwAntCF"></script>
+      <%# facebook button %>
+      <div class="fb-share-button" data-href="https://www.mondo.recipes/dishes/6/reviews/new" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mondo.recipes%2Fdishes%2F6%2Freviews%2Fnew&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+      <%# linkedin %>
+      <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+      <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+    </div>
   </div>
 
   <%= render "shared/bottom_navbar" %>
