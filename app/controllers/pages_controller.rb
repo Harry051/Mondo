@@ -19,5 +19,10 @@ class PagesController < ApplicationController
       end
     end
     @markers = @markers.compact
+
+    respond_to do |format|
+      format.html
+      format.json # Follow the classic Rails flow and look for a create.json view
+    end
   end
 end
