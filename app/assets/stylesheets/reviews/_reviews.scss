@@ -20,18 +20,19 @@
 
 .picture-card {
   width: 90%;
-  border-radius: 12px;
-  box-shadow: 3px 3px 3px #888888;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #888888;
   height: 300px;
-  background-color: aquamarine;
-  margin-bottom: 15px
+  background-color: #F5F5EE;
+  margin-bottom: 10px
 }
 
 .add-to-favourite {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px
+  margin-bottom: 10px
 
   h4 {
     margin: 0px;
@@ -46,9 +47,9 @@
 
 .review-container {
   width: 90%;
-  border-radius: 12px;
-  box-shadow: 3px 3px 3px #888888;
-  background-color: aquamarine;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #888888;
+  background-color: #F5F5EE;
   margin-bottom: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -56,9 +57,9 @@
 
 .share-box {
   width: 90%;
-  border-radius: 12px;
-  box-shadow: 3px 3px 3px #888888;
-  background-color: aquamarine;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #888888;
+  background-color: #F5F5EE;
   padding-top: 10px;
   padding-bottom: 10px;
 }
