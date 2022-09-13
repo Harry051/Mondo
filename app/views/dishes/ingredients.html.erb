@@ -11,40 +11,17 @@
   </div>
 
 
-
-
-
-
-
-    <div class="card-small-dish">
-        <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
-        <div class="title-rating">
-
-          <div class="card-dish-infos">
-            <h2><strong><%= @dish.title %></strong></h2>
-            <p><%= @dish.categories %></p>
-          </div>
-
-          <div class="rating">
-            <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
-            <p class="number m-0"><%= @dish.average_rating %></p>
-          </div>
-
-        </div>
-    </div>
-    <br>
     <div class="ingredient-list">
-      <h2>Ingredients</h2>
-    <br>
+      <h2>Good! Let's get the ingredients.</h2>
 
-      <ul>
-        <% @dish.ingredients.each do |i| %>
-        <li class="card card-lists">
-        <p class="text"><%= i %></p>
-        <input type="checkbox" class="checkbox">
-        <% end %>
-        </li>
-      </ul>
+      <% @dish.ingredients.each do |i| %>
+        <div class="ingredients-card-simple">
+          <p><%= i %></p>
+          <input type="checkbox" class="checkbox">
+        </div>
+      <% end %>
+
+
 
       <%= link_to "< Dish", dish_path(@dish), class:"btn btn-primary" %>
       <%= link_to "> Recipe", dish_recipes_path(@dish), class:"btn btn-success" %>
