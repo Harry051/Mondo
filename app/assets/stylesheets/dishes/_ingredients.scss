@@ -1,9 +1,42 @@
-.iPhone-13-screen {
-  width: 390px;
-  height: 844px;
-  margin: 0 auto;
-  background-image: linear-gradient(to bottom right, #75F864, #99F88D);
+.iPhone-13-container-colour {
+  background-image: linear-gradient(to bottom right, #F5F5EE, #F4F5DB);
 }
+
+.dish-card-simple-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.dish-card-simple {
+  background-color: white;
+  padding: 6px 6px;
+  opacity: 0.8;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px #888888;
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    width: 85%;
+    margin-top: 6px;
+    margin-left: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #261127;
+  }
+
+  .dish-card-btn{
+
+  }
+}
+
+
+
+
+
 
 .card-dish-infos {
   font-family: 'Raleway', sans-serif;
