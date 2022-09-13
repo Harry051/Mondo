@@ -213,17 +213,22 @@ button {
     text-align: center;
     padding: 8px 0px;
 
+    hr{
+      margin: 2px 0px;
+    }
+
     .piece {
       text-align: center;
     }
 
     p {
       color: rgba(128,128,128,0.8);
+      font-weight: 600;
       margin: 2px;
     }
 
     span {
-      color: rgb(138,247,123);
+      color: black;
       padding-top: 8px;
     }
   }
@@ -251,11 +256,24 @@ button {
 .btn-choose {
   background-color: #9595F5;
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 25px;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
+  text-align: center;
+  margin: 2px auto;
+  transition: ease 0.4s;
+}
+
+.btn-choose:hover {
+  background-color: #BDBDF5 !important;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white !important;
   text-align: center;
   margin: 2px auto;
 }

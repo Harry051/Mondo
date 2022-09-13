@@ -2,16 +2,17 @@
 
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
 
-    <div class="container-fluid">
+    <%# <div class="container-fluid"> %>
+    <div class="nav-bar-top">
       <%= link_to "/", class: "navbar-brand" do %>
         <%= image_tag "mondo-logo.png" %>
       <% end %>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> %>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
 
           <% if user_signed_in? %>
@@ -41,6 +42,7 @@
         </ul>
       </div>
     </div>
+    <%# </div> %>
 
   </div>
 
