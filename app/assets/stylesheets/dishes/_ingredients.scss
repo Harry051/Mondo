@@ -33,8 +33,43 @@
     margin-top: 12px;
     margin-right: 12px;
   }
-
 }
+
+.ingredient-list {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 30px;
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+  }
+}
+
+.ingredients-card-simple {
+  padding: 6px 6px;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    width: 75%;
+    margin-top: 6px;
+    margin-left: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #261127;
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -66,11 +101,6 @@
   position: absolute;
   right: 15px;
   top: 17px;
-}
-
-.ingredient-list {
-  width: 80%;
-  margin: 0 auto;
 }
 
 .text {
