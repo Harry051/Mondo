@@ -17,6 +17,7 @@
         <%= simple_form_for([@dish, @review]) do |f| %>
           <%= f.input :content, label: "So, tell us how was it?", title:""%>
           <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
+          <%= f.input :photo, as: :file, label:"Upload your photo" %>
           <%= f.submit "Send your review" %>
         <% end %>
       </div>
