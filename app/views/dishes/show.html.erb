@@ -95,7 +95,7 @@
                     <% if review.photo.attached? %>
                       <%= cl_image_tag review.photo.key, class: 'review_img' %>
                     <% else %>
-                      <%= image_tag @dish.photo.key, class: 'review_img' %>
+                      <%= cl_image_tag @dish.photo.key, class: 'review_img' %>
                     <% end %>
                 </div>
                 <p><%= review.rating %> - <%= review.content %> </p>
