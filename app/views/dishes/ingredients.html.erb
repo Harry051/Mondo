@@ -14,20 +14,26 @@
     <div class="ingredient-list">
       <h2>Good! Let's get the ingredients.</h2>
 
+      <% x = 1 %>
       <% @dish.ingredients.each do |i| %>
+        <hr>
         <div class="ingredients-card-simple">
+
+          <h6 class="ingredients-index"><%= x %></h6>
           <p><%= i %></p>
-          <input type="checkbox" class="checkbox">
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <% x = x + 1 %>
         </div>
       <% end %>
 
-
-
-      <%= link_to "< Dish", dish_path(@dish), class:"btn btn-primary" %>
-      <%= link_to "> Recipe", dish_recipes_path(@dish), class:"btn btn-success" %>
+      <div class="dish-p-btn">
+        <%= link_to "← Back to dish", dish_path(@dish), class:"btn btn-dish-back" %>
+        <%= link_to "See recipe →", dish_recipes_path(@dish), class:"btn btn-dish-next" %>
+      </div>
     </div>
 
-    <div class="iPhone-13-spacing"></div>
+    <div class="iPhone-13-spacing-colour"></div>
 
   </div>
 
