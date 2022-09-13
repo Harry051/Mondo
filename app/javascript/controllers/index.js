@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import CheckIngredientsController from "./check_ingredients_controller"
+application.register("check-ingredients", CheckIngredientsController)
+
 import CuisineHistoryController from "./cuisine_history_controller"
 application.register("cuisine-history", CuisineHistoryController)
 

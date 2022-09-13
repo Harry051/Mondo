@@ -67,6 +67,20 @@
   background-color: #F5F5EE;
   padding-top: 10px;
   padding-bottom: 10px;
+
+}
+
+[data-star-rating] {
+  margin-top: -23px;
+}
+
+.share-box {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #888888;
+  background-color: #F5F5EE;
+  padding-top: 10px;
+  padding-bottom: 10px;
   .share-links{
     display: flex;
     justify-content: space-evenly;
