@@ -37,7 +37,7 @@
 
       <div class="dish-categories">
         <% @dish.categories.each do |cat| %>
-          <h6> • <%= cat %> • </h6>
+          <h6><%= cat %> • </h6>
         <% end %>
       </div>
 
@@ -50,20 +50,29 @@
         <div class="dish-description">
           <p><%= @dish.description %></p>
         </div>
+        <div class="choose-dish-btn">
+          <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-choose" %>
+        </div>
+
+        <hr>
+
       </div>
 
-      <div class="choose-dish-btn">
-        <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-success" %>
-      </div>
 
       <div class="dish-flag-history" data-controller="cuisine-history">
-        <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
-        <h4>Cuisine history</h4>
+        <div class="dish-flag-country">
+          <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
+          <h4>Cuisine history</h4>
+        </div>
         <%# <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow">
           <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
         </svg> %>
-        <i class="fa-solid fa-2x fa-caret-down" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow"></i>
-        <p class="d-none" data-cuisine-history-target="content"><%= @dish.country.story %></p>
+        <i class="cuisine-drop-btn fa-solid fa-2x fa-caret-down" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow"></i>
+      </div>
+      <div class="dish-flag-country-drop">
+        <p class="d-none dish-flag-country-drop-content" data-cuisine-history-target="content"><%= @dish.country.story %></p>
+
+      <hr>
       </div>
 
 
@@ -71,10 +80,13 @@
         <div class="dish-show-reviews">
           <i class="fa-solid fa-2x fa-star"></i>
           <h4><%= pluralize @dish.reviews.size, "review" %></h4>
-          <i class="fa-solid fa-2x fa-caret-down" data-action="click->cuisine-reviews#revealReviews" data-cuisine-reviews-target="caret"></i>
-          <% if @dish.reviews.blank? %>
-            <p>Be the first to leave a review for <%= @dish.title %></p>
         </div>
+          <i class="reviews-drop-btn fa-solid fa-2x fa-caret-down" data-action="click->cuisine-reviews#revealReviews" data-cuisine-reviews-target="caret"></i>
+      </div>
+          <% if @dish.reviews.blank? %>
+          <div class="d-none dish-show-reviews-item">
+            <p>Be the first to leave a review for <%= @dish.title %></p>
+          </div>
           <% else %>
             <% @dish.reviews.each do |review| %>
           <div class="d-none dish-show-reviews-item" data-cuisine-reviews-target="reviews">
@@ -84,12 +96,12 @@
         <% end %>
       </div>
 
+      <div class="iPhone-13-spacing"></div>
+
     </div>
 
-    <div class="iPhone-13-spacing"></div>
+      <%= render "shared/bottom_navbar" %>
 
   </div>
-
-  <%= render "shared/bottom_navbar" %>
 
 </div>

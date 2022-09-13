@@ -6,11 +6,19 @@ export default class extends Controller {
 
   connect() {
     console.log("hiii")
+    const caretBtn = document.querySelector(".reviews-drop-btn");
+    const reviewsContent = document.querySelector(".dish-show-reviews-item");
+
+    caretBtn.addEventListener('click', (event) => {
+      caretBtn.classList.toggle('fa-caret-down');
+      caretBtn.classList.toggle('fa-caret-up');
+      reviewsContent.classList.toggle('d-none');
+    })
   }
 
   revealReviews() {
-    this.reviewsTarget.classList.toggle("d-none");
-    this.caretTarget.classList.toggle("fa-caret-down");
-    this.caretTarget.classList.toggle("fa-caret-up");
+    // this.reviewsTarget.classList.toggle("d-none");
+    // this.caretTarget.classList.toggle("fa-caret-down");
+    // this.caretTarget.classList.toggle("fa-caret-up");
   }
 }

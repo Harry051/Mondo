@@ -132,6 +132,11 @@ button {
   margin-top: -20px;
 }
 
+.dish-infos hr {
+  width: 90%;
+  margin: 16px auto;
+}
+
 .title-rating {
   display: flex;
   align-items: center;
@@ -225,8 +230,8 @@ button {
 
   p {
     margin: 20px 20px 4px 20px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(128,128,128,0.5);
+    padding-bottom: 4px;
+    // border-bottom: 1px solid rgba(128,128,128,0.5);
     // use id in corresponding if wanting rid of the bottom border on upper box
   }
 }
@@ -234,15 +239,36 @@ button {
 .dish-description {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  margin: -6px auto;
-  padding-bottom: 16px;
+  margin: 0 auto;
+  padding-bottom: 0px;
 }
 
+.choose-dish-btn {
+  width: fit-content;
+  margin: 4px auto;
+}
+
+.btn-choose {
+  background-color: #9595F5;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 2px auto;
+}
 
 .dish-flag-history {
   display: flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
+  // flex-flow: wrap;
+  justify-content: space-between;
+  width: 90%;
+
+  .dish-flag-country {
+    display: flex;
+  }
 
   .cl_img {
     width: 30px;
@@ -261,15 +287,20 @@ button {
   }
 
   .fa-caret-down {
-    position: relative;
-    right: -120px;
+    // position: relative;
+    // right: -120px;
   }
 
   .fa-caret-up {
-    position: relative;
-    top: 2px;
-    right: -120px;
+    // position: relative;
+    // top: 2px;
+    // right: -120px;
   }
+}
+
+.dish-flag-country-drop {
+  width: 100%;
+  margin: 0 auto;
 
   p {
     font-family: 'Raleway', sans-serif;
@@ -283,64 +314,86 @@ button {
       display: none;
     }
   }
+
+  hr {
+    width: 90%;
+  }
 }
 
-
-.dish-show-reviews {
+.dish-show-reviews-container {
   display: flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
-  margin-top: 15px;
-  padding-top: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-top: 1px solid rgba(128,128,128,0.5);
+  // flex-flow: wrap;
+  justify-content: space-between;
+  width: 90%;
 
-  h4 {
-    margin-left: 10px;
-    padding-top: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-  }
+    .dish-show-reviews {
+      display: flex;
+    }
+
+    h4 {
+      margin-left: 10px;
+      padding-top: 6px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 21px;
+      font-weight: 400;
+    }
+
+    .fa-star {
+      margin-top: 4px;
+      margin-left: 25px;
+      color: gold;
+    }
 
     p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    margin-top: 14px;
-    margin-left: 6px;
-    margin-right: 20px;
-  }
-
-  .fa-star {
-    margin-top: 12px;
-    margin-left: 4px;
-    color: gold;
-  }
+      margin-left: 16px;
+      padding-top: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+    }
 
   .fa-caret-down {
-    position: relative;
-    top: 12px;
-    right: -178px;
+    // position: relative;
+    // top: 12px;
+    // right: -178px;
   }
 
   .fa-caret-up {
-    position: relative;
-    top: 14px;
-    right: -178px;
+    // position: relative;
+    // top: 14px;
+    // right: -178px;
   }
+
+// .dish-show-reviews {
+//   display: flex;
+//   flex-flow: wrap;
+//   justify-content: flex-start;
+//   margin-top: 15px;
+//   padding-top: 5px;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   border-top: 1px solid rgba(128,128,128,0.5);
+
 }
 
 .dish-show-reviews-item {
-  position: relative;
-  top: 50px;
-  left: -146px;
+  // position: relative;
+  // top: 50px;
+  // left: -146px;
+  width: 100%;
+  margin: 0 auto;
 
   p {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    margin-top: 14px;
-    margin-left: 6px;
+    margin-top: 10px;
+    margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 0px;
   }
+}
+
+.iPhone-13-space {
+  background-color: white;
+  margin-bottom: 112px;
 }
