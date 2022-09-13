@@ -12,6 +12,10 @@
   overflow: scroll;
 }
 
+.iPhone-13-container .my-favourites {
+  text-align: center;
+}
+
 .dish-card-container {
   width: 100%;
   margin-bottom: 12px;
@@ -91,6 +95,8 @@
   border-radius: 50%;
   box-shadow: 3px 0px 3px #888888;
   transition: all 0.4s ease;
+  position: relative;
+  bottom: 5px;
 }
 
 .dish-heart-item-login {
@@ -342,16 +348,16 @@
     font-weight: 400;
   }
 
-  .fa-caret-down {
+  // .fa-caret-down {
     // position: relative;
     // right: -120px;
-  }
+  // }
 
-  .fa-caret-up {
+  // .fa-caret-up {
     // position: relative;
     // top: 2px;
     // right: -120px;
-  }
+  // }
 }
 
 .dish-flag-country-drop {
@@ -408,17 +414,17 @@
       font-weight: 400;
     }
 
-  .fa-caret-down {
+  // .fa-caret-down {
     // position: relative;
     // top: 12px;
     // right: -178px;
-  }
+  // }
 
-  .fa-caret-up {
+  // .fa-caret-up {
     // position: relative;
     // top: 14px;
     // right: -178px;
-  }
+  // }
 
 // .dish-show-reviews {
 //   display: flex;
