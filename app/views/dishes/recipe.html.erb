@@ -30,6 +30,29 @@
       </li>
     </ol>
 
+    <br>
+
+    <div class="stopwatch" data-controller="stopwatch">
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <i id="playButton" class="fa-solid fa-play"></i>
+
+          <i class="fa-solid fa-pause "id="pauseButton"></i>
+        </button>
+
+        <button class="buttonReset">
+          <i class="fa-solid fa-stop" id="resetButton"></i>
+        </button>
+      </div>
+    </div>
+    <script src="stopwatch_controller.js"></script>
+
+    <br>
+
     <%= link_to "< Ingredients", dish_ingredients_path(@dish), class:"btn btn-primary"  %>
     <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
   </div>

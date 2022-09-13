@@ -18,7 +18,7 @@
       </div>
 
       <div class="dish-refresh-btn">
-        <% @random_dish = Dish.where(country: @dish.country).ids.sample %>
+        <% @random_dish = Dish.where(country: @dish.country, categories: @dish.categories).ids.sample %>
         <a href="<%= dish_path(@random_dish) %>"><i class="fa-solid fa-rotate-left"></i></a>
       </div>
 

@@ -33,3 +33,6 @@ application.register("music-player", MusicPlayerController)
 
 import StarRatingController from "./star_rating_controller"
 application.register("star-rating", StarRatingController)
+
+import StopwatchController from "./stopwatch_controller"
+application.register("stopwatch", StopwatchController)
