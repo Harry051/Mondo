@@ -487,7 +487,7 @@ recipes = [
     name: 'Yuca fries',
     description: "These yuca fries are wonderfully crisp and perfect for dipping!",
     average_rating: 5.0,
-    categories: ['Vegetarian', 'Vegan'],
+    categories: ['Vegetarian'],
     times: { prep: 15,
              cook: 40,
              total: 55
