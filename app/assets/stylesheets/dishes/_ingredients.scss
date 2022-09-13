@@ -61,17 +61,20 @@
 .ingredients-card-simple {
   width: 90%;
   margin: 0 auto;
+  margin-left: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .ingredients-index {
     margin-top: 8px;
-    background-color: #F5F5C2;
+    background-color: #DADA59;
     opacity: 0.8;
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -90,8 +93,6 @@
     margin-right: -28px;
     margin-top: -8px;
     width: 16px;
-    height: 16px;
-    border-radius: 50%;
   }
 }
 
