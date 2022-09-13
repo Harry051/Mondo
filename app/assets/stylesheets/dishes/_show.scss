@@ -10,10 +10,13 @@
   height: 768px;
   background-color: #FFFFFF;
   overflow: scroll;
-}
 
-.iPhone-13-container .my-favourites {
-  text-align: center;
+  .my-favourites-top {
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
+  }
 }
 
 .dish-card-container {
@@ -500,6 +503,13 @@
     .fa-star {
       color: gold;
     }
+
+    .dish-reviews-card-content-top {
+      display: flex;
+      justify-content: space-between;
+      width: 220px;
+    }
+
   }
 
 }
