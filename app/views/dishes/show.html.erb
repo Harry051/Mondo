@@ -37,21 +37,21 @@
 
       <div class="dish-categories">
         <% @dish.categories.each do |cat| %>
-          <h6><%= cat %> • </h6>
+          <h6>• <%= cat %></h6>
         <% end %>
       </div>
 
       <div class="dish-stats">
         <div class="list">
-          <div class="piece"><p>Prep time</p><span><%= @dish.times["prep"] %> mins</span></div>
-          <div class="piece"> <p>Cooking time</p><span><%= @dish.times["cook"] %> mins </span></div>
-          <div class="piece"> <p>Calories</p><span><%= @dish.calories %></span></div>
+          <div class="piece"><p>Prep time</p><hr><span><%= @dish.times["prep"] %> mins</span></div>
+          <div class="piece"> <p>Cooking time</p><hr><span><%= @dish.times["cook"] %> mins </span></div>
+          <div class="piece"> <p>Calories</p><hr><span><%= @dish.calories %></span></div>
         </div>
         <div class="dish-description">
           <p><%= @dish.description %></p>
         </div>
         <div class="choose-dish-btn">
-          <%= link_to "> Choose this", dish_ingredients_path(@dish), class:"btn btn-choose" %>
+          <%= link_to "Let's cook this!", dish_ingredients_path(@dish), class:"btn btn-choose" %>
         </div>
 
         <hr>
