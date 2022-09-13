@@ -1,19 +1,25 @@
 <%# This 'form' creates a favourite record with the dish and current user IDs if combination not exist%>
 
-<div class='add-to-favourites'>
+<div class='add-to-favourites' data-controller="heart">
   <% if user_signed_in? %>
-    <%= simple_form_for [@dish, @favourite] do |f| %>
-      <% if current_user.favourites.where(dish_id:@dish).exists? %>
-        <%= button_tag(type: 'submit', class: 'btn') do %>
-          <i style="color:crimson;" class="fa-solid fa-heart"></i>
+    <% if current_user.favourites.where(dish_id:@dish).exists? %>
+      <%= simple_form_for [@dish, @favourite] do |f| %>
+        <%= button_tag(type: 'submit', class: 'btn dish-heart-btn') do %>
+          <div class="dish-heart-item">
+            <i class="fa-solid fa-heart dish-fa-heart"></i>
+          </div>
         <% end %>
-      <% else %>
-        <%= button_tag(type: 'submit', class: 'btn') do %>
-          <i class="fa-regular fa-heart" data-controller="heart" data-action="click->heart#colorHeart"></i>
+      <% end %>
+    <% else %>
+      <%= simple_form_for [@dish, @favourite] do |f| %>
+        <%= button_tag(type: 'submit', class: 'btn dish-heart-btn') do %>
+          <div class="dish-heart-item">
+            <i class="fa-regular fa-heart dish-fa-heart" data-action="click->heart#colorHeart"></i>
+          </div>
         <% end %>
       <% end %>
     <% end %>
   <% else %>
-    <%#  %>
+    <%#= flash.alert = "Please log in." %>
   <% end %>
 </div>

@@ -1,4 +1,4 @@
-<div class="iPhone-13-spacing"></div>
+<%# <div class="iPhone-13-spacing"></div> %>
 
 <div class="iPhone-13-bottom-nav-bar">
 
@@ -10,11 +10,7 @@
 
     <a href="#"><li><i style="color: #E36397" class="fa-solid fa-kitchen-set fa-2x"></i></li></a>
 
-    <div data-controller="music-player">
-    <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
-      <a href="#"><li><i style="color: #261127" class="fa-solid fa-music fa-lg"  data-action="click->music-player#audioplay"></i></li></a>
-    </div>
-
+    <a href="#"><li><i style="color: #261127" class="fa-solid fa-music fa-lg" data-action="click->music-player#audioplay"></i></li></a>
 
     <% if user_signed_in? %>
       <a href="/users/<%= current_user.id %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
@@ -22,6 +18,13 @@
       <a href="<% new_user_session_path %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
     <% end %>
 
+  </ul>
+
+  <ul class="music-btn-list">
+    <div data-controller="music-player">
+      <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
+      <a href="#"><li><div class="music-btn"  data-action="click->music-player#audioplay"></div></li></a>
+    </div>
   </ul>
 
 </div>

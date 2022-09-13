@@ -19,4 +19,10 @@ class FavouritesController < ApplicationController
     @favourite.destroy
     redirect_to favourite_path(@favourite), status: :see_other
   end
+
+  # private
+
+  # def favourite_params
+  #   params.require(:favourite).permit(:dish_id, :user_id)
+  # end
 end
