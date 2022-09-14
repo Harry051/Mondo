@@ -111,6 +111,13 @@
   justify-content: space-between;
 }
 
+.dish-p-btn-recipe {
+  width: 78%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-dish-next {
   background-color: #9595F5;
   padding: 8px 12px;
@@ -161,57 +168,31 @@
   margin: 2px auto;
 }
 
-// .ingredient-list {
-//   width: 80%;
-//   margin: 0 auto;
-// }
-
-// .text {
-//   position: relative;
-//   top: 9px;
-// }
-
-.card-small-dish {
-  margin: 25px;
+.btn-dish-back-recipe {
+  background-color: #AAAA70;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 2px;
+  transition: ease 0.4s;
 }
 
-// .card-dish-infos {
-//   font-family: 'Raleway', sans-serif;
-// }
-
-// .card-small-dish img {
-//   width: 90%;
-// }
-
-// .card-lists {
-//   margin-left: 5px;
-//   margin-right: 5px;
-//   margin-top: 17px;
-//   margin-bottom: 17px;
-//   padding: 3px;
-//   border-radius: 12px;
-//   position: relative;
-//   left: -45px;
-//   width: 328px;
-//   box-shadow: 2px 2px 2px #888888;
-// }
-
-// .checkbox {
-//   position: absolute;
-//   right: 15px;
-//   top: 17px;
-// }
-
-// .text {
-//   position: relative;
-//   top: 9px;
-// }
+.btn-dish-back-recipe:hover {
+  background-color: #BCBC7C !important;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white !important;
+  text-align: center;
+  margin: 2px;
+}
 
 // .card-small-dish {
 //   margin: 25px;
-// }
-
-// .btn-success {
-//   position: relative;
-//   right: -155px;
 // }

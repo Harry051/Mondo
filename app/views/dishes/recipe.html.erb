@@ -1,36 +1,37 @@
 <div class="iPhone-13">
-  <br>
-  <div class="card-small-dish">
-      <%= cl_image_tag @dish.photo.key, class: 'cl-dish-img' %>
-      <div class="title-rating">
 
-        <div class="card-dish-infos">
-          <h2><strong><%= @dish.title %></strong></h2>
-          <p><%= @dish.categories %></p>
-        </div>
+  <div class="iPhone-13-container iPhone-13-container-colour">
 
-        <div class="rating">
-          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
-          <p class="number m-0"><%= @dish.average_rating %></p>
-        </div>
-
+    <div class="dish-card-simple-container" data-controller="dish-card">
+      <div class="dish-card-simple">
+        <h4><%= @dish.title %></h4>
+        <i class="dish-card-btn fa-solid fa-lg fa-caret-down" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow"></i>
       </div>
-   </div>
-  <br>
-  <div class="recipe-list">
-    <h2>Recipe</h2>
-    <br>
+    </div>
 
-    <ol value="Step:">
+    <div class="ingredient-list">
+      <h2>Follow the steps and be a Chef!</h2>
+
+      <% x = 1 %>
       <% @dish.recipe.each do |i| %>
-      <li type="step" class="card card-lists">
-      <p class="text"><%= i %></p>
-      <input type="checkbox" class="checkbox">
-      <% end %>
-      </li>
-    </ol>
+        <hr>
+        <div class="ingredients-card-simple" data-controller="check-ingredients" data-action="click->check-ingredients#checkBox">
 
-    <br>
+          <h6 class="ingredients-index"><%= x %></h6>
+          <p data-check-ingredients-target="word"><%= i %></p>
+
+          <div class='ingredients-checkbox'>
+            <div class="ingredients-checkbox-item">
+              <i style="font-size: 20px" class="fa-regular fa-circle checkbox-item" data-check-ingredients-target="box"></i>
+            </div>
+          </div>
+
+            <%# <i class="fa-solid fa-circle-check"></i> %>
+
+          <% x = x + 1 %>
+        </div>
+      <% end %>
+
 
     <div class="stopwatch" data-controller="stopwatch">
       <div>
@@ -54,11 +55,17 @@
     </div>
     <script src="stopwatch_controller.js"></script>
 
-    <br>
+    <div class="dish-p-btn-recipe">
+      <%= link_to "← Ingredient", dish_ingredients_path(@dish), class:"btn btn-dish-back-recipe" %>
+      <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
+    </div>
 
-    <%= link_to "< Ingredients", dish_ingredients_path(@dish), class:"btn btn-primary"  %>
-    <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
+    <div class="iPhone-13-spacing"></div>
+
   </div>
-  <br>
+
   <%= render "shared/bottom_navbar" %>
+
+  </div>
+
 </div>

@@ -13,9 +13,9 @@
       <p>Cook this and be the first to review <%= @dish.title %>.</p>
     </div>
   <% else %>
-    <% @dish.reviews.each do |review| %>
       <div class="d-none dish-show-reviews-item" data-cuisine-reviews-target="reviews">
-        <div class="dish-reviews-card">
+      <% @dish.reviews.each do |review| %>
+          <div class="dish-reviews-card">
 
           <%# Display default image if none uploaded %>
           <% if review.photo.attached? %>
