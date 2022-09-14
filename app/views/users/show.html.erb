@@ -41,7 +41,11 @@
           <p><%= current_user.location %></p>
 
           <h6>Favourite Dish:</h6>
-          <p><%= current_user.favourites.first.dish.title %></p>
+          <p><% if current_user.favourites.exists? %>
+               <%= current_user.favourites.first.dish.title %>
+             <% else %>
+               <%= "None" %>
+             <% end %></p>
         </div>
 
         <div class="user-basic">
