@@ -71,31 +71,42 @@
   top: 76px;
   left: 30px;
   width: fit-content;
-  transition: 0.4s ease;
-}
 
-.home-btn:hover {
-  background-color: #63F851;
-  color: #261127;
-  border-radius: 8px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
 }
+// transition: 0.4s ease;
+
+// .home-btn:hover {
+//   background-color: #3E4279;
+//   color: #261127;
+//   border-radius: 8px;
+//   font-family: 'Raleway', sans-serif;
+//   font-size: 20px;
+// }
 
 .btn-get-started {
-  background: #99F88D;
+  background: #484C8C;
   padding: 20px 28px;
   border-radius: 8px;
-  color: #261127;
+  color: #FEFAF3;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  transition: 0.4s ease;
+
 }
+// transition: 0.4s ease;
 
 .home-background-bottom {
   height: 768px;
-  background-image: linear-gradient(#52AA5E, #99F88D);
+  background-color: #FFBF9C;
+  // background-image: linear-gradient(#52AA5E, #99F88D);
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
+}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  background-color: #FFBF9C;
+}
+
+a.mapboxgl-ctrl-logo {
+  background-color: #FFBF9C;
 }
 
 .fa-bars {
@@ -144,12 +155,12 @@
   margin: 100px 0px -128px 5px;
 }
 
-.home-earth-shadow img {
-  position: relative;
-  top: 128px;
-  left: 100px;
-  width: 200px;
-}
+// .home-earth-shadow img {
+//   position: relative;
+//   top: 128px;
+//   left: 100px;
+//   width: 200px;
+// }
 
 .home-filters-box {
   position: relative;
@@ -173,7 +184,7 @@
 .home-filters-box-top p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  color: #D0D0D0;
+  color: #261127;
   margin-top: 10px;
   position: relative;
   left: 32px;
@@ -209,6 +220,10 @@
   line-height: 20%;
   width: auto;
   margin: 0px 12px 0px 12px;
+}
+
+.home-filters-grid p {
+  color:#261127;
 }
 
 .home-filters-grid a {
