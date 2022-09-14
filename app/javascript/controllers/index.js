@@ -37,6 +37,12 @@ application.register("map", MapController)
 import MusicPlayerController from "./music_player_controller"
 application.register("music-player", MusicPlayerController)
 
+import ReviewFavController from "./review_fav_controller"
+application.register("review-fav", ReviewFavController)
+
+import ReviewFavLoginController from "./review_fav_login_controller"
+application.register("review-fav-login", ReviewFavLoginController)
+
 import StarRatingController from "./star_rating_controller"
 application.register("star-rating", StarRatingController)
 
