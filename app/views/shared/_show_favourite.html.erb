@@ -1,11 +1,11 @@
 <%# This 'form' creates a favourite record with the dish and current user IDs if combination not exist%>
 
-<div class='add-to-favourites' data-controller="heart">
+<div data-controller="heart">
   <% if user_signed_in? %>
     <% if current_user.favourites.where(dish_id:@dish).exists? %>
       <%= simple_form_for [@dish, @favourite] do |f| %>
         <%= button_tag(type: 'submit', class: 'btn dish-heart-btn') do %>
-          <div class="dish-heart-item">
+          <div class="dish-heart-item-user">
             <i class="fa-solid fa-heart dish-fa-heart"></i>
           </div>
         <% end %>
@@ -13,7 +13,7 @@
     <% else %>
       <%= simple_form_for [@dish, @favourite] do |f| %>
         <%= button_tag(type: 'submit', class: 'btn dish-heart-btn') do %>
-          <div class="dish-heart-item">
+          <div class="dish-heart-item-user">
             <i class="fa-regular fa-heart dish-fa-heart" data-action="click->heart#colorHeart"></i>
           </div>
         <% end %>

@@ -2,7 +2,7 @@
   <div class="iPhone-13-container iPhone-13-container-colour">
     <h4 class='my-favourites-top'>My Favourites</h4>
     <% @favourites.each do |f| %>
-      <div class='dish-reviews-card'>
+      <div class='dish-reviews-card dish-display-card'>
         <a href=<%="/dishes/#{f.dish.id}/ingredients"%>><%= cl_image_tag f.dish.photo.key, class:'fav-img' %></a>
         <div class='dish-reviews-card-content'>
           <div class='dish-reviews-card-content-top'>
@@ -10,7 +10,7 @@
             <%= link_to '<i style="color:crimson; font-size:20px" class="fa-solid fa-heart-crack"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>
           </div>
           <h4><i class='fa-solid fa-lg fa-star'></i> <%= f.dish.average_rating %></h4>
-          <p><%= f.dish.categories.first(3).join(', ') %></p>
+          <p style="font-size: 14px; color: grey"><%= f.dish.categories.first(3).join(', ') %></p>
         </div>
       </div>
     <% end %>
