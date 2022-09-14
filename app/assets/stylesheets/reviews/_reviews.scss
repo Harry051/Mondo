@@ -18,6 +18,18 @@
 //   color: #282d33;
 // }
 
+.a-parent {
+  position: relative;
+}
+
+.a-child {
+  /* ... */
+  position: absolute;
+  bottom: 10px;
+  margin-left: 20px;
+  /* ... */
+}
+
 
 .picture-card {
   width: 90%;
