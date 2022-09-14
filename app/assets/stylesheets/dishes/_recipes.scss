@@ -1,1 +1,68 @@
 // please refer to the ingredients scss
+
+.stopwatch {
+  width: 90%;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+.stopwatch-timer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0px 0px 0px 12px;
+  border-radius: 25px;
+
+  p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #261127;
+    margin-top: 14px;
+    padding-right: 10px;
+  }
+}
+
+// .control {
+
+// }
+
+.buttonPlay-box {
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.8;
+  border: 1px grey solid;
+}
+
+.buttonPlay {
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.8;
+  border: 1px grey solid;
+}
+
+.buttonReset {
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.8;
+  border: 1px grey solid;
+}
+
+.fa-play {
+  padding: 4px;
+}
+
+.fa-pause {
+  padding: 4px;
+}
+
+.fa-stop {
+  padding: 3px;
+}

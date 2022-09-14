@@ -34,17 +34,16 @@
 
 
     <div class="stopwatch" data-controller="stopwatch">
-      <div>
-        <i class="fa-solid fa-stopwatch"></i>
-      </div>
-      <div class="circle">
-        <span class="time" id="display">00:00:00</span>
+      <div class="stopwatch-timer">
+          <p><i class="fa-solid fa-stopwatch"></i>  Timer</p>
+        <div class="circle">
+          <span class="time" id="display">00:00:00</span>
+        </div>
       </div>
 
       <div class="controls">
         <button class="buttonPlay">
-          <i id="playButton" class="fa-solid fa-play"></i>
-
+          <i class="fa-solid fa-play" id="playButton"></i>
           <i class="fa-solid fa-pause "id="pauseButton"></i>
         </button>
 
@@ -53,7 +52,8 @@
         </button>
       </div>
     </div>
-    <script src="stopwatch_controller.js"></script>
+    </div>
+
 
     <div class="dish-p-btn-recipe">
       <%= link_to "← Ingredient", dish_ingredients_path(@dish), class:"btn btn-dish-back-recipe" %>
@@ -67,5 +67,7 @@
   <%= render "shared/bottom_navbar" %>
 
   </div>
+
+  <script src="stopwatch_controller.js"></script>
 
 </div>
