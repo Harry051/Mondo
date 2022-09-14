@@ -1,36 +1,41 @@
 <div class="dish-show-reviews-container" data-controller="cuisine-reviews">
+
   <div class="dish-show-reviews">
     <i class="fa-solid fa-2x fa-star"></i>
     <h4><%= pluralize @dish.reviews.size, "review" %></h4>
   </div>
 
-
     <i class="reviews-drop-btn fa-solid fa-2x fa-caret-down" data-action="click->cuisine-reviews#revealReviews" data-cuisine-reviews-target="caret"></i>
-  </div>
+</div>
 
   <% if @dish.reviews.blank? %>
     <div class="d-none dish-show-reviews-item">
       <p>Cook this and be the first to review <%= @dish.title %>.</p>
     </div>
+
   <% else %>
-    <% @dish.reviews.each do |review| %>
       <div class="d-none dish-show-reviews-item" data-cuisine-reviews-target="reviews">
-        <div class="dish-reviews-card">
+        <div class="dish-reviews-card-all">
 
-          <%# Display default image if none uploaded %>
-          <% if review.photo.attached? %>
-            <%= cl_image_tag review.photo.key, class: 'review_img' %>
-          <% else %>
-            <%= cl_image_tag @dish.photo.key, class: 'review_img' %>
-          <% end %>
+        <% @dish.reviews.each do |review| %>
+            <div class="dish-reviews-card">
 
-          <div class="dish-reviews-card-content">
-            <h4><i class="fa-solid fa-lg fa-star"></i> <%= review.rating %></h4>
-            <hr>
-            <h6><%= review.content %> </h6>
-          </div>
+              <%# Display default image if none uploaded %>
+              <% if review.photo.attached? %>
+                <%= cl_image_tag review.photo.key, class: 'review_img' %>
+              <% else %>
+                <%= cl_image_tag @dish.photo.key, class: 'review_img' %>
+              <% end %>
+
+              <div class="dish-reviews-card-content">
+                <h4><%= review.user.username.capitalize %> gave <% stars = review.rating.to_i %> <% stars.times do %><i style="font-size: 14px" class="fa-solid fa-lg fa-star"></i> <% end %></h4>
+                <hr>
+                <h6><%= review.content %> </h6>
+              </div>
+
+            </div>
+        <% end %>
         </div>
       </div>
-    <% end %>
   <% end %>
 </div>
