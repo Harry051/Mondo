@@ -372,6 +372,10 @@
   // }
 }
 
+.d-none {
+  display: none;
+}
+
 .dish-flag-country-drop {
   width: 100%;
   margin: 0 auto;
@@ -383,10 +387,6 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0px;
-
-    .d-none {
-      display: none;
-    }
   }
 
   hr {
