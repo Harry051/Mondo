@@ -16,7 +16,7 @@
 
 .iPhone-13-home-container {
   width: 100%;
-  height: 768px;
+  height: 710px;
   background-color: #FFFFFF;
   overflow: scroll;
 }
@@ -28,22 +28,61 @@
 }
 
 .home-background-top {
-  height: 768px;
-  background-image: linear-gradient(to bottom right, #1FE4DA, #A2EEEB);
+  height: 710px;
+  background-image: url(home-image-1.eps.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  // animation: change 0.1s infinite ease;
+  animation: change;
+  animation-duration: 30s;
 }
 
-// .home-logo img {
-//   position: relative;
-//   left: 12px;
-//   top: 24px;
-//   width: 40px;
-// }
+@keyframes change {
+  0% {
+    background-image: url(home-image-1.eps.png);
+  }
+  12% {
+    background-image: url(home-image-1.eps.png);
+  }
+  25% {
+    background-image: url(home-image-2.eps.png);
+  }
+  37% {
+    background-image: url(home-image-2.eps.png);
+  }
+  50% {
+    background-image: url(home-image-3.eps.png);
+  }
+  62% {
+    background-image: url(home-image-3.eps.png);
+  }
+  75% {
+    background-image: url(home-image-4.eps.png);
+  }
+  87% {
+    background-image: url(home-image.4.eps.png);
+  }
+  100% {
+    background-image: url(home-image-1.eps.png);
+  }
+}
+
+
+
+.home-logo img {
+  position: relative;
+  left: 12px;
+  top: 24px;
+  width: 40px;
+}
 
 .home-graphics img {
   position: relative;
   left: 4px;
   top: 34px;
   width: 98%;
+  opacity: 0;
 }
 
 .home-infos {
@@ -93,7 +132,7 @@
 }
 
 .home-background-bottom {
-  height: 768px;
+  height: 704px;
   background-image: linear-gradient(#52AA5E, #99F88D);
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
 }
