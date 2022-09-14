@@ -31,7 +31,7 @@
 
       <div>
         <% if user_signed_in? %>
-          <%= render partial: 'shared/review_favourite', favourite: @favourite %>
+          <%#= render partial: 'shared/review_favourite', favourite: @favourite %>
         <% else %>
           <div class="dish-heart-btn">
             <div class="dish-heart-item-login"><a href="/users/sign_in"><i class="fa-regular fa-heart dish-fa-heart-login"></i></a></div>
@@ -45,10 +45,11 @@
       <div class="row">
         <div class="col-xs-4">
           <%= simple_form_for([@dish, @review]) do |f| %>
+            <%= f.submit "Submit review", id:"submit-review", class:"d-none"  %>
             <%= f.input :content, label: "So, tell us how was it?"%>
             <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
             <%= f.input :photo, as: :file, label:"Add a photo" %>
-            <%= f.submit "Submit review", class:"btn btn-primary review-submit"  %>
+            <button id="sweet-alert" class="btn btn-primary submit-review">Submit review</button>
           <% end %>
         </div>
       </div>
