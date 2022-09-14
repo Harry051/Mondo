@@ -13,6 +13,9 @@ application.register("cuisine-history", CuisineHistoryController)
 import CuisineReviewsController from "./cuisine_reviews_controller"
 application.register("cuisine-reviews", CuisineReviewsController)
 
+import DishCardController from "./dish_card_controller"
+application.register("dish-card", DishCardController)
+
 import DisplayTabController from "./display_tab_controller"
 application.register("display-tab", DisplayTabController)
 
