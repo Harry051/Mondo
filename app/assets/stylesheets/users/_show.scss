@@ -140,10 +140,11 @@
   margin-left: 4px;
 }
 
+// prior to click
 .user-tab {
   position: relative;
   bottom: -90px;
-  width: 390px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #C8FFC1;
@@ -171,10 +172,11 @@
   margin: 0 auto;
 }
 
+// after click
 .tab-new-position {
   position: relative;
   bottom: -46px;
-  width: 390px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #C8FFC1;
