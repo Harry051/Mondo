@@ -35,24 +35,25 @@
       <%= link_to "https://twitter.com/intent/tweet?url=https://www.mondo.recipes/&hashtags=loveMondo" do %>
         <i class="fab fa-twitter-square fa-2x twitter"></i>
       <% end %>
+      <%# Instagram %>
+      <%= link_to "" do %>
+        <i class="fa-brands fa-instagram fa-2x instagram"></i>
+      <% end %>
       <%# facebook head%>
       <%= link_to "https://www.facebook.com/share.php?u=https://www.mondo.recipes/" do %>
         <i class="fab fa-facebook-square fa-2x facebook"></i>
       <% end %>
-      <%# pinterest head%>
-      <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/&media=#{Review.last.photo.url}" do %>
-        <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
+      <%# pinterest head - Check if photo exists for review else post photo of the dish%>
+      <% if Review.last.photo.attached? %>
+        <% @photo_link = Review.last.photo.url %>
+      <% else %>
+        <% @photo_link = @dish.photo.url %>
       <% end %>
-      <%# linkedin %>
-      <%= link_to "https://www.linkedin.com/sharing/share-offsite/?url=https://www.mondo.recipes/" do %>
-        <i class="fa-brands fa-linkedin-in fa-2x linkedin"></i>
+      <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/&media=#{@photo_link}" do %>
+        <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
       <% end %>
     </div>
   </div>
 
-   <%= audio_tag("peru_track.mp3", autoplay: true, controls: true, class:"d-none") do %>
-  <% end %>
-
-  </div>
   <%= render "shared/bottom_navbar" %>
 </div>
