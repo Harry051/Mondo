@@ -34,7 +34,7 @@
   background-position: center;
   background-repeat: no-repeat;
   // animation: change 0.1s infinite ease;
-  animation: change;
+  animation: change infinite ease-in-out;
   animation-duration: 30s;
 }
 
@@ -42,30 +42,30 @@
   0% {
     background-image: url(home-image-1.eps.png);
   }
-  12% {
-    background-image: url(home-image-1.eps.png);
-  }
   25% {
-    background-image: url(home-image-2.eps.png);
-  }
-  37% {
     background-image: url(home-image-2.eps.png);
   }
   50% {
     background-image: url(home-image-3.eps.png);
   }
-  62% {
-    background-image: url(home-image-3.eps.png);
-  }
   75% {
     background-image: url(home-image-4.eps.png);
-  }
-  87% {
-    background-image: url(home-image.4.eps.png);
   }
   100% {
     background-image: url(home-image-1.eps.png);
   }
+  // 62% {
+  //   background-image: url(home-image-2.eps.png);
+  // }
+  // 75% {
+  //   background-image: url(home-image-3.eps.png);
+  // }
+  // 87% {
+  //   background-image: url(home-image.3.eps.png);
+  // }
+  // 100% {
+  //   background-image: url(home-image-3.eps.png);
+  // }
 }
 
 
