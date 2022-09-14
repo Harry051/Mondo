@@ -2,11 +2,6 @@
   <div class="iPhone-13-container">
 
     <%# ---- Add to fav header and button ---------------- %>
-
-    <div class="container picture-card">
-      <p>placeholder code</p>
-    </div>
-
     <div class="container add-to-favourite">
       <h4>Add to Favourites</h4>
       <div>
@@ -35,20 +30,29 @@
   </div>
 
   <div class="container share-box">
-    <p><strong>Share Links</strong></p>
     <div class="share-links">
       <%# twitter %>
-      <a href="https://twitter.com/intent/tweet?button_hashtag=LoveMondo&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="I found this amazing recipe on Mondo!!" data-url="https://www.mondo.recipes/dishes/6" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LoveMondo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <%= link_to "https://twitter.com/intent/tweet?url=https://www.mondo.recipes/&hashtags=loveMondo" do %>
+        <i class="fab fa-twitter-square fa-2x twitter"></i>
+      <% end %>
       <%# facebook head%>
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="hhwAntCF"></script>
-      <%# facebook button- fo %>
-      <div class="" data-href="https://www.mondo.recipes/dishes/6/reviews/new" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mondo.recipes%2Fdishes%2F6%2Freviews%2Fnew&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><i class="fa-brands fa-square-facebook"></i></a></div>
+      <%= link_to "https://www.facebook.com/share.php?u=https://www.mondo.recipes/" do %>
+        <i class="fab fa-facebook-square fa-2x facebook"></i>
+      <% end %>
+      <%# pinterest head%>
+      <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/&media=#{Review.last.photo.url}" do %>
+        <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
+      <% end %>
       <%# linkedin %>
-      <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-      <script type="IN/SHARE" class="fa-brands fa-linkedin" data-url="https://www.linkedin.com"></script>
+      <%= link_to "https://www.linkedin.com/sharing/share-offsite/?url=https://www.mondo.recipes/" do %>
+        <i class="fa-brands fa-linkedin-in fa-2x linkedin"></i>
+      <% end %>
     </div>
   </div>
 
+   <%= audio_tag("peru_track.mp3", autoplay: true, controls: true, class:"d-none") do %>
+  <% end %>
+
   </div>
+  <%= render "shared/bottom_navbar" %>
 </div>
