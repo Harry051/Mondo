@@ -5,6 +5,8 @@
 
 // background-color: #E1F8DE;
 
+// nav-btn-color: #261127;
+
 .iPhone-13-container {
   width: 100%;
   height: 768px;
@@ -30,6 +32,7 @@
 
 .dish-card-img-container {
   height: 310px;
+  object-fit: cover;
 
   button {
     width: 0px;
@@ -97,13 +100,14 @@
 
 .dish-heart-item {
   background-color: white;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  box-shadow: 2px 2px 2px #888888;
+  box-shadow: 1px 1px 1px #888888;
   transition: all 0.4s ease;
   position: relative;
   bottom: 5px;
+  opacity: 0.85;
 }
 
 .dish-heart-item-login {
@@ -148,18 +152,19 @@
   top: -284px;
   left: -8px;
   background-color: white;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  box-shadow: 3px 0px 3px #888888;
+  box-shadow: 1px 1px 1px #888888;
   transition: all 0.4s ease;
   margin-left: 28px;
+  opacity: 0.85;
 }
 
 .dish-refresh-btn a {
   position: relative;
-  top: 4px;
-  left: 7px;
+  top: 5px;
+  left: 9px;
   color: #261127;
 }
 
