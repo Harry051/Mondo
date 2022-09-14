@@ -8,11 +8,14 @@ export default class extends Controller {
     const favourite = document.querySelector('.dish-heart-btn');
     const favBtn = document.querySelector('.dish-fa-heart')
 
+    console.log('hello, how are you today?')
 
     favourite.addEventListener('click', (event) => {
       favBtn.classList.toggle('fa-regular');
       favBtn.classList.toggle('fa-solid');
       favBtn.classList.toggle('fa-colour-red');
+      console.log(favouriteReview);
+      console.log(favBtn);
     });
   }
 

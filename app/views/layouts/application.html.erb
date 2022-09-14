@@ -17,6 +17,19 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+
+    <%# scroll to refresh %>
+    <script>
+    $(document).ready(function(){
+        $(".scroll").pullToRefresh({
+             refresh:200
+        })
+        .on("refresh.pulltorefresh", function (){
+            location.reload();
+        });
+    });
+  </script>
   </head>
 
   <body>

@@ -30,12 +30,22 @@
   font-family: 'Raleway', sans-serif;
 }
 
+
+.dish-reviews-card-content-top {
+  .fa-xmark {
+    position: relative;
+    // padding-top: 8px; here is the conflixt
+    padding-right: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .iPhone-13-bottom-nav-bar {
     display: flex;
     position: sticky;
     background-color: #FFFFFF;
-    // right: 0px;
+    // right: 0px; conflict
     bottom: 0px;
+
   }
 }
