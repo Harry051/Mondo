@@ -7,7 +7,11 @@
         <div class='dish-reviews-card-content'>
           <div class='dish-reviews-card-content-top'>
             <h4><%= f.dish.title %></h4>
+
             <%= link_to '<i style="color: grey; font-size:20px" class="fa-solid fa-xmark"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>
+
+            <%#= link_to '<i style="color:crimson; font-size:20px" class="fa-sharp fa-solid fa-square-minus"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>
+
           </div>
           <h4><i class='fa-solid fa-lg fa-star'></i> <%= f.dish.average_rating %></h4>
           <p style="font-size: 14px; color: grey"><%= f.dish.categories.first(3).join(', ') %></p>

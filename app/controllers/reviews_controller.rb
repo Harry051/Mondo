@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
     @review.dish = @dish
     @review.user = current_user
     if @review.save
-      redirect_to new_dish_review_path(@review)
+      redirect_to new_dish_review_path(@review.dish)
     else
       render "reviews/new", status: :unprocessable_entity
     end

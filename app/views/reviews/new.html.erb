@@ -29,9 +29,9 @@
 
       <h4>Add to Favourites</h4>
 
-      <div>
+      <div class="heart-zzz">
         <% if user_signed_in? %>
-          <%= render partial: 'shared/review_favourite', favourite: @favourite %>
+          <%#= render partial: 'shared/review_favourite', favourite: @favourite %>
         <% else %>
           <div class="dish-heart-btn-review">
             <div class="dish-heart-item-login"><a href="/users/sign_in"><i class="fa-regular fa-heart dish-fa-heart-login"></i></a></div>
@@ -45,21 +45,19 @@
       <div class="row">
         <div class="col-xs-4">
           <%= simple_form_for([@dish, @review]) do |f| %>
-            <%= f.input :content, label: "So, tell us how was it?", title:""%>
+            <%= f.submit "Submit review", id:"submit-review", class:"d-none"  %>
+            <%= f.input :content, label: "So, tell us how was it?"%>
             <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
-            <%= f.input :photo, as: :file, label:"Upload your photo" %>
-            <%= f.submit "Submit review"  %>
+            <%= f.input :photo, as: :file, label:"Add a photo" %>
+            <button id="sweet-alert" class="btn btn-primary submit-review">Submit review</button>
           <% end %>
         </div>
       </div>
-    </div>
 
-    <%# show latest review  %>
+      <hr>
 
-
-    <%# ------------- Social media share links ----------------------%>
-    <div class="container share-box a-child">
       <div class="share-links">
+        <h4 style="font">Share</h4>
         <%# twitter %>
         <%= link_to "https://twitter.com/intent/tweet?url=https://www.mondo.recipes/&hashtags=loveMondo" do %>
           <i class="fab fa-twitter-square fa-2x twitter"></i>
@@ -79,9 +77,9 @@
           <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
         <% end %>
       </div>
+
     </div>
   </div>
-
  <%# Navbar here %>
   <%= render "shared/bottom_navbar" %>
 </div>
