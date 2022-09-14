@@ -12,6 +12,7 @@ export default class extends Controller {
     favourite.addEventListener('click', (event) => {
       favBtn.classList.toggle('fa-regular');
       favBtn.classList.toggle('fa-solid');
+      favBtn.classList.toggle('fa-colour-red');
     });
   }
 

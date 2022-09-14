@@ -3,15 +3,15 @@
   <% if user_signed_in? %>
     <%= simple_form_for [@dish, @favourite] do |f| %>
       <% if current_user.favourites.where(dish_id:@dish).exists? %>
-        <%= button_tag(type: 'submit', class: 'btn dish-heart-btn') do %>
-          <div class="dish-heart-item">
+        <%= button_tag(type: 'submit', class: 'btn dish-heart-btn-review') do %>
+          <div class="dish-heart-item-user dish-heart-item-user-review">
             <i style="color:crimson;" class="fa-solid fa-heart dish-fa-heart"></i>
           </div>
 
         <% end %>
       <% else %>
         <%= button_tag(type: 'submit', class: 'btn dish-heart-btn') do %>
-          <div class="dish-heart-item">
+          <div class="dish-heart-item-user">
             <i class="fa-regular fa-heart dish-fa-heart" data-action="click->heart#colorHeart"></i>
           </div>
 
