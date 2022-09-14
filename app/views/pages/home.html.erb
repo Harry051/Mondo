@@ -23,13 +23,12 @@
 
     </div>
 
-    <div id="home-bottom" class="home-background-bottom">
+    <div class="home-background-bottom">
 
-
-        <div class="home-nav" data-controller="home-nav-btn">
+        <%# <div class="home-nav" data-controller="home-nav-btn">
           <div class="nav-btn btn"><i class="fa-solid fa-bars"></i>
           </div>
-        </div>
+        </div> %>
 
       <div class="home-tab-menu-tabs d-none">
 
@@ -61,7 +60,7 @@
 
 
       <div class="home-search-text">
-        <h4>Pick a country and get a random dish!</h4>
+        <h2>Pick a country and get a random dish!</h2>
       </div>
 
       <div data-controller="globe-filtering">
@@ -71,7 +70,7 @@
           <%= image_tag "pages-home-earth-shadow.png" %>
         <%#</div> %>
 
-        <div class="home-filters-box">
+        <div id="home-bottom" class="home-filters-box">
 
           <div class="home-filters-box-top">
             <p>Filters</p>
@@ -128,6 +127,8 @@
         </div>
 
       </div>
+
+      <%= render "shared/home_bottom_navbar" %>
 
     </div>
 
