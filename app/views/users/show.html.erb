@@ -1,6 +1,6 @@
 <div class="iPhone-13">
 
-  <div class="user-background">
+  <div class="iPhone-13-container">
 
     <div class="user-container">
 
@@ -33,23 +33,57 @@
 
       <div class="user-infos">
 
-        <div class="user-basic">
+        <div class="user-basic" style="width:160px">
           <h6>Bio:</h6>
           <p><%= current_user.bio %></p>
 
+          <br>
+
           <h6>Location:</h6>
           <p><%= current_user.location %></p>
+
+          <br>
 
           <h6>Favourite Dish:</h6>
           <p>Not McDonald's<%#= current_user.xxx %></p>
         </div>
 
-        <div class="user-basic">
-          <h6>My Award:</h6>
-          <div class="user-awards">
-            <i class="fa-solid fa-burger fa-2x"></i>
-            <div class="user-awards-infos">
-              <p>Master Food Delivery</p>
+        <div class="container awards-container">
+          <div class="user-basic">
+            <h6>My Awards:</h6>
+            <div class="award list">
+              <ul class="ul-award">
+                <li class="card-award">
+                    <div class="award-header">
+                      <i class="fa-solid fa-hat-cowboy-side"></i>
+                    </div>
+                    <div class="award-info">
+                      <h6>Rootin' Tootin</h6>
+                      <p>Made 3 dishes from USA</p>
+                    </div>
+                </li>
+
+                <li class="card-award">
+                    <div class="award-header">
+                      <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <div class="award-info">
+                      <h6>Le Critique Magnifique</h6>
+                      <p>Left 5 Reviews</p>
+                    </div>
+                </li>
+
+                <li class="card-award">
+                    <div class="award-header">
+                      <i class="fa-solid fa-hippo"></i>
+                    </div>
+                    <div class="award-info">
+                      <h6>T.I.A</h6>
+                      <p>Cooked 10 dishes from across Africa</p>
+                    </div>
+                </li>
+
+              </ul>
             </div>
           </div>
         </div>
@@ -72,8 +106,12 @@
       </div>
 
 
-  </div>
+      <div class="iPhone-13-spacing"></div>
 
-<%= render "shared/user_bottom_navbar" %>
+    </div>
+
+      <%= render "shared/bottom_navbar" %>
+
+  </div>
 
 </div>
