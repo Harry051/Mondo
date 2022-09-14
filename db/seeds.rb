@@ -445,6 +445,57 @@ recipes = [
     country_bio: "Indian cuisine consists of a variety of regional and traditional cuisines native to India. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Indian cuisine has shaped the history of international relations; the spice trade between India and Europe was the primary catalyst for Europe's Age of Discovery.[4] Spices were bought from India and traded around Europe and Asia. Indian cuisine has influenced other cuisines across the world, especially those from Europe (especially Britain), the Middle East, Southern African, East Africa, Southeast Asia, North America, Mauritius, Fiji, Oceania, and the Caribbean.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1920px-Flag_of_India.svg.png',
     calories: 472
+  },
+
+  {
+    name: 'Satay Beef Soup Noodle',
+    description: "Warm rice noodles and tender sweet nutty satay beef swimming in a simple broth. A dish that is often served for lunch or an afternoon snack at Hong Kong style cafes. This dish is great for lunch or dinner. A bowl of comfort, perfect for a cold day.",
+    average_rating: 4.8,
+    categories: ['Main'],
+    times: { prep: 20,
+             cook: 20,
+             total: 40
+               },
+    ingredients: [
+      "500 grams vermicelli rice noodles",
+      "7 cups unsalted chicken broth",
+      "2 tbsp soy sauce",
+      "5 tbsp oyster sauce",
+      "½ tbsp sesame oil",
+      "½ tsp turmeric",
+      "500 grams beef, flank steak recommended",
+      "1 tsp cooking oil",
+      "¼ tsp Baking soda",
+      "4 tsp Soy sauce",
+      "1 ½ tsp Cornstarch",
+      "½ tsp Garlic powder",
+      "2 tsp Water",
+      "½ tbsp garlic, minced",
+      "3 tbsp peanut butter, smooth kind",
+      "½ tsp Ginger powder",
+      "2 tbsp Lemongrass, finely minced",
+      "1 tsp sesame oil",
+      "3 tbsp brown sugar",
+      "One Shallot, minced",
+      "3 tbsp soy sauce",
+      "2 tsp Garlic, minced",
+      "1 tsp red chili, finely minced"
+                     ],
+    recipe: [
+      "Slice your steak against the grain and very thinly. Tip: if you freeze the steak for 20-30 minutes, this will allow you to slice the steak very thinly. Transfer beef to a mixing bowl.",
+      "To the same mixing bowl, add your beef marinade ingredients. Mix with tongs or your hands and then pack the beef into a ball so that the marinade really soaks into the meat. Set aside.",
+      "In another bowl, whisk together your satay sauce ingredients until well combine. Tip: if you have a blender, add your ingredients to the blender and then blend until smooth. Set aside.",
+      "Next in a non-stick pan set over medium high heat, add cooking oil and your marinated beef. Fry until the edges are brown and the meat is 50-60% cooked, about 5 minutes.",
+      "Then when the beef is 75% cooked, pour in your satay sauce and mix. Cook for 1-2 minutes until beef is cooked through and not red. Transfer to a plate and set aside.",
+      "In a pot, boil your rice vermicelli noodles for a couple of minutes loosened and softer, about 2-3 minutes. Strain immediately. Rinse with cold water and strain again. Divide your noodles into 5 bowls.",
+      "Divide your satay beef between the bowls placing them over your noodles.",
+      "Meanwhile, mix chicken broth, oyster sauce, soy sauce and sesame oil. Bring to a boil. Then divide the broth between the bowl by pouring it over your noodles. Serve and enjoy!"
+                    ],
+    dish_image_url: 'https://christieathome.com/wp-content/uploads/2021/05/Satay-Beef-Noodle-Soup-8.jpg',
+    country: 'Hong Kong',
+    country_bio: "Hong Kong cuisine is mainly influenced by Cantonese cuisine, European cuisines (especially British cuisine) and non-Cantonese Chinese cuisines (especially Hakka, Teochew, Hokkien and Shanghainese), as well as Japanese, Korean and Southeast Asian cuisines, due to Hong Kong's past as a British colony and a long history of being an international port of commerce. Complex combinations and international gourmet expertise have given Hong Kong the labels of 'Gourmet Paradise' and 'World's Fair of Food'.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/2880px-Flag_of_Hong_Kong.svg.png',
+    calories: 667
   }
  ]
 
