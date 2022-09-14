@@ -9,11 +9,21 @@
 
 // screen width-size min 374px
 
-.iPhone-13-container {
-  width: 100%;
-  height: 768px;
-  background-color: #FFFFFF;
-  overflow: scroll;
+@media (min-width: 480px) {
+
+  .iPhone-13-container {
+    width: 100%;
+    height: 768px;
+    background-color: #FFFFFF;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .iPhone-13-container {
+    width: 100%;
+    background-color: #FFFFFF;
+  }
 }
 
 .iPhone-13-container .my-favourites {
