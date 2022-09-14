@@ -32,7 +32,9 @@
 
 @media (max-width: 480px) {
   .iPhone-13-bottom-nav-bar {
-    position: fixed;
+    display: flex;
+    position: sticky;
+    background-color: #FFFFFF;
     // right: 0px;
     bottom: 0px;
   }
