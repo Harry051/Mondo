@@ -1,13 +1,16 @@
 <div class="iPhone-13">
   <div class="iPhone-13-container iPhone-13-container-colour">
+
     <h4 class='my-favourites-top'>My Favourites</h4>
+
     <% @favourites.each do |f| %>
       <div class='dish-reviews-card dish-display-card'>
+        <%# ------------- Image links back to ingredients ... user can cook again from fav page ---------------------%>
         <a href=<%="/dishes/#{f.dish.id}/ingredients"%>><%= cl_image_tag f.dish.photo.key, class:'fav-img' %></a>
         <div class='dish-reviews-card-content'>
           <div class='dish-reviews-card-content-top'>
             <h4><%= f.dish.title %></h4>
-
+            <%# ----------- X icon on button to delete the fav card ----------------------------- %>
             <%= link_to '<i style="color: grey; font-size:20px" class="fa-solid fa-xmark"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>
 
             <%#= link_to '<i style="color:crimson; font-size:20px" class="fa-sharp fa-solid fa-square-minus"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>

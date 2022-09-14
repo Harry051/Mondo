@@ -1,17 +1,18 @@
 import { Controller } from "@hotwired/stimulus"
 import swal from 'sweetalert';
 
-// Connects to data-controller="review-confirmation"
+// Connects to data-controller="review-confirmation" ...
+// Activated on form submit in Review/new
 export default class extends Controller {
   connect() {
-    console.log("New review popup!");
+    console.log("review-confirm controller-hello");
 
     const initSweetalert = (selector, options = {}, callback = () => {}) => {
       const swalButton = document.querySelector(selector);
         if (swalButton) { // protect other pages
           swalButton.addEventListener('click', (e) => {
             e.preventDefault();
-            swal(options).then(callback); // <-- add the `.then(callback)`
+            swal(options).then(callback);
           });
         }
     };

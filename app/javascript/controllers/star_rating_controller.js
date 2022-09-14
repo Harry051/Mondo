@@ -3,9 +3,10 @@ import { Controller } from "@hotwired/stimulus"
 import StarRating from "star-rating.js"
 
 // Connects to data-controller="star-rating"
+// activated in Reviews/New
 export default class extends Controller {
   connect() {
     new StarRating(this.element)
-    console.log("conected to stars")
+    console.log("star-rating - controller-hello");
   }
 }

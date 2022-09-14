@@ -8,7 +8,7 @@ export default class extends Controller {
     const reviewLogBtn = document.querySelector('.dish-heart-btn');
     const favBtn = document.querySelector('.dish-fa-heart')
 
-    console.log('try?')
+    console.log('review-fav-login controller-hello');
 
     reviewLogBtn.addEventListener('click', (event) => {
       favBtn.classList.toggle('fa-regular');
