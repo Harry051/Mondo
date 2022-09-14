@@ -41,7 +41,7 @@
           <p><%= current_user.location %></p>
 
           <h6>Favourite Dish:</h6>
-          <p>Not McDonald's<%#= current_user.xxx %></p>
+          <p><%= current_user.favourites.first.dish.title %></p>
         </div>
 
         <div class="user-basic">
@@ -61,18 +61,25 @@
 
       <p> </p>
 
-    </div>
 
-      <div class="user-tabs-box" data-controller="display-tab">
-
-        <div class="user-tab" data-action="click->display-tab#showContent" data-display-tab-target="tab">
-          <h2>Cooking History</h2>
-        </div>
-
-      </div>
 
 
   </div>
+      <div class="user-tabs-box">
+
+        <div class="user-tab">
+          <h2>Cooking History</h2>
+          <div class="tab-new-position">
+            <% current_user.cooked_dishes.each do |d| %>
+              <p> ~ <em><%= d.dish.title %></em></p>
+            <% end %>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
 
 <%= render "shared/user_bottom_navbar" %>
 

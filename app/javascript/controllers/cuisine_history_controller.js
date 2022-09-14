@@ -7,6 +7,7 @@ export default class extends Controller {
   connect() {
     const dropBtn = document.querySelector(".cuisine-drop-btn");
     const dropContent = document.querySelector(".dish-flag-country-drop-content");
+    const dropProfile = document.querySelector(".tab-position-new");
 
     dropBtn.addEventListener('click', (event) => {
       dropBtn.classList.toggle('fa-caret-down');
