@@ -42,14 +42,28 @@
   list-style: none;
 }
 
-.music-btn {
-  background-color: black;
-  opacity: 0.4;
-  width: 50px;
-  height: 32px;
-  position: absolute;
-  bottom: 18px;
-  right: 88px;
+@media (min-width: 480px) {
+  .music-btn {
+    background-color: black;
+    opacity: 0.4;
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    bottom: 18px;
+    right: 88px;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-btn {
+    background-color: black;
+    opacity: 0.4;
+    width: 50px;
+    height: 32px;
+    position: relative;
+    bottom: 62px;
+    right: -248px;
+  }
 }
 
 .music-btn-list {
