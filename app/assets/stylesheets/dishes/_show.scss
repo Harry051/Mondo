@@ -424,9 +424,9 @@
 
     h4 {
       margin-left: 10px;
-      padding-top: 6px;
+      padding-top: 8px;
       font-family: 'Raleway', sans-serif;
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 400;
     }
 
@@ -465,7 +465,6 @@
 //   margin-left: 20px;
 //   margin-right: 20px;
 //   border-top: 1px solid rgba(128,128,128,0.5);
-
 }
 
 .dish-show-reviews-item {
@@ -488,18 +487,19 @@
 .dish-reviews-card {
   width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 16px;
   margin-bottom: 10px;
   display: flex;
   background-color: #F5F5EE;
   border-radius: 15px;
-  box-shadow: 2px 2px 2px #888888;
+  box-shadow: 1px 1px 2px #888888;
 
   img {
     width: 90px;
     height: 90px;
     margin: 10px;
     border-radius: 15px;
+    object-fit: cover;
   }
 
   .dish-reviews-card-content {
@@ -529,6 +529,7 @@
 
     .fa-star {
       color: gold;
+      letter-spacing: -2px;
     }
 
     .dish-reviews-card-content-top {
