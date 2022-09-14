@@ -12,10 +12,17 @@
 
 
     <% if user_signed_in? %>
-      <a href="<% user_path(current_user) %>"><li><i style="color: #E36397" class="fa-solid fa-user fa-2x"></i></li></a>
+      <a href="<% user_path(current_user) %>"><li><i style="color: #97F88C" class="fa-solid fa-user fa-2x"></i></li></a>
     <% else %>
-      <a href="/users/sign_in"><li><i style="color: #E36397" class="fa-solid fa-user fa-2x"></i></li></a>
+      <a href="/users/sign_in"><li><i style="color: #97F88C" class="fa-solid fa-user fa-2x"></i></li></a>
     <% end %>
+  </ul>
+
+    <ul class="music-btn-list">
+    <div data-controller="music-player">
+      <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
+      <a href="#"><li><div class="music-btn"  data-action="click->music-player#audioplay"></div></li></a>
+    </div>
   </ul>
 
 </div>

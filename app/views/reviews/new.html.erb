@@ -1,9 +1,34 @@
 <div class="iPhone-13">
+
+  <div class="iPhone-13-container iPhone-13-container-colour">
+
+    <div class="dish-card-simple-container" data-controller="dish-card">
+    <div class="dish-card-simple" d-none>
+      <h4><%= @dish.title %></h4>
+      <i class="dish-drop-btn fa-solid fa-lg fa-caret-down" ></i>
+    </div>
+
+      <div class='d-none dish-reviews-card dish-show-card dish-display-card'>
+        <%= cl_image_tag @dish.photo.key, class:'fav-img' %>
+        <div class='dish-reviews-card-content'>
+          <div class='dish-reviews-card-content-top'>
+            <h4><%= @dish.title %></h4>
+            <i class="dish-up-btn fa-solid fa-lg fa-caret-up"></i>
+          </div>
+          <h4><i class='fa-solid fa-lg fa-star'></i> <%= @dish.average_rating %></h4>
+          <p style="font-size: 14px; color: grey"><%= @dish.categories.first(3).join(', ') %></p>
+        </div>
+      </div>
+  </div>
+
   <div class="iPhone-13-container a-parent">
+
 
     <%# ---- Add to fav header and button ---------------- %>
     <div class="container add-to-favourite">
+
       <h4>Add to Favourites</h4>
+
       <div>
         <% if user_signed_in? %>
           <%= render partial: 'shared/review_favourite', favourite: @favourite %>
@@ -48,7 +73,9 @@
           <i class="fab fa-facebook-square fa-2x facebook"></i>
         <% end %>
         <%# pinterest head - Check if photo exists for review else post photo of the dish%>
+
         <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/" do %>
+
           <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
         <% end %>
       </div>

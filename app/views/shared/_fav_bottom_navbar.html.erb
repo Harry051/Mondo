@@ -4,7 +4,7 @@
 
     <a href="/"><li><i style="color: #261127" class="fa-solid fa-book-atlas fa-lg"></i></li></a>
 
-    <a href="/favourites"><li><i style="color: #E36397" class="fa-solid fa-heart fa-2x"></i></li></a>
+    <a href="/favourites"><li><i style="color: crimson;" class="fa-solid fa-heart fa-2x"></i></li></a>
 
     <a href="#"><li><i style="color: #E36397" class="fa-solid fa-kitchen-set fa-lg"></i></li></a>
 
@@ -16,6 +16,13 @@
       <a href="/users/sign_in"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
     <% end %>
 
+  </ul>
+
+    <ul class="music-btn-list">
+    <div data-controller="music-player">
+      <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
+      <a href="#"><li><div class="music-btn"  data-action="click->music-player#audioplay"></div></li></a>
+    </div>
   </ul>
 
 </div>

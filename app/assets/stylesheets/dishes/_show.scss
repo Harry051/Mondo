@@ -7,22 +7,108 @@
 
 // nav-btn-color: #261127;
 
+// screen width-size min 374px
+
 .iPhone-13-container {
   width: 100%;
   height: 768px;
   background-color: #FFFFFF;
   overflow: scroll;
-
-  .my-favourites-top {
-    text-align: center;
-    margin-top: 6px;
-    margin-left: 30px;
-    font-family: 'Raleway', sans-serif;
-  }
 }
 
 .iPhone-13-container .my-favourites {
   text-align: center;
+}
+
+.dish-img-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 18px;
+  width: 86%;
+  margin: 0 auto;
+  margin-bottom: -32px;
+
+  button {
+    width: 0px;
+    height: 0px;
+    background-color: white !important;
+    padding: 0px;
+    border: 0px !important;
+  }
+
+  .dish-heart-item {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #888888;
+    transition: all 0.4s ease;
+    opacity: 0.85;
+  }
+
+  .dish-heart-item-login {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 3px 0px 3px #888888;
+    transition: all 0.4s ease;
+    opacity: 0.85;
+  }
+
+  .dish-heart-item .fa-solid {
+    color: rgb(220,20,60);
+  }
+
+  .dish-heart-item-login a {
+    position: relative;
+    top: 5px;
+    left: 8px;
+  }
+
+  .dish-fa-heart {
+    color: #261127;
+    position: relative;
+    top: 6px;
+    left: 0px;
+  }
+
+  .dish-fa-heart-login {
+    color: #261127;
+  }
+
+  .dish-refresh-btn {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #888888;
+    transition: all 0.4s ease;
+    opacity: 0.85;
+  }
+
+  .dish-refresh-btn a {
+    position: relative;
+    top: 5px;
+    left: 9px;
+    color: #261127;
+  }
+
+  .dish-heart-item-user {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #888888;
+    transition: all 0.4s ease;
+    opacity: 0.85;
+    position: relative;
+    top: -20px;
+    right: 26px;
+    margin-right: 10px;
+  }
 }
 
 .dish-card-container {
@@ -33,177 +119,27 @@
 .dish-card-img-container {
   height: 310px;
   object-fit: cover;
-
-  button {
-    width: 0px;
-    height: 0px;
-    background-color: white !important;
-    padding: 0px;
-    border: 0px !important;
-  }
-
-  @media (max-width: 480px) {
-    .dish-heart-item {
-      position: relative;
-      top: -402px;
-      left: 368px;
-      background-color: white;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      box-shadow: 3px 0px 3px #888888;
-      transition: all 0.4s ease;
-      margin-left: 28px;
-    }
-  }
-
-  @media (min-width: 480px) {
-    .dish-heart-item {
-      position: relative;
-      top: -384px;
-      left: 312px;
-      background-color: white;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      box-shadow: 3px 0px 3px #888888;
-      transition: all 0.4s ease;
-      margin-left: 28px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .dish-heart-item-login {
-      position: relative;
-      top: -382px;
-      left: 368px;
-      background-color: white;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      box-shadow: 3px 0px 3px #888888;
-      transition: all 0.4s ease;
-      margin-left: 28px;
-    }
-  }
-
-  @media (min-width: 480px) {
-    .dish-heart-item-login {
-      position: relative;
-      top: -370px;
-      left: 314px;
-      background-color: white;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      box-shadow: 3px 0px 3px #888888;
-      transition: all 0.4s ease;
-      margin-left: 28px;
-    }
-  }
 }
 
 .cl_img {
   width: 100%;
   height: 310px;
-  box-shadow: 2px 2px 2px #888888;
+  // box-shadow: 2px 2px 2px #888888;
+  // margin-bottom: -10px;
 }
 
 .dish-card-img-curve {
   position: relative;
-  top: -75px;
+  bottom: 80px;
 }
-
-.dish-heart-item {
-  background-color: white;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 1px #888888;
-  transition: all 0.4s ease;
-  position: relative;
-  bottom: 5px;
-  opacity: 0.85;
-}
-
-.dish-heart-item-login {
-  background-color: white;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  box-shadow: 3px 0px 3px #888888;
-  transition: all 0.4s ease;
-  position: relative;
-  bottom: 5px;
-  opacity: 0.85;
-}
-
-.dish-heart-item .fa-solid {
-  color: rgb(220,20,60);
-}
-
 
 .btn-choose {
   padding: 10px 16px;
   background-color: rgb(220,20,60);
 }
 
-.dish-heart-item-login a {
-  position: relative;
-  top: 5px;
-  left: 8px;
-}
-
-.dish-fa-heart {
-  color: #261127;
-  position: relative;
-  top: 6px;
-  left: 0px;
-}
-
-.dish-fa-heart-login {
-  color: #261127;
-}
-
-.dish-refresh-btn {
-  position: relative;
-  top: -284px;
-  left: -8px;
-  background-color: white;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 1px #888888;
-  transition: all 0.4s ease;
-  margin-left: 28px;
-  opacity: 0.85;
-}
-
-.dish-refresh-btn a {
-  position: relative;
-  top: 5px;
-  left: 9px;
-  color: #261127;
-}
-
-
-// p {
-//   margin-left: 20px;
-// }
-// .btn {
-//   border-radius: 50%;
-//   box-shadow: 2px 2px 2px #888888;
-//   width: 30px;
-//   height: 30px;
-//   padding: 0;
-//   position: relative;
-//   bottom: 286px;
-//   left: 355px;
-//   background-color: white;
-// }
-
 .dish-infos {
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 .dish-infos hr {
@@ -218,7 +154,6 @@
   padding-left: 18px;
   padding-right: 12px;
   margin-bottom: 4px;
-  // text-shadow: 1px 1px 1px rgba(128,128,128,0.3);
 
   h2 {
     font-family: 'Raleway', sans-serif;
@@ -235,26 +170,22 @@
     padding: 4px 8px;
     border: 1px solid rgba(128,128,128,0.3);
     border-radius: 30px;
-    // box-shadow: 1px 1px 2px #888888;
     display: flex;
-    // position: relative;
-    // top: -28px;
-    // right: 4px;
     font-family: 'Raleway', sans-serif;
     color: #261127;
 
-      .icon {
-        padding-left: 2px;
-        padding-right: 4px;
-        color: rgb(239,200,9);
-      }
+    .icon {
+      padding-left: 2px;
+      padding-right: 4px;
+      color: rgb(239,200,9);
+    }
 
-      .number {
-        position: relative;
-        top: -1px;
-        padding-right: 4px;
-        padding-bottom: 2px;
-      }
+    .number {
+      position: relative;
+      top: -1px;
+      padding-right: 4px;
+      padding-bottom: 2px;
+    }
   }
 }
 
@@ -368,6 +299,7 @@
     border-radius: 50%;
     margin-top: 4px;
     margin-left: 25px;
+    object-fit: cover;
   }
 
   h4 {
@@ -443,34 +375,9 @@
       font-size: 20px;
       font-weight: 400;
     }
-
-  // .fa-caret-down {
-    // position: relative;
-    // top: 12px;
-    // right: -178px;
-  // }
-
-  // .fa-caret-up {
-    // position: relative;
-    // top: 14px;
-    // right: -178px;
-  // }
-
-// .dish-show-reviews {
-//   display: flex;
-//   flex-flow: wrap;
-//   justify-content: flex-start;
-//   margin-top: 15px;
-//   padding-top: 5px;
-//   margin-left: 20px;
-//   margin-right: 20px;
-//   border-top: 1px solid rgba(128,128,128,0.5);
 }
 
 .dish-show-reviews-item {
-  // position: relative;
-  // top: 50px;
-  // left: -146px;
   width: 100%;
   margin: 0 auto;
 
@@ -537,7 +444,5 @@
       justify-content: space-between;
       width: 220px;
     }
-
   }
-
 }
