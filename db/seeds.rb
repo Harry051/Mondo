@@ -496,6 +496,36 @@ recipes = [
     country_bio: "Hong Kong cuisine is mainly influenced by Cantonese cuisine, European cuisines (especially British cuisine) and non-Cantonese Chinese cuisines (especially Hakka, Teochew, Hokkien and Shanghainese), as well as Japanese, Korean and Southeast Asian cuisines, due to Hong Kong's past as a British colony and a long history of being an international port of commerce. Complex combinations and international gourmet expertise have given Hong Kong the labels of 'Gourmet Paradise' and 'World's Fair of Food'.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/2880px-Flag_of_Hong_Kong.svg.png',
     calories: 667
+  },
+
+  {
+    name: 'Baigan Chokha',
+    description: "The term chokha refers to any dish of vegetables roasted over a fire or scorched in hot oil, then mashed into a paste, and usually eaten with roti.",
+    average_rating: 4.9,
+    categories: ['Vegetarian', 'Vegan'],
+    times: { prep: 5,
+             cook: 25,
+             total: 30 },
+    ingredients: ["2 large Italian eggplants",
+                  "1 tablespoon canola oil",
+                  "1/2 medium onion, chopped",
+                  "2 /3 cup vegetable oil",
+                  "2 cloves garlic, finely chopped",
+                  "1 small tomato, chopped",
+                  "1/4 teaspoon coarse salt, or to taste",
+                  "Freshly ground black pepper to taste",
+                  "1 tablespoon coarsely chopped cilantro",
+                  "Roti, for serving"],
+    recipe: ["Prepare a hot grill or preheat the broiler.",
+             "With a fork, pierce the eggplants all over, and place on the grill or under the broiler. Grill or broil until completely charred and soft, about 20 minutes, turning frequently (the eggplants will brown and blister quickly). Remove and allow to cool.",
+             "Once cool, cut open the eggplants and scrape out the flesh. The flesh should be soft to the touch and pulpy, and should easily come away from the skin. Set aside.",
+             "Heat the canola oil in a frying pan. Add the onion and sauté until translucent. Add the garlic and fry until the garlic turns a dark golden brown, then add the tomato and fry for 1 to 2 minutes.",
+             "Stir in the mashed eggplant and cook for about 2 minutes. Season with salt and black pepper to taste. Garnish with the cilantro and serve with roti."],
+    dish_image_url: 'https://assets.epicurious.com/photos/5f7b812ee3c3c1d8f0b080da/1:1/w_2240,c_limit/BaiganChkha_RECIPE_091620_11868.jpg',
+    country: 'Trinidad & Tobago',
+    country_bio: "a unique history and its food is influenced by Indian-South Asian, West African, Creole, European, American, Chinese, Amerindian, and Latin American culinary styles. Trinidad and Tobagonian food is dominated by a wide selection of seafood dishes, most notably, curried crab and dumplings.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/200px-Flag_of_Trinidad_and_Tobago.svg.png',
+    calories: 266
   }
  ]
 
@@ -695,7 +725,7 @@ recipes = [
 
   {
     name: 'Patacones',
-    description: "AIn some countries they are known as tostones, but in the northern region of Peru, where plantains are abundant and an important part of the daily diet, these tasty fritters are called patacones. They are usually eaten as an accompaniment for meat and fish dishes, instead of bread, French fries, or rice.",
+    description: "In some countries they are known as tostones, but in the northern region of Peru, where plantains are abundant and an important part of the daily diet, these tasty fritters are called patacones. They are usually eaten as an accompaniment for meat and fish dishes, instead of bread, French fries, or rice.",
     average_rating: 4.7,
     categories: ['Vegetarian'],
     times: { prep: 60,
@@ -723,8 +753,7 @@ recipes = [
     country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
     calories: 491
-  },
-
+  }
 ]
 
 recipes.each do |r|

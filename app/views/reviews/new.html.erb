@@ -1,4 +1,5 @@
 <div class="iPhone-13">
+
   <div class="iPhone-13-container iPhone-13-container-colour">
 
     <div class="dish-card-simple-container" data-controller="dish-card">
@@ -19,6 +20,9 @@
         </div>
       </div>
   </div>
+
+  <div class="iPhone-13-container a-parent">
+
 
     <%# ---- Add to fav header and button ---------------- %>
     <div class="container add-to-favourite">
@@ -44,14 +48,17 @@
             <%= f.input :content, label: "So, tell us how was it?", title:""%>
             <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
             <%= f.input :photo, as: :file, label:"Upload your photo" %>
-            <%= f.submit "Send your review" %>
+            <%= f.submit "Submit review"  %>
           <% end %>
         </div>
       </div>
     </div>
 
+    <%# show latest review  %>
+
+
     <%# ------------- Social media share links ----------------------%>
-    <div class="container share-box">
+    <div class="container share-box a-child">
       <div class="share-links">
         <%# twitter %>
         <%= link_to "https://twitter.com/intent/tweet?url=https://www.mondo.recipes/&hashtags=loveMondo" do %>
@@ -66,12 +73,9 @@
           <i class="fab fa-facebook-square fa-2x facebook"></i>
         <% end %>
         <%# pinterest head - Check if photo exists for review else post photo of the dish%>
-        <%# if Review.last.photo.attached? %>
-          <%# @photo_link = Review.last.photo.url %>
-        <%# else %>
-          <%# @photo_link = @dish.photo.url %>
-        <%# end %>
-        <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/&media=#{@photo_link}" do %>
+
+        <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/" do %>
+
           <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
         <% end %>
       </div>
