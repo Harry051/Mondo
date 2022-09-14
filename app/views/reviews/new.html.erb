@@ -21,8 +21,6 @@
       </div>
   </div>
 
-  <%# <div class="iPhone-13-container a-parent"> %>
-
 
     <%# ---- Add to fav header and button ---------------- %>
     <div class="container add-to-favourite">
@@ -41,15 +39,15 @@
     </div>
 
     <%# ---- reviews: Content, star-rating, submit ----------- %>
-    <div class="container review-container">
+    <div class="container review-container" data-controller="review-confirmation">
       <div class="row">
         <div class="col-xs-4">
           <%= simple_form_for([@dish, @review]) do |f| %>
-            <%= f.submit "Submit review", id:"submit-review", class:"d-none"  %>
             <%= f.input :content, label: "So, tell us how was it?"%>
             <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
             <%= f.input :photo, as: :file, label:"Add a photo" %>
-            <button id="sweet-alert" class="btn btn-primary submit-review">Submit review</button>
+            <button id="sweet-alert" class="btn btn-primary submit-review" >Submit review</button>
+            <%= f.submit "Submit review", id:"submit-review", class:"d-none"  %>
           <% end %>
         </div>
       </div>
