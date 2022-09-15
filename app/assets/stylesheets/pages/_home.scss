@@ -34,7 +34,7 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: change infinite ease-in-out;
-  animation-duration: 30s;
+  animation-duration: 18s;
 
   @keyframes change {
     0% {
@@ -199,7 +199,7 @@ a.mapboxgl-ctrl-logo {
 
 .home-pan {
   position: relative;
-  bottom: -115px;
+  bottom: -105px;
   right: 18px;
   display: flex;
   justify-content: space-between;
@@ -464,145 +464,3 @@ ol, ul, dl {
   margin-top: 0;
   margin-bottom: -28px;
 }
-
-
-
-
-
-
-
-
-
-
-// .container-responsive {
-//   width: 100%;
-//   height: 100vh;
-//   margin: 0 auto;
-// }
-
-// @media (min-width: 420px) {
-//   .container-responsive {
-//     width: 390px;
-//     height: 704px;
-//     margin: 0 auto;
-//     overflow: scroll;
-//   }
-// }
-
-// .top-navbar-responsive {
-//   width: 100%;
-//   position: sticky;
-//   top: 0%;
-// }
-
-// @media (min-width: 420px) {
-//   .bottom-navbar-responsive {
-//     width: 100%;
-//     position: absolute;
-//     top: 768px;
-//     background-color: white;
-//     height: 64px;
-//     border-top: 0.5px solid #888888;
-//     z-index: 99;
-//   }
-// }
-
-// .container-home-top {
-//     height: 100%;
-//     background-image: url(home-bg-1.eps.png);
-//     background-size: 100%;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     animation: change infinite ease-in-out;
-//     animation-duration: 30s;
-//   }
-
-// @keyframes change {
-//   0% {
-//     background-image: url(home-bg-1.eps.png);
-//   }
-//   25% {
-//     background-image: url(home-bg-2.eps.png);
-//   }
-//   50% {
-//     background-image: url(home-bg-3.eps.png);
-//   }
-//   75% {
-//     background-image: url(home-bg-4.eps.png);
-//   }
-//   100% {
-//     background-image: url(home-bg-1.eps.png);
-//   }
-// }
-
-// .bottom-navbar-responsive {
-//   width: 100%;
-//   position: sticky;
-//   top: 100%;
-//   background-color: white;
-//   height: 64px;
-//   border-top: 0.5px solid #888888;
-//   z-index: 98;
-//   display: flex;
-
-//   .bottom-navbar-list {
-//     width: 95%;
-//     margin: 0 auto;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-//     list-style: none;
-//     text-align: center;
-//     align-items: center;
-
-//     li {
-//       display: inline-block;
-//     }
-//   }
-// }
-
-// .music-btn-fake {
-//   background-color: black;
-//   opacity: 0.1;
-//   width: 40px;
-//   height: 40px;
-//   position: fixed;
-//   right: 106px;
-//   bottom: 12px;
-//   z-index: 99;
-// }
-
-// .home-headline {
-//   width: 85%;
-//   margin-top: 300px;
-//   margin-left: 30px;
-
-//   h3 {
-//     font-family: 'Raleway', sans-serif;
-//     font-weight: 900;
-//     font-size: 52px;
-//     color: #261127;
-//   }
-
-//   p {
-//     font-family: 'Raleway', sans-serif;
-//     font-size: 20px;
-//     color: #261127;
-//   }
-// }
-
-// .home-start-btn-box {
-//   margin-top: 50px;
-//   margin-left: 30px;
-//   width: fit-content;
-//   transition: 0.4s ease;
-// }
-
-// .home-start-btn {
-//   background: #99F88D;
-//   padding: 20px 28px;
-//   border-radius: 8px;
-//   color: #261127;
-//   font-family: 'Raleway', sans-serif;
-//   font-size: 20px;
-//   transition: 0.4s ease;
-// }
