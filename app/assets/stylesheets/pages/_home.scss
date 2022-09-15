@@ -16,7 +16,7 @@
 
 .iPhone-13-home-container {
   width: 100%;
-  height: 710px;
+  height: 768px;
   background-color: #FFFFFF;
   overflow: scroll;
 }
@@ -53,43 +53,14 @@
     background-image: url(home-bg-1.eps.png);
     }
   }
-
-// @keyframes change {
-//   0% {
-//     background-image: url(home-image-1.eps.png);
-//   }
-//   25% {
-//     background-image: url(home-image-2.eps.png);
-//   }
-//   50% {
-//     background-image: url(home-image-3.eps.png);
-//   }
-//   75% {
-//     background-image: url(home-image-4.eps.png);
-//   }
-//   100% {
-//     background-image: url(home-image-1.eps.png);
-//   }
-  // 62% {
-  //   background-image: url(home-image-2.eps.png);
-  // }
-  // 75% {
-  //   background-image: url(home-image-3.eps.png);
-  // }
-  // 87% {
-  //   background-image: url(home-image.3.eps.png);
-  // }
-  // 100% {
-  //   background-image: url(home-image-3.eps.png);
-  // }
 }
 
-.home-logo img {
-  position: relative;
-  left: 12px;
-  top: 24px;
-  width: 40px;
-}
+// .home-logo img {
+//   position: relative;
+//   left: 12px;
+//   top: 24px;
+//   width: 40px;
+// }
 
 .home-graphics img {
   position: relative;
@@ -124,12 +95,10 @@
   top: 120px;
   left: 30px;
   width: fit-content;
-  transition: 0.4s ease;
-}
 
-.home-btn:hover {
-  background-color: #63F851;
-  color: #261127;
+}
+// transition: 0.4s ease;
+
 // .home-btn:hover {
 //   background-color: #3E4279;
 //   color: #261127;
@@ -142,26 +111,26 @@
   background: #9391EF;
   padding: 20px 28px;
   border-radius: 8px;
+  color: #FEFAF3;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-}
 
-.btn-get-started {
-  background: #99F88D;
-  padding: 20px 28px;
-  border-radius: 8px;
-  color: #261127;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  transition: 0.4s ease;
 }
+// transition: 0.4s ease;
 
 .home-background-bottom {
-  // height: 710px;
   height: 768px;
   // background-color: #FFBF9C;
   background-image: linear-gradient(#FECB03, #FED73D);
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
+}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  background-color: #FFBF9C;
+}
+
+a.mapboxgl-ctrl-logo {
+  background-color: #FFBF9C;
 }
 
 .fa-bars {
@@ -172,8 +141,7 @@
 
 .home-search-text h2 {
   position: relative;
-  top: 48px;
-  // top: 70px;
+  top: 70px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -208,30 +176,15 @@
 }
 
 .home-globe {
-  // margin: 70px 0px -128px 5px;
   margin: 40px 0px -128px 5px;
-
-
-.home-pan {
-  // position: relative;
-  // top: 100px;
-  // right: 100px;
-  margin-top: 40px;
-  margin-bottom: -160px;
-  margin-left: 84px;
 }
 
-.home-earth-shadow img {
-  position: relative;
-  top: 128px;
-  left: 100px;
-  width: 200px;
-}
-
-
-
-
-
+// .home-earth-shadow img {
+//   position: relative;
+//   top: 128px;
+//   left: 100px;
+//   width: 200px;
+// }
 
 .home-pan {
   position: relative;
@@ -258,8 +211,6 @@
   background-color: white;
   box-shadow: 3px 0px 3px #888888;
   display: block;
-  position: relative;
-  bottom: -10px;
 }
 
 .home-filters-box-top {
@@ -308,7 +259,6 @@
   width: auto;
   margin: 0px 12px 0px 12px;
 }
-
 
 .home-filters-grid p {
   color:#D0D0D0;
@@ -397,12 +347,8 @@
 }
 
 .mapboxgl-canvas {
-  border-radius: 50%;
+  border-radius: 35%;
 }
-
-
-
-
 
 
 
@@ -517,26 +463,26 @@ ol, ul, dl {
 
 
 
-.container-responsive {
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-}
+// .container-responsive {
+//   width: 100%;
+//   height: 100vh;
+//   margin: 0 auto;
+// }
 
-@media (min-width: 420px) {
-  .container-responsive {
-    width: 390px;
-    height: 704px;
-    margin: 0 auto;
-    overflow: scroll;
-  }
-}
+// @media (min-width: 420px) {
+//   .container-responsive {
+//     width: 390px;
+//     height: 704px;
+//     margin: 0 auto;
+//     overflow: scroll;
+//   }
+// }
 
-.top-navbar-responsive {
-  width: 100%;
-  position: sticky;
-  top: 0%;
-}
+// .top-navbar-responsive {
+//   width: 100%;
+//   position: sticky;
+//   top: 0%;
+// }
 
 // @media (min-width: 420px) {
 //   .bottom-navbar-responsive {
@@ -550,104 +496,102 @@ ol, ul, dl {
 //   }
 // }
 
-.container-home-top {
-    height: 100%;
-    background-image: url(home-bg-1.eps.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: change infinite ease-in-out;
-    animation-duration: 30s;
-  }
+// .container-home-top {
+//     height: 100%;
+//     background-image: url(home-bg-1.eps.png);
+//     background-size: 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     animation: change infinite ease-in-out;
+//     animation-duration: 30s;
+//   }
 
-@keyframes change {
-  0% {
-    background-image: url(home-bg-1.eps.png);
-  }
-  25% {
-    background-image: url(home-bg-2.eps.png);
-  }
-  50% {
-    background-image: url(home-bg-3.eps.png);
-  }
-  75% {
-    background-image: url(home-bg-4.eps.png);
-  }
-  100% {
-    background-image: url(home-bg-1.eps.png);
-  }
-}
+// @keyframes change {
+//   0% {
+//     background-image: url(home-bg-1.eps.png);
+//   }
+//   25% {
+//     background-image: url(home-bg-2.eps.png);
+//   }
+//   50% {
+//     background-image: url(home-bg-3.eps.png);
+//   }
+//   75% {
+//     background-image: url(home-bg-4.eps.png);
+//   }
+//   100% {
+//     background-image: url(home-bg-1.eps.png);
+//   }
+// }
 
-.bottom-navbar-responsive {
-  width: 100%;
-  position: sticky;
-  top: 100%;
-  background-color: white;
-  height: 64px;
-  border-top: 0.5px solid #888888;
-  z-index: 98;
-  display: flex;
+// .bottom-navbar-responsive {
+//   width: 100%;
+//   position: sticky;
+//   top: 100%;
+//   background-color: white;
+//   height: 64px;
+//   border-top: 0.5px solid #888888;
+//   z-index: 98;
+//   display: flex;
 
-  .bottom-navbar-list {
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    list-style: none;
-    text-align: center;
-    align-items: center;
+//   .bottom-navbar-list {
+//     width: 95%;
+//     margin: 0 auto;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+//     list-style: none;
+//     text-align: center;
+//     align-items: center;
 
-    li {
-      display: inline-block;
-    }
-  }
-}
+//     li {
+//       display: inline-block;
+//     }
+//   }
+// }
 
-.music-btn-fake {
-  background-color: black;
-  opacity: 0.1;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  right: 106px;
-  bottom: 12px;
-  z-index: 99;
-}
+// .music-btn-fake {
+//   background-color: black;
+//   opacity: 0.1;
+//   width: 40px;
+//   height: 40px;
+//   position: fixed;
+//   right: 106px;
+//   bottom: 12px;
+//   z-index: 99;
+// }
 
-.home-headline {
-  width: 85%;
-  margin-top: 300px;
-  margin-left: 30px;
+// .home-headline {
+//   width: 85%;
+//   margin-top: 300px;
+//   margin-left: 30px;
 
-  h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: 52px;
-    color: #261127;
-  }
+//   h3 {
+//     font-family: 'Raleway', sans-serif;
+//     font-weight: 900;
+//     font-size: 52px;
+//     color: #261127;
+//   }
 
-  p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    color: #261127;
-  }
-}
+//   p {
+//     font-family: 'Raleway', sans-serif;
+//     font-size: 20px;
+//     color: #261127;
+//   }
+// }
 
-.home-start-btn-box {
-  margin-top: 50px;
-  margin-left: 30px;
-  width: fit-content;
-  transition: 0.4s ease;
-}
+// .home-start-btn-box {
+//   margin-top: 50px;
+//   margin-left: 30px;
+//   width: fit-content;
+//   transition: 0.4s ease;
+// }
 
-.home-start-btn {
-  background: #99F88D;
-  padding: 20px 28px;
-  border-radius: 8px;
-  color: #261127;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  transition: 0.4s ease;
-}
-}
-}
+// .home-start-btn {
+//   background: #99F88D;
+//   padding: 20px 28px;
+//   border-radius: 8px;
+//   color: #261127;
+//   font-family: 'Raleway', sans-serif;
+//   font-size: 20px;
+//   transition: 0.4s ease;
+// }
