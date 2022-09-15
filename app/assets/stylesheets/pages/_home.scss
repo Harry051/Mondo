@@ -132,8 +132,8 @@
 }
 
 .home-background-bottom {
-  height: 704px;
-  background-image: linear-gradient(#52AA5E, #99F88D);
+  height: 710px;
+  background-image: linear-gradient(#FECB03, #FED73D);
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
 }
 
@@ -181,6 +181,15 @@
 
 .home-globe {
   margin: 70px 0px -128px 5px;
+}
+
+.home-pan {
+  // position: relative;
+  // top: 100px;
+  // right: 100px;
+  margin-top: 40px;
+  margin-bottom: -160px;
+  margin-left: 84px;
 }
 
 .home-earth-shadow img {
@@ -333,9 +342,8 @@
 }
 
 .mapboxgl-canvas {
-  border-radius: 35%;
+  border-radius: 50%;
 }
-
 
 
 .home-nav {

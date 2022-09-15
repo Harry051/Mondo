@@ -1,3 +1,6 @@
+<%= render "shared/navbar" %>
+<%= render "shared/home_bottom_navbar" %>
+
 <div class="iPhone-13">
 
   <div class="iPhone-13-home-container">
@@ -66,9 +69,9 @@
       <div data-controller="globe-filtering">
         <%= render 'pages/globe', markers: @markers %>
 
-        <%# <div class="home-earth-shadow">
-          <%= image_tag "pages-home-earth-shadow.png" %>
-        <%#</div> %>
+        <div class="home-pan">
+          <%= image_tag "home-pan.png" %>
+        </div>
 
         <div id="home-bottom" class="home-filters-box">
 
@@ -128,7 +131,7 @@
 
       </div>
 
-      <%= render "shared/home_bottom_navbar" %>
+
 
     </div>
 

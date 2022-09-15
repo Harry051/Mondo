@@ -18,22 +18,10 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 
-
-    <%# scroll to refresh %>
-    <script>
-    $(document).ready(function(){
-        $(".scroll").pullToRefresh({
-             refresh:200
-        })
-        .on("refresh.pulltorefresh", function (){
-            location.reload();
-        });
-    });
-  </script>
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
+    <%#= render "shared/navbar" %>
     <%= yield %>
   </body>
 </html>
