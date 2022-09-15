@@ -199,17 +199,21 @@
   width: 200px;
 }
 
+
+
+
+
+
 .home-filters-box {
-  position: relative;
-  top: 158px;
-  bottom: 0px;
-  height: 179px;
+  height: 180px;
   width: 75%;
   margin: 0 auto;
   border-radius: 12px 12px 0px 0px;
   background-color: white;
   box-shadow: 3px 0px 3px #888888;
   display: block;
+  position: relative;
+  bottom: -28px;
 }
 
 .home-filters-box-top {
@@ -346,6 +350,11 @@
 }
 
 
+
+
+
+
+
 .home-nav {
   position: relative;
   top: 34px;
@@ -478,32 +487,6 @@ ol, ul, dl {
   top: 0%;
 }
 
-.bottom-navbar-responsive {
-  width: 100%;
-  position: sticky;
-  top: 100%;
-  background-color: white;
-  height: 64px;
-  border-top: 0.5px solid #888888;
-  z-index: 99;
-  align-items: center;
-  display: flex;
-
-  .bottom-navbar-list {
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    list-style: none;
-    text-align: center;
-
-    li {
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-}
-
 // @media (min-width: 420px) {
 //   .bottom-navbar-responsive {
 //     width: 100%;
@@ -542,4 +525,76 @@ ol, ul, dl {
   100% {
     background-image: url(home-bg-1.eps.png);
   }
+}
+
+.bottom-navbar-responsive {
+  width: 100%;
+  position: sticky;
+  top: 100%;
+  background-color: white;
+  height: 64px;
+  border-top: 0.5px solid #888888;
+  z-index: 98;
+  display: flex;
+
+  .bottom-navbar-list {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.music-btn-fake {
+  background-color: black;
+  opacity: 0.1;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 106px;
+  bottom: 12px;
+  z-index: 99;
+}
+
+.home-headline {
+  width: 85%;
+  margin-top: 300px;
+  margin-left: 30px;
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    color: #261127;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #261127;
+  }
+}
+
+.home-start-btn-box {
+  margin-top: 50px;
+  margin-left: 30px;
+  width: fit-content;
+  transition: 0.4s ease;
+}
+
+.home-start-btn {
+  background: #99F88D;
+  padding: 20px 28px;
+  border-radius: 8px;
+  color: #261127;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  transition: 0.4s ease;
 }

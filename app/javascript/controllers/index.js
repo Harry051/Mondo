@@ -48,3 +48,6 @@ application.register("star-rating", StarRatingController)
 
 import StopwatchController from "./stopwatch_controller"
 application.register("stopwatch", StopwatchController)
+
+import TypedjsController from "./typedjs_controller"
+application.register("typedjs", TypedjsController)

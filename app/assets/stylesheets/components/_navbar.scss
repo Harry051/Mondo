@@ -1,20 +1,9 @@
-.iPhone-13-top-navbar {
-  .iPhone-13 {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
 .navbar {
   height: 76px;
 }
 
 .navbar-lewagon {
-  // // justify-content: space-between;
   background: white;
-  // position: sticky;
-  // z-index: 10;
-  // top: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -25,20 +14,10 @@
   width: 40px;
 }
 
-// .navbar-nav {
-//   align-items: center;
-// }
-
-// .container-fluid {
-//   display: inline !important;
-//   height: 100px;
-//   justify-content: space-around;
-// }
-
 .nav-bar-top {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   align-items: center;
 }
@@ -49,16 +28,16 @@
   right: 10px !important;
 }
 
-.avatar {
-  position: absolute !important;
-  top: 6px;
-  left: -42px;
-}
-
 .nav-link {
   position: absolute !important;
   top: 6px;
   left: -50px;
+}
+
+.avatar {
+  position: absolute !important;
+  top: 6px;
+  left: -48px;
 }
 
 .dropdown-menu.show {

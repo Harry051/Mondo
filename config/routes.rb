@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
+  get '/earth', to: 'pages#earth'
+
   # independent route for favs
   resources :favourites, only: [:index, :destroy]
 

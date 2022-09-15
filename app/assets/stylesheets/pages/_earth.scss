@@ -1,0 +1,56 @@
+.container-home-bottom {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#FECB03, #FED73D);
+}
+
+.earth-headline {
+  h2 {
+    margin-top: -15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    color: #261127;
+  }
+}
+
+.earth-globe {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.earth-pan {
+  margin-top: -25px;
+  margin-left: -30px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-image: url(home-pan-3.eps.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: change infinite ease-in-out;
+  animation-duration: 10s;
+  z-index: 98;
+}
+
+@keyframes change {
+0% {
+  background-image: url(home-pan-3.eps.png);
+}
+25% {
+  background-image: url(home-pan-1.eps.png);
+}
+50% {
+  background-image: url(home-pan-2.eps.png);
+}
+75% {
+  background-image: url(home-pan-4.eps.png);
+}
+100% {
+  background-image: url(home-pan-3.eps.png);
+}
+}

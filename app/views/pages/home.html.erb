@@ -2,10 +2,17 @@
 
   <div class="container-home-top">
 
-  <%= render "shared/navbar" %>
-  <%= render "shared/home_bottom_navbar" %>
+    <%= render "shared/navbar" %>
+    <%= render "shared/home_bottom_navbar" %>
 
+    <div class="home-headline">
+      <h3>Find exotic new recipes </h3>
+      <p>Make dishes from around the world right in your kitchen</p>
+    </div>
 
+    <div class="home-start-btn-box">
+      <%= link_to "Get Started", "/earth", class: "btn home-start-btn" %>
+    </div>
 
   </div>
 

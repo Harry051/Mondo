@@ -1,0 +1,82 @@
+<div class="container-responsive">
+
+  <div class="container-home-bottom">
+
+    <%= render "shared/navbar" %>
+    <%= render "shared/home_bottom_navbar" %>
+
+
+    <%# <div class="earth-headline" data-controller="typedjs">
+      <p>test</p>
+    </div> %>
+
+    <div class="earth-headline">
+      <h2>Pick a country and get a random dish!</h2>
+    </div>
+
+
+    <div data-controller="globe-filtering">
+      <%= render 'pages/globe', markers: @markers %>
+
+      <div class="earth-pan">
+      </div>
+
+      <div id="home-bottom" class="home-filters-box">
+
+        <div class="home-filters-box-top">
+          <p>Filters</p>
+          <p><i class="fa-solid fa-filter"></i></p>
+          <hr>
+        </div>
+
+        <div class="home-filters-box-bottom">
+
+          <div class="home-filters-grid">
+            <%= link_to root_path(category: "Vegetarian"), remote: true, data: { action: 'click->globe-filtering#search', category: 'Vegetarian'}  do %>
+              <p><i class="fa-solid fa-seedling <%= params[:category] == "Vegetarian" ? "selected" : "" %>"></i></p>
+              <p>Vegetarian</p>
+            <% end %>
+          </div>
+
+          <div class="home-filters-grid">
+            <%= link_to root_path(category: "Pescetarian"),  remote: true, data: { action: 'click->globe-filtering#search', category: 'Pescetarian'}  do %>
+              <p><i class="fa-solid fa-fish <%= params[:category] == "Pescetarian" ? "selected" : "" %>"></i></p>
+              <p>Pescetarian</p>
+            <% end %>
+          </div>
+
+          <div class="home-filters-grid">
+            <%= link_to root_path(category: "Lactose"), remote: true, data: { action: 'click->globe-filtering#search', category: 'Lactose'} do %>
+              <p><i class="fa-solid fa-cow <%= params[:category] == "Lactose" ? "selected" : "" %>"></i></p>
+              <p>Lactose</p>
+            <% end %>
+          </div>
+
+          <div class="home-filters-grid">
+            <%= link_to root_path(category: "Vegan"), remote: true, data: { action: 'click->globe-filtering#search', category: 'Vegan'} do %>
+              <p><i class="fa-solid fa-leaf" <%= params[:category] == "Vegan" ? "selected" : "" %>></i></p>
+              <p>Vegan</p>
+            <% end %>
+          </div>
+
+          <div class="home-filters-grid">
+            <%= link_to root_path(category: "Gluten"),  remote: true, data: { action: 'click->globe-filtering#search', category: 'Gluten'} do %>
+              <p><i class="fa-solid fa-bread-slice <%= params[:category] == "Gluten" ? "selected" : "" %>"></i></p>
+              <p>Gluten</p>
+            <% end %>
+          </div>
+
+          <div class="home-filters-grid">
+            <%= link_to root_path(category: "Puddings"), remote: true, data: { action: 'click->globe-filtering#search', category: 'Puddings'} do %>
+              <p><i class="fa-solid fa-ice-cream <%= params[:category] == "Puddings" ? "selected" : "" %>"></i></p>
+              <p>Puddings</p>
+            <% end %>
+          </div>
+
+        </div>
+
+      </div>
+
+  </div>
+
+</div>
