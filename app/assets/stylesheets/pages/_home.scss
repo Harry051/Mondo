@@ -108,13 +108,19 @@
 // }
 
 .btn-get-started {
-  background: #9391EF;
+  background: #4E4F92;
   padding: 20px 28px;
   border-radius: 8px;
   color: #FEFAF3;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 
+}
+
+.btn-get-started:hover {
+  background: #4E4F92 !important;
+  color: #FEFAF3 !important;
+  text-decoration: none;
 }
 // transition: 0.4s ease;
 
