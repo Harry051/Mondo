@@ -11,7 +11,7 @@
           <div class='dish-reviews-card-content-top'>
             <h4><%= f.dish.title %></h4>
             <%# ----------- X icon on button to delete the fav card ----------------------------- %>
-            <%= link_to '<i style="color: #FC3B02; font-size:20px" class="fa-solid fa-minus"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>
+            <%= link_to '<i style="color: #4E4F92; font-size:20px" class="fa-solid fa-square-minus"></i>'.html_safe, favourite_path(f), data: {turbo_method: :delete}%>
           </div>
           <h4><i class='fa-solid fa-lg fa-star'></i> <%= f.dish.average_rating %></h4>
           <p style="font-size: 14px; color: grey"><%= f.dish.categories.first(3).join(', ') %></p>
