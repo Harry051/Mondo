@@ -17,7 +17,7 @@ export default class extends Controller {
     };
 
   checkBox(e) {
-    console.log('hi.')
+    console.log("check-ingredients controller-hello");
     this.boxTarget.classList.toggle('fa-regular');
     this.boxTarget.classList.toggle('fa-circle');
     this.boxTarget.classList.toggle('fa-solid');

@@ -4,4 +4,5 @@ class Dish < ApplicationRecord
   has_one_attached :photo
   has_many :favourites, dependent: :destroy
   has_many :users, through: :favourites
+  has_many :cooked_dishes, dependent: :destroy
 end

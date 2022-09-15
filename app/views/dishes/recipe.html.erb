@@ -2,12 +2,13 @@
 
   <div class="iPhone-13-container iPhone-13-container-colour">
 
+    <%# --------------- Dish card drop down section -------------------------- %>
     <div class="dish-card-simple-container" data-controller="dish-card">
       <div class="dish-card-simple" d-none>
         <h4><%= @dish.title %></h4>
         <i class="dish-drop-btn fa-solid fa-lg fa-caret-down" ></i>
       </div>
-
+        <%# make this a partial %>
         <div class='d-none dish-reviews-card dish-show-card dish-display-card'>
           <%= cl_image_tag @dish.photo.key, class:'fav-img' %>
           <div class='dish-reviews-card-content'>
@@ -21,7 +22,7 @@
         </div>
     </div>
 
-
+    <%# ----------------------- Recipe list display ------------------------------------------- %>
     <div class="ingredient-list">
       <h2>Follow the steps and be a Chef!</h2>
 
@@ -45,7 +46,8 @@
         </div>
       <% end %>
 
-
+    <%# ------------------------ Stop watch timer for recipe prep --------------------------------- %>
+    <%# See JS script at end of this file %>
     <div class="stopwatch" data-controller="stopwatch">
       <div class="stopwatch-timer">
           <p><i class="fa-solid fa-stopwatch"></i>  Timer</p>
@@ -67,20 +69,15 @@
     </div>
     </div>
 
-
+    <%# ---------------------------- Page Navigations --------------------------------------------- %>
     <div class="dish-p-btn-recipe">
       <%= link_to "← Ingredient", dish_ingredients_path(@dish), class:"btn btn-dish-back-recipe" %>
       <%= render partial: 'shared/cooked_form', cooked_dishes: @cooked_dishes %>
     </div>
 
     <div class="iPhone-13-spacing-colour"></div>
-
   </div>
-
-  <%= render "shared/bottom_navbar" %>
-
+    <%= render "shared/bottom_navbar" %>
   </div>
-
   <script src="stopwatch_controller.js"></script>
-
 </div>
