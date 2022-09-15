@@ -29,7 +29,30 @@
 
 .home-background-top {
   height: 768px;
-  background-image: linear-gradient(to bottom right, #1FE4DA, #A2EEEB);
+  margin-top: -30px;
+  background-image: url(home-bg-1.eps.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: change infinite ease-in-out;
+  animation-duration: 30s;
+
+  @keyframes change {
+    0% {
+    background-image: url(home-bg-1.eps.png);
+    }
+    25% {
+    background-image: url(home-bg-2.eps.png);
+    }
+    50% {
+    background-image: url(home-bg-3.eps.png);
+    }
+    75% {
+    background-image: url(home-bg-4.eps.png);
+    }
+    100% {
+    background-image: url(home-bg-1.eps.png);
+    }
+  }
 }
 
 // .home-logo img {
@@ -44,11 +67,12 @@
   left: 4px;
   top: 34px;
   width: 98%;
+  opacity: 0;
 }
 
 .home-infos {
   position: relative;
-  top: 54px;
+  top: 110px;
   left: 30px;
   width: 80%;
 }
@@ -68,7 +92,7 @@
 
 .home-btn {
   position: relative;
-  top: 76px;
+  top: 120px;
   left: 30px;
   width: fit-content;
 
@@ -96,8 +120,8 @@
 
 .home-background-bottom {
   height: 768px;
-  background-color: #FFBF9C;
-  // background-image: linear-gradient(#52AA5E, #99F88D);
+  // background-color: #FFBF9C;
+  background-image: linear-gradient(#FECB03, #FED73D);
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
 }
 
@@ -117,7 +141,7 @@ a.mapboxgl-ctrl-logo {
 
 .home-search-text h2 {
   position: relative;
-  top: 68px;
+  top: 70px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -127,7 +151,7 @@ a.mapboxgl-ctrl-logo {
 
 .home-search-bar {
   position: relative;
-  top: 80px;
+  top: 60px;
   height: 36px;
   width: 55%;
   margin: 0 auto;
@@ -152,7 +176,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .home-globe {
-  margin: 100px 0px -128px 5px;
+  margin: 40px 0px -128px 5px;
 }
 
 // .home-earth-shadow img {
@@ -162,11 +186,25 @@ a.mapboxgl-ctrl-logo {
 //   width: 200px;
 // }
 
+.home-pan {
+  position: relative;
+  bottom: -100px;
+  right: 18px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-image: url(home-pan-3.eps.png);
+  background-position: center;
+  background-repeat: no-repeat;
+//   animation: change infinite ease-in-out;
+//   animation-duration: 10s;
+//   z-index: 98;
+}
+
 .home-filters-box {
   position: relative;
-  top: 158px;
-  bottom: 0px;
-  height: 179px;
+  bottom: -116px;
+  height: 180px;
   width: 75%;
   margin: 0 auto;
   border-radius: 12px 12px 0px 0px;
@@ -184,7 +222,7 @@ a.mapboxgl-ctrl-logo {
 .home-filters-box-top p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  color: #261127;
+  color: #D0D0D0;
   margin-top: 10px;
   position: relative;
   left: 32px;
@@ -223,7 +261,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .home-filters-grid p {
-  color:#261127;
+  color:#D0D0D0;
 }
 
 .home-filters-grid a {
