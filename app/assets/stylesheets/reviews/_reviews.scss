@@ -19,7 +19,6 @@
 // }
 .dish-fa-heart-login {
   color: black;
-
 }
 
 .picture-card {
@@ -83,11 +82,13 @@
   }
 
   textarea {
-    height:305px;
+    height:250px;
   }
 
-  .review-submit {
+  .submit-review {
     border-radius: 5px;
+    background-color: #FF1500;
+    border: none;
   }
 }
 
@@ -185,11 +186,11 @@
   }
 
   .dish-heart-item .fa-solid {
-    color: rgb(220,20,60);
+    color: #FF1500;
   }
 
   .dish-heart-item-user .fa-solid {
-    color: rgb(220,20,60);
+    color: #FF1500;
   }
 
   .dish-heart-item-login a {
