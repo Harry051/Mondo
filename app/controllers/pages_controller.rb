@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def earth
+  def home
     @countries = Country.all
     # Add category filter to the country
     if params[:category]
