@@ -18,4 +18,11 @@
     <% end %>
   </ul>
 
+    <ul class="music-btn-list">
+      <div data-controller="music-player">
+        <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
+        <a href="#"><li><div class="music-btn"  data-action="click->music-player#audioplay"></div></li></a>
+      </div>
+    </ul>
+
 </div>
