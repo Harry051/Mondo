@@ -1,4 +1,12 @@
-.iPhone-13-container-colour {
+iPhone-13-bg-colour {
+  // background-color: #feffe8;
+  // opacity: 0.2;
+  // background-image:  linear-gradient(#f1f9cb 2px, transparent 2px), linear-gradient(90deg, #f1f9cb 2px, transparent 2px), linear-gradient(#f1f9cb 1px, transparent 1px), linear-gradient(90deg, #f1f9cb 1px, #feffe8 1px);
+  // background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  // background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.iPhone-13-container-in-colour {
   background-image: linear-gradient(to bottom right, #F5F5EE, #F4F5DB);
 
   .dish-show-card {
