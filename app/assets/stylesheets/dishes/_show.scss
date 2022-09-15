@@ -50,22 +50,22 @@
 
   .dish-heart-item {
     background-color: white;
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     box-shadow: 1px 1px 1px #888888;
     transition: all 0.4s ease;
-    opacity: 0.85;
+    opacity: 0.72;
   }
 
   .dish-heart-item-login {
     background-color: white;
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     box-shadow: 3px 0px 3px #888888;
     transition: all 0.4s ease;
-    opacity: 0.85;
+    opacity: 1.0;
   }
 
   .dish-heart-item .fa-solid {
@@ -85,7 +85,7 @@
   .dish-fa-heart {
     color: #261127;
     position: relative;
-    top: 7px;
+    top: 10px;
     left: 0px;
   }
 
@@ -100,26 +100,28 @@
     border-radius: 50%;
     box-shadow: 1px 1px 1px #888888;
     transition: all 0.4s ease;
-    opacity: 0.72;
+    opacity: 1.0;
+    position: relative;
+    left: -10px;
   }
 
   .dish-shuffle-btn a {
     position: relative;
-    top: 6px;
-    left: 11px;
+    top: 9px;
+    left: 13px;
     color: #261127;
   }
 
   .dish-heart-item-user {
     background-color: white;
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     box-shadow: 1px 1px 1px #888888;
     transition: all 0.4s ease;
-    opacity: 0.85;
+    opacity: 1.0;
     position: relative;
-    top: -20px;
+    top: -23px;
     right: 26px;
     margin-right: 10px;
   }

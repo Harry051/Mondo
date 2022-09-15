@@ -51,7 +51,7 @@ recipes = [
                 ],
     dish_image_url: 'https://i0.wp.com/www.eatlivecool.com/wp-content/uploads/2018/11/Moussaka-Vertical-5.jpg?w=800&ssl=1',
     country: 'Greece',
-    country_bio: "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences. - Wikipedia",
+    country_bio: "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/510px-Flag_of_Greece.svg.png',
     calories: 771
   },
@@ -80,7 +80,7 @@ recipes = [
                 ],
     dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2020/03/Peruvian-tiradito-photo.jpg',
     country: 'Peru',
-    country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru. - Wikipedia",
+    country_bio: "Peruvian cuisine reflects local practices and ingredients including influences mainly from the indigenous population, including the Inca, and cuisines brought by immigrants from Europe (Spanish cuisine, Italian cuisine); Asia (Japanese cuisine and Chinese cuisine); and Africa (Maghrebi cuisine and West African cuisine). Without the familiar ingredients from their home countries, immigrants modified their traditional cuisines by using ingredients available in Peru.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/510px-Flag_of_Peru.svg.png',
     calories: 106
   },
@@ -114,7 +114,7 @@ recipes = [
                 ],
     dish_image_url: 'https://www.carolinescooking.com/wp-content/uploads/2016/05/pavlova-raspberries-and-cream-photo.jpg',
     country: 'Australia',
-    country_bio: "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences. - Wikipedia",
+    country_bio: "In common with many other cuisines of the Mediterranean, it is founded on the triad of wheat, olive oil, and wine. It uses vegetables, olive oil, grains, fish, and meat, including pork, poultry, veal and beef, lamb, rabbit, and goat. Other important ingredients include pasta (for example hilopites), cheeses, lemon juice, herbs, olives, and yogurt. Bread made of wheat is ubiquitous; other grains, notably barley, are also used, especially for paximathia. Common dessert ingredients include nuts, honey, fruits, and filo pastries. It continues traditions from Ancient Greek and Byzantine cuisine, while incorporating Balkan and Italian influences.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/510px-Flag_of_Australia_%28converted%29.svg.png',
     calories: 216
   },
@@ -150,7 +150,7 @@ recipes = [
                 ],
     dish_image_url: 'https://www.mexicanplease.com/wp-content/uploads/2022/06/Vegetarian-Breakfast-Burritos-11.jpg',
     country: 'USA',
-    country_bio: "Principal influences on American cuisine are Native American, British, French, German, Spanish, and Italian cuisines. Whilst some of American cuisine is fusion cuisine, many regions in America have a specific regional cuisine. Each are deeply rooted in ethnic heritages, for example Cajun, Louisiana Creole, Native American, New England Algonquian, New Mexican, Pennsylvania Dutch, Soul food, Texan/Tex-Mex, Southern, and Tlingit. - Wikipedia",
+    country_bio: "Principal influences on American cuisine are Native American, British, French, German, Spanish, and Italian cuisines. Whilst some of American cuisine is fusion cuisine, many regions in America have a specific regional cuisine. Each are deeply rooted in ethnic heritages, for example Cajun, Louisiana Creole, Native American, New England Algonquian, New Mexican, Pennsylvania Dutch, Soul food, Texan/Tex-Mex, Southern, and Tlingit.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/440px-Flag_of_the_United_States.svg.png',
     calories: 430
   },
@@ -370,7 +370,7 @@ recipes = [
                     ],
     dish_image_url: 'https://chowcation.com/wp-content/uploads/2017/asado-1024x683.jpg',
     country: 'Argentina',
-    country_bio: "Argentine cuisine is described as a cultural blending of Mediterranean influences brought by the Spanish during the colonial period and, later, by Italian and Spanish immigrants to Argentina during 19th and 20th centuries, with influences from a further cultural blending of criollos (due to Spanish colonizers) with the Indigenous peoples of Argentina (such as mate and humitas). Beyond asado (the Argentine barbecue), no other dish more genuinely matches the national identity. Nevertheless, the country's vast area, and its cultural diversity, have led to a local cuisine of various dishes. Argentine people have a reputation for their love of eating.[3] Social gatherings are commonly centred on sharing a meal. Invitations to have dinner at home are generally viewed as a symbol of friendship, warmth, and integration. Sunday family lunch is considered the most significant meal of the week, whose highlights often include asado or pasta.",
+    country_bio: "Argentine cuisine is described as a cultural blending of Mediterranean influences brought by the Spanish during the colonial period and, later, by Italian and Spanish immigrants to Argentina during 19th and 20th centuries, with influences from a further cultural blending of criollos (due to Spanish colonizers) with the Indigenous peoples of Argentina (such as mate and humitas). Beyond asado (the Argentine barbecue), no other dish more genuinely matches the national identity. Nevertheless, the country's vast area, and its cultural diversity, have led to a local cuisine of various dishes. Argentine people have a reputation for their love of eating. Social gatherings are commonly centred on sharing a meal. Invitations to have dinner at home are generally viewed as a symbol of friendship, warmth, and integration. Sunday family lunch is considered the most significant meal of the week, whose highlights often include asado or pasta.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1920px-Flag_of_Argentina.svg.png',
     calories: 985
   },
@@ -442,7 +442,7 @@ recipes = [
                     ],
     dish_image_url: 'https://assets.vogue.in/photos/5f2d006293fbd755fe1ac36f/2:3/w_2240,c_limit/Chicken%20Chettinad%20easy%20chettinad%20recipes%20chettinad%20cuisine.jpg',
     country: 'India',
-    country_bio: "Indian cuisine consists of a variety of regional and traditional cuisines native to India. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Indian cuisine has shaped the history of international relations; the spice trade between India and Europe was the primary catalyst for Europe's Age of Discovery.[4] Spices were bought from India and traded around Europe and Asia. Indian cuisine has influenced other cuisines across the world, especially those from Europe (especially Britain), the Middle East, Southern African, East Africa, Southeast Asia, North America, Mauritius, Fiji, Oceania, and the Caribbean.",
+    country_bio: "Indian cuisine consists of a variety of regional and traditional cuisines native to India. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Indian cuisine has shaped the history of international relations; the spice trade between India and Europe was the primary catalyst for Europe's Age of Discovery. Spices were bought from India and traded around Europe and Asia. Indian cuisine has influenced other cuisines across the world, especially those from Europe (especially Britain), the Middle East, Southern African, East Africa, Southeast Asia, North America, Mauritius, Fiji, Oceania, and the Caribbean.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1920px-Flag_of_India.svg.png',
     calories: 472
   },
@@ -526,6 +526,36 @@ recipes = [
     country_bio: "a unique history and its food is influenced by Indian-South Asian, West African, Creole, European, American, Chinese, Amerindian, and Latin American culinary styles. Trinidad and Tobagonian food is dominated by a wide selection of seafood dishes, most notably, curried crab and dumplings.",
     country_image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/200px-Flag_of_Trinidad_and_Tobago.svg.png',
     calories: 266
+  },
+
+  {
+    name: 'Hawaiian Pizza',
+    description: "Recently voted as Italy's favourite dish an modern twist on the classic Margherita",
+    average_rating: 100,
+    categories: ['Vegetarian'],
+    times: { prep: 20,
+             cook: 10,
+             total: 30
+               },
+    ingredients: ['Dough',
+              'Tomato',
+              'Mozzerella',
+              'Ham',
+              'Some Glooooorious pineapple'
+                     ],
+    recipe: [
+             'Stretch out the dough with a rolling pin',
+             "Spread the tomato over the top like there's no tomorrow",
+             "Put chunks of mozzerella LEFT RIGHT AND CENTRE",
+             'garnish with as much ham and pineapple as you see fit',
+             '200 degrees C oven for 10 minutes',
+             'Bon appetite'
+                ],
+    dish_image_url: 'https://www.tasteatlas.com/images/recipes/60f9fa6062694a6b8e0127d578815525.jpg?mw=910',
+    country: 'Italy',
+    country_bio: "One of the main characteristics of Italian cuisine is its simplicity, with many dishes made up of few ingredients, and therefore Italian cooks often rely on the quality of the ingredients, rather than the complexity of preparation. Italian cuisine is at the origin of a turnover of more than €200 billion worldwide. The most popular dishes and recipes, over the centuries, have often been created by ordinary people more so than by chefs, which is why many Italian recipes are suitable for home and daily cooking, respecting regional specificities, privileging only raw materials and ingredients from the region of origin of the dish and preserving its seasonality.",
+    country_image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1920px-Flag_of_Italy.svg.png',
+    calories: 600
   }
  ]
 
