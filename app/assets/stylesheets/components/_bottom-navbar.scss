@@ -11,7 +11,7 @@
 @media (max-width: 480px) {
   .Phone-13-bottom-nav-bar {
     width: 100%;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     background-color: white;
     height: 64px;
@@ -23,7 +23,7 @@
   .iPhone-13-bottom-nav-bar {
     width: 390px;
     position: fixed;
-    top: 704px;
+    top: 762px;
     background-color: white;
     height: 64px;
     border-top: 0.5px solid #888888;
