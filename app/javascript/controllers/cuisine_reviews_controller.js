@@ -5,7 +5,7 @@ export default class extends Controller {
   // static targets = ["reviews", "caret"]
 
   connect() {
-    console.log("hello")
+    console.log("cuisine-reviews controller-hello");
     const caretBtn = document.querySelector(".reviews-drop-btn");
     const reviewsContent = document.querySelector(".dish-show-reviews-item");
 

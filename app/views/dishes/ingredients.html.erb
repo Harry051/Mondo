@@ -2,13 +2,14 @@
 
   <div class="iPhone-13-container iPhone-13-container-colour">
 
-
+    <%# --------------- Dish card drop down section -------------------------- %>
     <div class="dish-card-simple-container" data-controller="dish-card">
       <div class="dish-card-simple" d-none>
         <h4><%= @dish.title %></h4>
         <i class="dish-drop-btn fa-solid fa-lg fa-caret-down" ></i>
       </div>
 
+        <%# Can make this a section a partial in future versions - repeated in the recipes view %>
         <div class='d-none dish-reviews-card dish-show-card dish-display-card'>
           <%= cl_image_tag @dish.photo.key, class:'fav-img' %>
           <div class='dish-reviews-card-content'>
@@ -22,7 +23,7 @@
         </div>
     </div>
 
-
+    <%# ----------------- Ingredients display -------------------------------- %>
     <div class="ingredient-list">
       <h2>Good! Let's get the ingredients.</h2>
 
@@ -46,6 +47,7 @@
         </div>
       <% end %>
 
+      <%# ------------------- Page Navigations ---------------------------------------- %>
       <div class="dish-p-btn">
         <%= link_to "← Back to dish", dish_path(@dish), class:"btn btn-dish-back" %>
         <%= link_to "See recipe →", dish_recipes_path(@dish), class:"btn btn-dish-next" %>
@@ -53,11 +55,7 @@
     </div>
 
     <div class="iPhone-13-spacing-colour"></div>
-
   </div>
-
-  <%= render "shared/bottom_navbar" %>
-
+    <%= render "shared/bottom_navbar" %>
   </div>
-
 </div>

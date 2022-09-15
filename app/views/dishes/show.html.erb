@@ -4,11 +4,13 @@
 
     <div class="dish-img-btn">
 
+      <%# ------------------------ Shuffle for new dish function ------------------------------------ %>
       <div class="dish-shuffle-btn">
         <% @random_dish = Dish.where(country: @dish.country, categories: @dish.categories).ids.sample %>
         <a href="<%= dish_path(@random_dish) %>"><i class="fa-solid fa-shuffle"></i></a>
       </div>
 
+      <%# ------------------------ Heart to favourite --------------------------------------------- %>
       <% if user_signed_in? %>
         <%= render partial: 'shared/show_favourite', favourite: @favourite %>
       <% else %>
@@ -18,20 +20,19 @@
       <% end %>
     </div>
 
+    <%# ------------------------ Dish view, styling and info ---------------------------------------------- %>
     <div class="dish-card-container">
       <div class="dish-card-img-container">
         <%= cl_image_tag @dish.photo.key, class: 'cl_img' %>
         <svg class="dish-card-img-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,234.7C384,267,480,277,576,282.7C672,288,768,288,864,282.7C960,277,1056,267,1152,234.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       </div>
-
     </div>
 
     <div class="dish-infos">
-
       <div class="title-rating">
         <h2><%= @dish.title %></h2>
         <div class="rating">
-          <p class="icon m-0"><i class="fa-solid fa-star"></i></p>
+          <p class="icon m-0"><i style="color:#FFD600;" class="fa-solid fa-star"></i></p>
           <p class="number m-0"><%= @dish.average_rating %></p>
         </div>
       </div>
@@ -54,39 +55,32 @@
         <div class="choose-dish-btn">
           <%= link_to "Let's cook this!", dish_ingredients_path(@dish), class:"btn btn-choose" %>
         </div>
-
         <hr>
-
       </div>
 
-
+      <%# --------------------- Drop down for extended dish info ------------------------------------------------ %>
       <div class="dish-flag-history" data-controller="cuisine-history">
         <div class="dish-flag-country">
           <%= cl_image_tag @dish.country.photo.key, class: 'cl_img' %>
           <h4>Cuisine history</h4>
         </div>
-        <%# <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow">
-          <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-        </svg> %>
+          <%# <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow">
+            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+          </svg> %>
         <i class="cuisine-drop-btn fa-solid fa-2x fa-caret-down" data-action="click->cuisine-history#revealContent" data-cuisine-history-target="arrow"></i>
       </div>
+
       <div class="dish-flag-country-drop">
         <p class="d-none dish-flag-country-drop-content" data-cuisine-history-target="content"><%= @dish.country.story %></p>
-
-      <hr>
+        <hr>
       </div>
 
       <%# Partial for the reviews. It's to be used again in the Review new %>
       <%= render "shared/reviews_index" %>
 
       <br>
-
       <div class="iPhone-13-spacing"></div>
-
     </div>
-
       <%= render "shared/bottom_navbar" %>
-
   </div>
-
 </div>

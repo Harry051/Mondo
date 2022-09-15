@@ -6,7 +6,7 @@ export default class extends Controller {
 
   connect() {
 
-    console.log('XX')
+    console.log('home-nav-btn controller-hello');
 
     const menuBar = document.querySelector('.home-nav');
     const menuNav = document.querySelector('.nav-btn');

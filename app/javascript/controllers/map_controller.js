@@ -15,9 +15,9 @@ export default class extends Controller {
 
     this.map = new mapboxgl.Map({
       container: this.element,
+      zoom: 1.5,
       projection: 'globe',
-      style: "mapbox://styles/harry051/cl8048h2m00b314qxwjrb56nw",
-      zoom: 2,
+      style: "mapbox://styles/mapbox/satellite-streets-v11"
     });
     this.#addMarkersToMap();
     this.#fitMapToMarkers();

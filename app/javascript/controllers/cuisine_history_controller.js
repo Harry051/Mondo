@@ -5,6 +5,7 @@ export default class extends Controller {
   static targets = ["content", "arrow"]
 
   connect() {
+    console.log("cuisine-history controller-hello");
     const dropBtn = document.querySelector(".cuisine-drop-btn");
     const dropContent = document.querySelector(".dish-flag-country-drop-content");
     const dropProfile = document.querySelector(".tab-position-new");

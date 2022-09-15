@@ -1,7 +1,7 @@
 <div class="iPhone-13">
 
   <div class="iPhone-13-container iPhone-13-container-colour">
-
+    <%# ---------------- Drop down dish card ------------------------ %>
     <div class="dish-card-simple-container" data-controller="dish-card">
     <div class="dish-card-simple" d-none>
       <h4><%= @dish.title %></h4>
@@ -21,16 +21,12 @@
       </div>
   </div>
 
-  <%# <div class="iPhone-13-container a-parent"> %>
-
-
     <%# ---- Add to fav header and button ---------------- %>
     <div class="container add-to-favourite">
-
       <h4>Add to Favourites</h4>
 
         <% if user_signed_in? %>
-          <%#= render partial: 'shared/review_favourite', favourite: @favourite %>
+          <%= render partial: 'shared/review_favourite', favourite: @favourite %>
         <% else %>
           <div class="dish-heart-btn-review">
             <div class="dish-heart-item-login"><a href="/users/sign_in"><i class="fa-regular fa-heart dish-fa-heart-login"></i></a></div>
@@ -38,22 +34,22 @@
         <% end %>
       </div>
 
-    <%# ---- reviews: Content, star-rating, submit ----------- %>
-    <div class="container review-container">
+    <%# ----------------------- reviews: Content, star-rating, submit ----------------------------------- %>
+    <div class="container review-container" data-controller="review-confirmation">
       <div class="row">
         <div class="col-xs-4">
           <%= simple_form_for([@dish, @review]) do |f| %>
-            <%= f.submit "Submit review", id:"submit-review", class:"d-none"  %>
             <%= f.input :content, label: "So, tell us how was it?"%>
             <%= f.input :rating, collection: (1..5).to_a, label:"", input_html: {data: {controller: "star-rating"}}%>
             <%= f.input :photo, as: :file, label:"Add a photo" %>
-            <button id="sweet-alert" class="btn btn-primary submit-review">Submit review</button>
+            <button id="sweet-alert" class="btn btn-primary submit-review" >Submit review</button>
+            <%= f.submit "Submit review", id:"submit-review", class:"d-none"  %>
           <% end %>
         </div>
       </div>
 
       <hr>
-
+      <%# ---------------------- Share to Social Media -------------------------------------------------- %>
       <div class="share-links">
         <h4 style="font">Share</h4>
         <%# twitter %>
@@ -69,9 +65,7 @@
           <i class="fab fa-facebook-square fa-2x facebook"></i>
         <% end %>
         <%# pinterest head - Check if photo exists for review else post photo of the dish%>
-
         <%= link_to "https://pinterest.com/pin-builder/?url=https://www.mondo.recipes/" do %>
-
           <i style="color:#CC0100;" class="fa-brands fa-pinterest fa-2x pinterest"></i>
         <% end %>
       </div>
