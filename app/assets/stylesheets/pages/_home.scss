@@ -28,8 +28,8 @@
 }
 
 .home-background-top {
-  height: 768px;
-  margin-top: -30px;
+  height: 704px;
+  margin-top: -25px;
   background-image: url(home-bg-1.eps.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 
 .home-infos {
   position: relative;
-  top: 110px;
+  top: 90px;
   left: 30px;
   width: 80%;
 }
@@ -80,7 +80,7 @@
 .home-infos h3{
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  font-size: 53px;
+  font-size: 50px;
   color: #261127;
 }
 
@@ -92,7 +92,7 @@
 
 .home-btn {
   position: relative;
-  top: 120px;
+  top: 110px;
   left: 30px;
   width: fit-content;
 
@@ -204,7 +204,7 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   justify-content: space-between;
   height: 90px;
-  background-image: url(home-pan-3.eps.png);
+  background-image: url(home-pan-ani.gif);
   background-position: center;
   background-repeat: no-repeat;
 //   animation: change infinite ease-in-out;

@@ -8,36 +8,27 @@
   height: 64px;
 }
 
-.iPhone-13-bottom-nav-bar {
-  position: sticky;
-  top: 100%;
-  background-color: white;
-  height: 64px;
-  border-top: 0.5px solid #888888;
-  z-index: 99;
+@media (max-width: 480px) {
+  .Phone-13-bottom-nav-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 64px;
+    border-top: 0.5px solid #888888;
+  }
 }
 
-// @media (max-width: 480px) {
-//   .iPhone-13-bottom-nav-bar {
-//     width: 100%;
-//     position: fixed;
-//     bottom: 0;
-//     background-color: white;
-//     height: 64px;
-//     border-top: 0.5px solid #888888;
-//   }
-// }
-
-// @media (min-width: 480px) {
-//   .iPhone-13-bottom-nav-bar {
-//     width: 390px;
-//     position: fixed;
-//     top: 780px;
-//     background-color: white;
-//     height: 64px;
-//     border-top: 0.5px solid #888888;
-//   }
-// }
+@media (min-width: 480px) {
+  .iPhone-13-bottom-nav-bar {
+    width: 390px;
+    position: fixed;
+    top: 704px;
+    background-color: white;
+    height: 64px;
+    border-top: 0.5px solid #888888;
+  }
+}
 
 .bottom-nav-bar-list {
   padding: 12px 0px;
@@ -59,7 +50,7 @@
 @media (min-width: 480px) {
   .music-btn {
     background-color: black;
-    opacity: 0.1;
+    opacity: 0;
     width: 50px;
     height: 32px;
     position: absolute;
