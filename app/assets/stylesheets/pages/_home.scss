@@ -16,7 +16,7 @@
 
 .iPhone-13-home-container {
   width: 100%;
-  height: 768px;
+  height: 800px;
   background-color: #FFFFFF;
   overflow: scroll;
 }
@@ -108,13 +108,19 @@
 // }
 
 .btn-get-started {
-  background: #9391EF;
+  background: #4E4F92;
   padding: 20px 28px;
   border-radius: 8px;
   color: #FEFAF3;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 
+}
+
+.btn-get-started:hover {
+  background: #4E4F92 !important;
+  color: #FEFAF3 !important;
+  text-decoration: none;
 }
 // transition: 0.4s ease;
 
@@ -125,12 +131,17 @@
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
 }
 
+
+.mapboxgl-ctrl-attrib-button {
+  background-color: #FFCE1C;
+}
+
 .mapboxgl-ctrl-attrib.mapboxgl-compact {
-  background-color: #FFBF9C;
+  background-color: #FFCE1C;
 }
 
 a.mapboxgl-ctrl-logo {
-  background-color: #FFBF9C;
+  background-color: #FFCE1C;
 }
 
 .fa-bars {
@@ -141,7 +152,7 @@ a.mapboxgl-ctrl-logo {
 
 .home-search-text h2 {
   position: relative;
-  top: 70px;
+  top: 40px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -188,7 +199,7 @@ a.mapboxgl-ctrl-logo {
 
 .home-pan {
   position: relative;
-  bottom: -100px;
+  bottom: -115px;
   right: 18px;
   display: flex;
   justify-content: space-between;
@@ -214,7 +225,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .home-filters-box-top {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 100%;
   display: flex;
 }
