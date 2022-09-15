@@ -1,28 +1,27 @@
-<div class="iPhone-13-bottom-navbar">
+<div class="bottom-navbar-responsive">
 
-  <ul class="bottom-nav-bar-list">
+  <div class="bottom-navbar-list">
 
-    <a href="/"><li><i style="color: #ff4b8e" class="fa-solid fa-house fa-2x"></i></li></a>
+    <a href="/"><i style="color: #ff4b8e" class="fa-solid fa-house fa-2x"></i></a>
 
-    <a href="/favourites"><li><i style="color: #261127" class="fa-solid fa-heart fa-lg"></i></li></a>
+    <a href="/favourites"><i style="color: #261127" class="fa-solid fa-heart fa-lg"></i></a>
 
-    <a href="#"><li><i style="color: #261127" class="fa-solid fa-kitchen-set fa-lg"></i></li></a>
+    <a href="#"><i style="color: #261127" class="fa-solid fa-kitchen-set fa-lg"></i></a>
 
-    <a href="#"><li><i style="color: #261127" class="fa-solid fa-music fa-lg"></i></li></a>
-
+    <a href="#"><i style="color: #261127" class="fa-solid fa-music fa-lg"></i></a>
 
     <% if user_signed_in? %>
-      <a href="<% user_path(current_user) %>"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
+      <%# the user_path(current_user) link is not working %>
+      <a href="<% user_path(current_user) %>"><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></a>
     <% else %>
-      <a href="/users/sign_in"><li><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></li></a>
+      <a href="/users/sign_in"><i style="color: #261127" class="fa-solid fa-user fa-lg"></i></a>
     <% end %>
-  </ul>
 
-    <ul class="music-btn-list">
-    <div data-controller="music-player">
-      <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
-      <a href="#"><li><div class="music-btn"  data-action="click->music-player#audioplay"></div></li></a>
-    </div>
-  </ul>
+  </div>
 
+</div>
+
+<div data-controller="music-player">
+  <%= audio_tag "peru_track.mp3", data: { music_player_target: "audio"} %>
+  <a href="#"><div class="music-btn"  data-action="click->music-player#audioplay"></div></a>
 </div>
