@@ -17,7 +17,7 @@ export default class extends Controller {
       container: this.element,
       zoom: 1.5,
       projection: 'globe',
-      style: "mapbox://styles/mapbox/satellite-streets-v11"
+      style: "mapbox://styles/harry051/cl8048h2m00b314qxwjrb56nw"
     });
     this.#addMarkersToMap();
     this.#fitMapToMarkers();
