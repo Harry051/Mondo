@@ -28,32 +28,48 @@
 }
 
 .home-background-top {
-  height: 710px;
-  background-image: url(home-image-1.eps.png);
-  background-size: 100%;
+  height: 768px;
+  margin-top: -30px;
+  background-image: url(home-bg-1.eps.png);
   background-position: center;
   background-repeat: no-repeat;
-  // animation: change 0.1s infinite ease;
   animation: change infinite ease-in-out;
   animation-duration: 30s;
-}
 
-@keyframes change {
-  0% {
-    background-image: url(home-image-1.eps.png);
+  @keyframes change {
+    0% {
+    background-image: url(home-bg-1.eps.png);
+    }
+    25% {
+    background-image: url(home-bg-2.eps.png);
+    }
+    50% {
+    background-image: url(home-bg-3.eps.png);
+    }
+    75% {
+    background-image: url(home-bg-4.eps.png);
+    }
+    100% {
+    background-image: url(home-bg-1.eps.png);
+    }
   }
-  25% {
-    background-image: url(home-image-2.eps.png);
-  }
-  50% {
-    background-image: url(home-image-3.eps.png);
-  }
-  75% {
-    background-image: url(home-image-4.eps.png);
-  }
-  100% {
-    background-image: url(home-image-1.eps.png);
-  }
+
+// @keyframes change {
+//   0% {
+//     background-image: url(home-image-1.eps.png);
+//   }
+//   25% {
+//     background-image: url(home-image-2.eps.png);
+//   }
+//   50% {
+//     background-image: url(home-image-3.eps.png);
+//   }
+//   75% {
+//     background-image: url(home-image-4.eps.png);
+//   }
+//   100% {
+//     background-image: url(home-image-1.eps.png);
+//   }
   // 62% {
   //   background-image: url(home-image-2.eps.png);
   // }
@@ -67,8 +83,6 @@
   //   background-image: url(home-image-3.eps.png);
   // }
 }
-
-
 
 .home-logo img {
   position: relative;
@@ -87,7 +101,7 @@
 
 .home-infos {
   position: relative;
-  top: 54px;
+  top: 110px;
   left: 30px;
   width: 80%;
 }
@@ -107,7 +121,7 @@
 
 .home-btn {
   position: relative;
-  top: 76px;
+  top: 120px;
   left: 30px;
   width: fit-content;
   transition: 0.4s ease;
@@ -116,6 +130,17 @@
 .home-btn:hover {
   background-color: #63F851;
   color: #261127;
+// .home-btn:hover {
+//   background-color: #3E4279;
+//   color: #261127;
+//   border-radius: 8px;
+//   font-family: 'Raleway', sans-serif;
+//   font-size: 20px;
+// }
+
+.btn-get-started {
+  background: #9391EF;
+  padding: 20px 28px;
   border-radius: 8px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -132,7 +157,9 @@
 }
 
 .home-background-bottom {
-  height: 710px;
+  // height: 710px;
+  height: 768px;
+  // background-color: #FFBF9C;
   background-image: linear-gradient(#FECB03, #FED73D);
   //url("https://media.idownloadblog.com/wp-content/uploads/2021/01/Transition-Space-iphone-wallpaper-AR72014-idownloadblog-green.jpg")
 }
@@ -146,6 +173,7 @@
 .home-search-text h2 {
   position: relative;
   top: 48px;
+  // top: 70px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -155,7 +183,7 @@
 
 .home-search-bar {
   position: relative;
-  top: 80px;
+  top: 60px;
   height: 36px;
   width: 55%;
   margin: 0 auto;
@@ -180,8 +208,9 @@
 }
 
 .home-globe {
-  margin: 70px 0px -128px 5px;
-}
+  // margin: 70px 0px -128px 5px;
+  margin: 40px 0px -128px 5px;
+
 
 .home-pan {
   // position: relative;
@@ -204,7 +233,24 @@
 
 
 
+.home-pan {
+  position: relative;
+  bottom: -100px;
+  right: 18px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-image: url(home-pan-3.eps.png);
+  background-position: center;
+  background-repeat: no-repeat;
+//   animation: change infinite ease-in-out;
+//   animation-duration: 10s;
+//   z-index: 98;
+}
+
 .home-filters-box {
+  position: relative;
+  bottom: -116px;
   height: 180px;
   width: 75%;
   margin: 0 auto;
@@ -261,6 +307,11 @@
   line-height: 20%;
   width: auto;
   margin: 0px 12px 0px 12px;
+}
+
+
+.home-filters-grid p {
+  color:#D0D0D0;
 }
 
 .home-filters-grid a {

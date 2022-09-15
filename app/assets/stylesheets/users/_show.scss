@@ -5,6 +5,8 @@
 
 .iPhone-13-container-colour {
   background-image: linear-gradient(to bottom right, #F5F5EE, #F4F5DB);
+  display: flex;
+  flex-direction: column;
 }
 
 .iPhone-13-spacing-colour {
@@ -172,9 +174,9 @@
   height: 138px;
   padding-top: 10px;
   padding-bottom: 5px;
-  background: #C8FFC1;
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: 0px 1px 1px #888888;
+  // background: #C8FFC1;
+  // border-radius: 10px 10px 0px 0px;
+  // box-shadow: 0px 1px 1px #888888;
 
     // after click
   .tab-new-position {
